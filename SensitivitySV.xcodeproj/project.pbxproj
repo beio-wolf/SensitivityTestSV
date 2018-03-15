@@ -220,6 +220,8 @@
 		28BE8A6320593721002CDB80 /* MainJP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A6020593720002CDB80 /* MainJP.storyboard */; };
 		28BE8A6420593721002CDB80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A6120593721002CDB80 /* Main.storyboard */; };
 		28BE8A6620593794002CDB80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A6520593794002CDB80 /* LaunchScreen.storyboard */; };
+		28BE8A6A205A645B002CDB80 /* chinese1_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A69205A645A002CDB80 /* chinese1_button.png */; };
+		28BE8A6C205A654A002CDB80 /* chinese2_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A6B205A6549002CDB80 /* chinese2_button.png */; };
 		28BF60181FCAE9CD00B2418F /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BF60171FCAE9CD00B2418F /* StartUpViewController.swift */; };
 		28BF601A1FD023CE00B2418F /* PreMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BF60191FD023CE00B2418F /* PreMain.storyboard */; };
 		28BF601C1FD0277600B2418F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BF601B1FD0277600B2418F /* SettingViewController.swift */; };
@@ -469,6 +471,8 @@
 		28BE8A6120593721002CDB80 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		28BE8A6520593794002CDB80 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28BE8A6720593860002CDB80 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28BE8A69205A645A002CDB80 /* chinese1_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chinese1_button.png; path = SensitivitySV/Images/Common/CH1/chinese1_button.png; sourceTree = SOURCE_ROOT; };
+		28BE8A6B205A6549002CDB80 /* chinese2_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chinese2_button.png; path = SensitivitySV/Images/Common/CH2/chinese2_button.png; sourceTree = SOURCE_ROOT; };
 		28BF60171FCAE9CD00B2418F /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 		28BF60191FD023CE00B2418F /* PreMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PreMain.storyboard; sourceTree = "<group>"; };
 		28BF601B1FD0277600B2418F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -884,6 +888,7 @@
 		28BE892720593285002CDB80 /* CH1 */ = {
 			isa = PBXGroup;
 			children = (
+				28BE8A69205A645A002CDB80 /* chinese1_button.png */,
 				28BE896F20593368002CDB80 /* chinese1_choose_button.png */,
 				28BE896720593368002CDB80 /* chinese1_exist_button_a.png */,
 				28BE896C20593368002CDB80 /* chinese1_exist_button.png */,
@@ -907,6 +912,7 @@
 		28BE892820593296002CDB80 /* CH2 */ = {
 			isa = PBXGroup;
 			children = (
+				28BE8A6B205A6549002CDB80 /* chinese2_button.png */,
 				28BE898B205933A5002CDB80 /* chinese2_exist_button_a.png */,
 				28BE898C205933A5002CDB80 /* chinese2_exist_button.png */,
 				28BE898D205933A5002CDB80 /* chinese2_manual_button.png */,
@@ -1191,6 +1197,7 @@
 				28BE8A2720593542002CDB80 /* 03_title@2x.png in Resources */,
 				28BE89D92059340B002CDB80 /* setting_title1.png in Resources */,
 				28BE89F4205934CF002CDB80 /* Inf7_ST1_minus3.png in Resources */,
+				28BE8A6A205A645B002CDB80 /* chinese1_button.png in Resources */,
 				28BE89D82059340B002CDB80 /* setting_title3.png in Resources */,
 				28BE896220593338002CDB80 /* jp_myope_button.png in Resources */,
 				28BE891B205931AD002CDB80 /* previous.png in Resources */,
@@ -1228,6 +1235,7 @@
 				28BE898F205933A6002CDB80 /* chinese2_trial_button.png in Resources */,
 				28BE8919205931AD002CDB80 /* validate_button.png in Resources */,
 				28BE8A6420593721002CDB80 /* Main.storyboard in Resources */,
+				28BE8A6C205A654A002CDB80 /* chinese2_button.png in Resources */,
 				28BE89B2205933CC002CDB80 /* icon83_5@2x.png in Resources */,
 				28BE89D62059340B002CDB80 /* setting_button.png in Resources */,
 				28BE893C205932EC002CDB80 /* enter@2x.png in Resources */,
