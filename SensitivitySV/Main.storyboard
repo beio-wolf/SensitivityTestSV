@@ -254,7 +254,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5q-qF-p7o">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="previous.png"/>
+                                <state key="normal" title="Button" image="en_previous.png"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="p1p-qx-TM1"/>
                                 </connections>
@@ -315,7 +315,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpo-Tj-oTH">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="previous.png"/>
+                                <state key="normal" title="Button" image="en_previous.png"/>
                                 <connections>
                                     <segue destination="wnz-W4-Ym6" kind="show" animates="NO" id="2ln-xv-dxG"/>
                                 </connections>
@@ -416,7 +416,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yH8-ug-vzs">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="previous.png"/>
+                                <state key="normal" title="Button" image="en_previous.png"/>
                                 <connections>
                                     <segue destination="3pf-4G-uLq" kind="show" animates="NO" id="bDS-WV-15Y"/>
                                 </connections>
@@ -449,7 +449,7 @@
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image.png" translatesAutoresizingMaskIntoConstraints="NO" id="JpN-c6-tq6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="en_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="JpN-c6-tq6">
                                 <rect key="frame" x="464" y="43" width="63" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -496,7 +496,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbf-GE-RCa">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="previous.png"/>
+                                <state key="normal" title="Button" image="en_previous.png"/>
                                 <connections>
                                     <segue destination="bYa-BX-6Fz" kind="show" animates="NO" id="Hk5-cK-lIO"/>
                                 </connections>
@@ -546,7 +546,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze4-7e-nJ7">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="previous.png"/>
+                                <state key="normal" title="Button" image="en_previous.png"/>
                                 <connections>
                                     <segue destination="a4m-2e-SdN" kind="show" animates="NO" id="hDn-N9-PKs"/>
                                 </connections>
@@ -571,7 +571,7 @@
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image.png" translatesAutoresizingMaskIntoConstraints="NO" id="uLm-4x-Ld3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="en_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="uLm-4x-Ld3">
                                 <rect key="frame" x="464" y="43" width="63" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -627,7 +627,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtA-DL-2LM">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="previous.png"/>
+                                <state key="normal" title="Button" image="en_previous.png"/>
                                 <connections>
                                     <segue destination="Hfz-eA-qv0" kind="show" animates="NO" id="rbN-Pa-ReF"/>
                                 </connections>
@@ -694,7 +694,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLf-6c-Xmg">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="previous.png"/>
+                                <state key="normal" title="Button" image="en_previous.png"/>
                                 <connections>
                                     <segue destination="moi-n6-VUF" kind="show" animates="NO" id="vlW-G7-Fp3"/>
                                 </connections>
@@ -727,7 +727,7 @@
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image.png" translatesAutoresizingMaskIntoConstraints="NO" id="gyZ-iG-Xzw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="en_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="gyZ-iG-Xzw">
                                 <rect key="frame" x="464" y="43" width="63" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -773,17 +773,17 @@
         <image name="chinese1_button.png" width="365" height="104"/>
         <image name="chinese2_button.png" width="365" height="104"/>
         <image name="choose_button.png" width="465" height="119"/>
+        <image name="en_image.png" width="126" height="28"/>
+        <image name="en_previous.png" width="263" height="150"/>
         <image name="english_button.png" width="365" height="104"/>
         <image name="exist_button.png" width="479" height="531"/>
         <image name="exiting-equipment.png" width="240" height="180"/>
         <image name="hyperope_button.png" width="361" height="105"/>
-        <image name="image.png" width="105" height="24"/>
         <image name="japanese_button.png" width="365" height="104"/>
         <image name="manual_button.png" width="508" height="104"/>
         <image name="myope_button.png" width="302" height="105"/>
         <image name="nikon-logo.png" width="68" height="68"/>
-        <image name="previous.png" width="350" height="33"/>
-        <image name="score_back.png" width="719" height="480"/>
+        <image name="score_back.png" width="572" height="480"/>
         <image name="score_title.png" width="475" height="98"/>
         <image name="setting_background.png" width="2048" height="1536"/>
         <image name="setting_button.png" width="120" height="120"/>
@@ -802,7 +802,7 @@
         <segue reference="bDS-WV-15Y"/>
         <segue reference="rbN-Pa-ReF"/>
         <segue reference="BGh-US-ePH"/>
-        <segue reference="4y0-cX-i7e"/>
-        <segue reference="sgg-q7-I8I"/>
+        <segue reference="jju-AN-Nq1"/>
+        <segue reference="p1p-qx-TM1"/>
     </inferredMetricsTieBreakers>
 </document>
