@@ -13,7 +13,7 @@
         <!--StartUp-->
         <scene sceneID="MC9-nw-fvx">
             <objects>
-                <viewController storyboardIdentifier="StartUp" title="StartUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="twd-P4-HMG" customClass="StartUpViewController" customModule="NiconLensWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartUp" title="StartUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="twd-P4-HMG" customClass="StartUpViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r05-Nk-DUP">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,7 +66,7 @@
         <!--SelectTest-->
         <scene sceneID="ix7-jW-xDC">
             <objects>
-                <viewController storyboardIdentifier="SelectTest" title="SelectTest" id="MbR-0D-uKl" customClass="SelectTestViewController" customModule="NiconLensWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectTest" title="SelectTest" id="MbR-0D-uKl" customClass="SelectTestViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8lI-ZY-VsE">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,7 +125,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2m-DF-bLN">
-                                <rect key="frame" x="553" y="418" width="151" height="53"/>
+                                <rect key="frame" x="553" y="421" width="151" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="chinese2_hyperope_button.png"/>
                                 <connections>
@@ -148,7 +148,7 @@
         <!--Description View Controller-->
         <scene sceneID="EZE-LU-mfr">
             <objects>
-                <viewController storyboardIdentifier="Description" id="1Nd-hf-jmE" customClass="DescriptionViewController" customModule="NiconLensWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Description" id="1Nd-hf-jmE" customClass="DescriptionViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZjI-Th-46f">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@
         <!--Blur View Controller-->
         <scene sceneID="Bxw-nJ-hcj">
             <objects>
-                <viewController storyboardIdentifier="Blur" id="Iwj-2f-kGu" customClass="BlurViewController" customModule="NiconLensWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Blur" id="Iwj-2f-kGu" customClass="BlurViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8yi-KW-1RO">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,7 +274,7 @@
         <!--Full Test View Controller-->
         <scene sceneID="wO3-CZ-Pkh">
             <objects>
-                <viewController storyboardIdentifier="FullTest" id="tYR-KB-aYg" customClass="FullTestViewController" customModule="NiconLensWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FullTest" id="tYR-KB-aYg" customClass="FullTestViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fwv-yC-Zkb">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -354,7 +354,7 @@
         <!--Great View Controller-->
         <scene sceneID="8Bc-v2-ghT">
             <objects>
-                <viewController storyboardIdentifier="Great" id="tuD-4v-gyf" customClass="GreatViewController" customModule="NiconLensWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Great" id="tuD-4v-gyf" customClass="GreatViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k9l-zo-1Nc">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -403,7 +403,7 @@
         <!--ReConfirm-->
         <scene sceneID="aYM-8C-XCX">
             <objects>
-                <viewController storyboardIdentifier="ReConfirm" title="ReConfirm" id="ScO-VV-vcA" customClass="ReConfirmViewController" customModule="NiconLensWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReConfirm" title="ReConfirm" id="ScO-VV-vcA" customClass="ReConfirmViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VWB-E1-5OK">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -483,7 +483,7 @@
         <!--Result View Controller-->
         <scene sceneID="H14-oQ-voI">
             <objects>
-                <viewController storyboardIdentifier="Result" id="yj6-Yz-7F7" customClass="ResultViewController" customModule="NiconLensWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Result" id="yj6-Yz-7F7" customClass="ResultViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S0D-J3-KEA">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -550,7 +550,7 @@
         <!--ShortTest-->
         <scene sceneID="QrG-dc-t1s">
             <objects>
-                <viewController storyboardIdentifier="ShortTest" title="ShortTest" id="vsQ-BA-pio" customClass="ShortTestViewController" customModule="NiconLensWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShortTest" title="ShortTest" id="vsQ-BA-pio" customClass="ShortTestViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sNl-1g-gl8">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -631,7 +631,7 @@
         <!--Settings View Controller-->
         <scene sceneID="zut-hb-uDE">
             <objects>
-                <viewController storyboardIdentifier="Settings" id="YMv-Fm-MaN" customClass="SettingsViewController" customModule="NiconLensWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Settings" id="YMv-Fm-MaN" customClass="SettingsViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HQf-b0-Pjq">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -721,7 +721,7 @@
         <!--Web View Controller-->
         <scene sceneID="sSR-AE-Ifl">
             <objects>
-                <viewController storyboardIdentifier="Web" id="2kS-jQ-yff" customClass="WebViewController" customModule="NiconLensWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Web" id="2kS-jQ-yff" customClass="WebViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nMh-vx-1RQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -769,7 +769,7 @@
         <image name="chinese2_exist_button.png" width="479" height="531"/>
         <image name="chinese2_exist_button_a.png" width="479" height="531"/>
         <image name="chinese2_hyperope_button.png" width="302" height="105"/>
-        <image name="chinese2_image.png" width="58" height="29"/>
+        <image name="chinese2_image.png" width="69" height="34"/>
         <image name="chinese2_manual_button.png" width="508" height="104"/>
         <image name="chinese2_myope_button.png" width="302" height="105"/>
         <image name="chinese2_previous.png" width="263" height="150"/>
@@ -785,7 +785,7 @@
         <image name="exiting-equipment.png" width="240" height="180"/>
         <image name="japanese_button.png" width="365" height="104"/>
         <image name="nikon-logo.png" width="68" height="68"/>
-        <image name="score_back.png" width="719" height="480"/>
+        <image name="score_back.png" width="572" height="480"/>
         <image name="setting_background.png" width="2048" height="1536"/>
         <image name="setting_button.png" width="120" height="120"/>
         <image name="start.png" width="198" height="59"/>
@@ -794,8 +794,7 @@
         <image name="trialset.png" width="240" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AuA-pZ-UnA"/>
-        <segue reference="nO8-2p-n9i"/>
+        <segue reference="uyj-kc-8sh"/>
         <segue reference="OWP-fJ-IwE"/>
         <segue reference="a5a-Zy-a3W"/>
     </inferredMetricsTieBreakers>
