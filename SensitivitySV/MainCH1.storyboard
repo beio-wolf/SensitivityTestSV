@@ -746,7 +746,7 @@
         <image name="chinese1_image.png" width="59" height="29"/>
         <image name="chinese1_manual_button.png" width="508" height="104"/>
         <image name="chinese1_myope_button.png" width="302" height="105"/>
-        <image name="chinese1_previous.png" width="350" height="33"/>
+        <image name="chinese1_previous.png" width="263" height="25"/>
         <image name="chinese1_score_title.png" width="454" height="48"/>
         <image name="chinese1_setting_title1.png" width="185" height="87"/>
         <image name="chinese1_setting_title2.png" width="296" height="46"/>
@@ -760,7 +760,7 @@
         <image name="exiting-equipment.png" width="240" height="180"/>
         <image name="japanese_button.png" width="365" height="104"/>
         <image name="nikon-logo.png" width="68" height="68"/>
-        <image name="score_back.png" width="719" height="480"/>
+        <image name="score_back.png" width="572" height="480"/>
         <image name="setting_background.png" width="2048" height="1536"/>
         <image name="setting_button.png" width="120" height="120"/>
         <image name="start.png" width="198" height="59"/>
@@ -769,7 +769,7 @@
         <image name="trialset.png" width="240" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Wcd-aJ-xTb"/>
+        <segue reference="j3a-p3-Iuw"/>
         <segue reference="Iaq-dt-HCN"/>
         <segue reference="dvk-tD-G6f"/>
     </inferredMetricsTieBreakers>
