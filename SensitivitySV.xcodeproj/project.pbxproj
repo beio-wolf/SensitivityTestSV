@@ -21,6 +21,8 @@
 		2868983B1FB07E0C007EEDCD /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2868983A1FB07E0C007EEDCD /* TitleViewController.swift */; };
 		2868987E1FB94419007EEDCD /* SelectTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2868987D1FB94419007EEDCD /* SelectTestViewController.swift */; };
 		286898801FB94CB4007EEDCD /* SelectStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2868987F1FB94CB4007EEDCD /* SelectStatusViewController.swift */; };
+		28AF4AF2205F90C3002C6D6A /* SelectLensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4AF1205F90C3002C6D6A /* SelectLensViewController.swift */; };
+		28AF4AF420616F0D002C6D6A /* NewestPrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4AF320616F0D002C6D6A /* NewestPrescriptionViewController.swift */; };
 		28BE88F7205931AD002CDB80 /* rigtarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE88CB205931AA002CDB80 /* rigtarrow@2x.png */; };
 		28BE88F8205931AD002CDB80 /* open.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28BE88CC205931AA002CDB80 /* open.jpg */; };
 		28BE88F9205931AD002CDB80 /* leftarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE88CD205931AA002CDB80 /* leftarrow.png */; };
@@ -283,6 +285,8 @@
 		2868983A1FB07E0C007EEDCD /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		2868987D1FB94419007EEDCD /* SelectTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTestViewController.swift; sourceTree = "<group>"; };
 		2868987F1FB94CB4007EEDCD /* SelectStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStatusViewController.swift; sourceTree = "<group>"; };
+		28AF4AF1205F90C3002C6D6A /* SelectLensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLensViewController.swift; sourceTree = "<group>"; };
+		28AF4AF320616F0D002C6D6A /* NewestPrescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewestPrescriptionViewController.swift; sourceTree = "<group>"; };
 		28BE88CB205931AA002CDB80 /* rigtarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rigtarrow@2x.png"; sourceTree = "<group>"; };
 		28BE88CC205931AA002CDB80 /* open.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = open.jpg; sourceTree = "<group>"; };
 		28BE88CD205931AA002CDB80 /* leftarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftarrow.png; sourceTree = "<group>"; };
@@ -565,15 +569,17 @@
 				28BF609A1FD554FA00B2418F /* MainCH1.storyboard */,
 				28BF60D61FD6A0DE00B2418F /* MainCH2.storyboard */,
 				286898021FB007EC007EEDCD /* AppDelegate.swift */,
+				285606691FBAD87F0026AB58 /* BlurViewController.swift */,
 				286898361FB04D66007EEDCD /* DataServer.swift */,
 				28BF607A1FD5049200B2418F /* DescriptionViewController.swift */,
-				285606691FBAD87F0026AB58 /* BlurViewController.swift */,
 				28D5BB671FB97ADA00FC868C /* FullTestViewController.swift */,
 				28BF60781FD3DA9800B2418F /* GreatViewController.swift */,
 				28BF60761FD3A99000B2418F /* LoadingViewController.swift */,
 				2806D49A1FC67D710042A979 /* LoginViewController.swift */,
+				28AF4AF320616F0D002C6D6A /* NewestPrescriptionViewController.swift */,
 				2806D4A01FC6BA8F0042A979 /* ReConfirmViewController.swift */,
 				2806D49E1FC6B6B70042A979 /* ResultViewController.swift */,
+				28AF4AF1205F90C3002C6D6A /* SelectLensViewController.swift */,
 				2868987F1FB94CB4007EEDCD /* SelectStatusViewController.swift */,
 				2868987D1FB94419007EEDCD /* SelectTestViewController.swift */,
 				28BF601B1FD0277600B2418F /* SettingViewController.swift */,
@@ -1353,6 +1359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AF4AF420616F0D002C6D6A /* NewestPrescriptionViewController.swift in Sources */,
 				2806D4A11FC6BA8F0042A979 /* ReConfirmViewController.swift in Sources */,
 				28BF607B1FD5049200B2418F /* DescriptionViewController.swift in Sources */,
 				2806D49B1FC67D710042A979 /* LoginViewController.swift in Sources */,
@@ -1361,6 +1368,7 @@
 				2868987E1FB94419007EEDCD /* SelectTestViewController.swift in Sources */,
 				285606681FBAD0A80026AB58 /* ShortTestViewController.swift in Sources */,
 				28BF60791FD3DA9800B2418F /* GreatViewController.swift in Sources */,
+				28AF4AF2205F90C3002C6D6A /* SelectLensViewController.swift in Sources */,
 				28BF601C1FD0277600B2418F /* SettingViewController.swift in Sources */,
 				2806D49D1FC68EAD0042A979 /* WebViewController.swift in Sources */,
 				2868983B1FB07E0C007EEDCD /* TitleViewController.swift in Sources */,
@@ -1520,7 +1528,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4K8S34BP9;
 				INFOPLIST_FILE = "$(SRCROOT)/SensitivitySV/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.nikon-essilor.SensitivityTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1536,7 +1544,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4K8S34BP9;
 				INFOPLIST_FILE = "$(SRCROOT)/SensitivitySV/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.nikon-essilor.SensitivityTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
