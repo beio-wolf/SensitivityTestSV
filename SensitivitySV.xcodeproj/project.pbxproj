@@ -36,6 +36,12 @@
 		28AF4C49206911F8002C6D6A /* setting_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C40206911F5002C6D6A /* setting_button.png */; };
 		28AF4C4B206911F8002C6D6A /* Japanese in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C42206911F8002C6D6A /* Japanese */; };
 		28AF4C4D206B8D73002C6D6A /* en_next_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C4C206B8D71002C6D6A /* en_next_button.png */; };
+		28AF4C4F206BAE6D002C6D6A /* CurrentPrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4C4E206BAE6D002C6D6A /* CurrentPrescriptionViewController.swift */; };
+		28AF4C52206BB657002C6D6A /* 22_en_title1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C51206BB656002C6D6A /* 22_en_title1.png */; };
+		28AF4C56206BC44A002C6D6A /* 23_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C54206BC447002C6D6A /* 23_background.png */; };
+		28AF4C57206BC44A002C6D6A /* 23_landolt.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C55206BC448002C6D6A /* 23_landolt.png */; };
+		28AF4C59206BC465002C6D6A /* 23_en_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C58206BC464002C6D6A /* 23_en_title.png */; };
+		28AF4C5B206BC5BC002C6D6A /* ConfarmFarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4C5A206BC5BC002C6D6A /* ConfarmFarViewController.swift */; };
 		28BE88F7205931AD002CDB80 /* rigtarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE88CB205931AA002CDB80 /* rigtarrow@2x.png */; };
 		28BE88F8205931AD002CDB80 /* open.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28BE88CC205931AA002CDB80 /* open.jpg */; };
 		28BE88F9205931AD002CDB80 /* leftarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE88CD205931AA002CDB80 /* leftarrow.png */; };
@@ -312,6 +318,13 @@
 		28AF4C40206911F5002C6D6A /* setting_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting_button.png; path = SensitivitySV/Images/21_SV/setting_button.png; sourceTree = SOURCE_ROOT; };
 		28AF4C42206911F8002C6D6A /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Japanese; path = SensitivitySV/Images/21_SV/Japanese; sourceTree = SOURCE_ROOT; };
 		28AF4C4C206B8D71002C6D6A /* en_next_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en_next_button.png; path = SensitivitySV/Images/Common/US/en_next_button.png; sourceTree = SOURCE_ROOT; };
+		28AF4C4E206BAE6D002C6D6A /* CurrentPrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentPrescriptionViewController.swift; sourceTree = "<group>"; };
+		28AF4C51206BB656002C6D6A /* 22_en_title1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 22_en_title1.png; path = SensitivitySV/Images/22_SV/English/22_en_title1.png; sourceTree = SOURCE_ROOT; };
+		28AF4C54206BC447002C6D6A /* 23_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 23_background.png; path = SensitivitySV/Images/23_Far/23_background.png; sourceTree = SOURCE_ROOT; };
+		28AF4C55206BC448002C6D6A /* 23_landolt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 23_landolt.png; path = SensitivitySV/Images/23_Far/23_landolt.png; sourceTree = SOURCE_ROOT; };
+		28AF4C58206BC464002C6D6A /* 23_en_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 23_en_title.png; path = SensitivitySV/Images/23_Far/English/23_en_title.png; sourceTree = SOURCE_ROOT; };
+		28AF4C5A206BC5BC002C6D6A /* ConfarmFarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfarmFarViewController.swift; sourceTree = "<group>"; };
+		28AF4C5C206BCE1D002C6D6A /* 21_en_title1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21_en_title1.png; sourceTree = "<group>"; };
 		28BE88CB205931AA002CDB80 /* rigtarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rigtarrow@2x.png"; sourceTree = "<group>"; };
 		28BE88CC205931AA002CDB80 /* open.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = open.jpg; sourceTree = "<group>"; };
 		28BE88CD205931AA002CDB80 /* leftarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftarrow.png; sourceTree = "<group>"; };
@@ -594,6 +607,8 @@
 				28BF60D61FD6A0DE00B2418F /* MainCH2.storyboard */,
 				286898021FB007EC007EEDCD /* AppDelegate.swift */,
 				285606691FBAD87F0026AB58 /* BlurViewController.swift */,
+				28AF4C5A206BC5BC002C6D6A /* ConfarmFarViewController.swift */,
+				28AF4C4E206BAE6D002C6D6A /* CurrentPrescriptionViewController.swift */,
 				286898361FB04D66007EEDCD /* DataServer.swift */,
 				28BF607A1FD5049200B2418F /* DescriptionViewController.swift */,
 				28D5BB671FB97ADA00FC868C /* FullTestViewController.swift */,
@@ -651,6 +666,7 @@
 			isa = PBXGroup;
 			children = (
 				28AF4C3A206911EE002C6D6A /* 21_background.png */,
+				28AF4C5C206BCE1D002C6D6A /* 21_en_title1.png */,
 				28AF4C3E206911F2002C6D6A /* 21_c.png */,
 				28AF4C3B206911EF002C6D6A /* 21_l.png */,
 				28AF4C3F206911F4002C6D6A /* 21_r.png */,
@@ -661,6 +677,26 @@
 			);
 			name = 21_SV;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		28AF4C50206BB60E002C6D6A /* 22_SV */ = {
+			isa = PBXGroup;
+			children = (
+				28AF4C51206BB656002C6D6A /* 22_en_title1.png */,
+			);
+			name = 22_SV;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		28AF4C53206BC3EA002C6D6A /* 23_Far */ = {
+			isa = PBXGroup;
+			children = (
+				28AF4C58206BC464002C6D6A /* 23_en_title.png */,
+				28AF4C54206BC447002C6D6A /* 23_background.png */,
+				28AF4C55206BC448002C6D6A /* 23_landolt.png */,
+			);
+			name = 23_Far;
+			path = "New Group2";
 			sourceTree = "<group>";
 		};
 		28BE88BA20592D97002CDB80 /* Images */ = {
@@ -684,6 +720,8 @@
 				28BE88CA20592F61002CDB80 /* 10_Result */,
 				28AF4C2E20689ECA002C6D6A /* 20_SV */,
 				28AF4C39206910F8002C6D6A /* 21_SV */,
+				28AF4C50206BB60E002C6D6A /* 22_SV */,
+				28AF4C53206BC3EA002C6D6A /* 23_Far */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -1172,6 +1210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BE89AD205933CC002CDB80 /* icon20.png in Resources */,
+				28AF4C52206BB657002C6D6A /* 22_en_title1.png in Resources */,
 				28BE89A8205933CC002CDB80 /* icon_all.jpg in Resources */,
 				28BE8A3420593551002CDB80 /* 004_layout.png in Resources */,
 				28BE8A0720593501002CDB80 /* Inf7_ST1_plus10.png in Resources */,
@@ -1261,6 +1300,7 @@
 				28BE897B20593369002CDB80 /* chinese1_exist_button.png in Resources */,
 				28BE89C8205933F3002CDB80 /* 2224×1668.jpg in Resources */,
 				28BE89B1205933CC002CDB80 /* icon_all.psd in Resources */,
+				28AF4C59206BC465002C6D6A /* 23_en_title.png in Resources */,
 				28BE88FC205931AD002CDB80 /* default.jpg in Resources */,
 				28BE89CA205933F3002CDB80 /* case1.psd in Resources */,
 				28BE8994205933A6002CDB80 /* chinese2_previous.png in Resources */,
@@ -1365,12 +1405,14 @@
 				28BE89B5205933CC002CDB80 /* icon76@2x.png in Resources */,
 				28BE890F205931AD002CDB80 /* result.png in Resources */,
 				28BE8A3220593551002CDB80 /* 04_chinese2_title.png in Resources */,
+				28AF4C57206BC44A002C6D6A /* 23_landolt.png in Resources */,
 				28BE893A205932EC002CDB80 /* enterthepassword.png in Resources */,
 				28BE8A3C2059356C002CDB80 /* 05_chinese1_title.png in Resources */,
 				28BE8911205931AD002CDB80 /* result.psd in Resources */,
 				28BE8A3F2059356C002CDB80 /* 005_layout.png in Resources */,
 				28BE8A6620593794002CDB80 /* LaunchScreen.storyboard in Resources */,
 				28BE897F20593369002CDB80 /* chinese1_manual_button.png in Resources */,
+				28AF4C56206BC44A002C6D6A /* 23_background.png in Resources */,
 				28BE8A3120593551002CDB80 /* 04_chinese1_title.png in Resources */,
 				28BE8A0E20593501002CDB80 /* Inf7_ST1_plus8.png in Resources */,
 				28BE8909205931AD002CDB80 /* trialset@2x.png in Resources */,
@@ -1438,6 +1480,8 @@
 				2806D49D1FC68EAD0042A979 /* WebViewController.swift in Sources */,
 				2868983B1FB07E0C007EEDCD /* TitleViewController.swift in Sources */,
 				286898801FB94CB4007EEDCD /* SelectStatusViewController.swift in Sources */,
+				28AF4C4F206BAE6D002C6D6A /* CurrentPrescriptionViewController.swift in Sources */,
+				28AF4C5B206BC5BC002C6D6A /* ConfarmFarViewController.swift in Sources */,
 				286898371FB04D66007EEDCD /* DataServer.swift in Sources */,
 				28D5BB681FB97ADA00FC868C /* FullTestViewController.swift in Sources */,
 				286898031FB007EC007EEDCD /* AppDelegate.swift in Sources */,
