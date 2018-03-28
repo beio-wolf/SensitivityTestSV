@@ -23,6 +23,19 @@
 		286898801FB94CB4007EEDCD /* SelectStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2868987F1FB94CB4007EEDCD /* SelectStatusViewController.swift */; };
 		28AF4AF2205F90C3002C6D6A /* SelectLensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4AF1205F90C3002C6D6A /* SelectLensViewController.swift */; };
 		28AF4AF420616F0D002C6D6A /* NewestPrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4AF320616F0D002C6D6A /* NewestPrescriptionViewController.swift */; };
+		28AF4C322068A1A0002C6D6A /* 20_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C312068A19E002C6D6A /* 20_background.png */; };
+		28AF4C342068A1FC002C6D6A /* 20_en_title1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C332068A1FB002C6D6A /* 20_en_title1.png */; };
+		28AF4C362068A390002C6D6A /* en_sv_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C352068A38E002C6D6A /* en_sv_button.png */; };
+		28AF4C382068A4BD002C6D6A /* en_svrg_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C372068A4BC002C6D6A /* en_svrg_button.png */; };
+		28AF4C43206911F8002C6D6A /* 21_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C3A206911EE002C6D6A /* 21_background.png */; };
+		28AF4C44206911F8002C6D6A /* 21_l.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C3B206911EF002C6D6A /* 21_l.png */; };
+		28AF4C45206911F8002C6D6A /* 21_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C3C206911F0002C6D6A /* 21_s.png */; };
+		28AF4C46206911F8002C6D6A /* English in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C3D206911F2002C6D6A /* English */; };
+		28AF4C47206911F8002C6D6A /* 21_c.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C3E206911F2002C6D6A /* 21_c.png */; };
+		28AF4C48206911F8002C6D6A /* 21_r.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C3F206911F4002C6D6A /* 21_r.png */; };
+		28AF4C49206911F8002C6D6A /* setting_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C40206911F5002C6D6A /* setting_button.png */; };
+		28AF4C4B206911F8002C6D6A /* Japanese in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C42206911F8002C6D6A /* Japanese */; };
+		28AF4C4D206B8D73002C6D6A /* en_next_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C4C206B8D71002C6D6A /* en_next_button.png */; };
 		28BE88F7205931AD002CDB80 /* rigtarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE88CB205931AA002CDB80 /* rigtarrow@2x.png */; };
 		28BE88F8205931AD002CDB80 /* open.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28BE88CC205931AA002CDB80 /* open.jpg */; };
 		28BE88F9205931AD002CDB80 /* leftarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE88CD205931AA002CDB80 /* leftarrow.png */; };
@@ -139,7 +152,6 @@
 		28BE89B5205933CC002CDB80 /* icon76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE89A6205933CC002CDB80 /* icon76@2x.png */; };
 		28BE89B6205933CC002CDB80 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE89A7205933CC002CDB80 /* icon.png */; };
 		28BE89BA205933E2002CDB80 /* nikon-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE89B7205933E2002CDB80 /* nikon-logo@2x.png */; };
-		28BE89BB205933E2002CDB80 /* nikon-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE89B8205933E2002CDB80 /* nikon-logo.png */; };
 		28BE89BC205933E2002CDB80 /* nikon_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE89B9205933E2002CDB80 /* nikon_logo.png */; };
 		28BE89C5205933F3002CDB80 /* 2732×2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28BE89BD205933F3002CDB80 /* 2732×2048.jpg */; };
 		28BE89C6205933F3002CDB80 /* case1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28BE89BE205933F3002CDB80 /* case1.jpg */; };
@@ -287,6 +299,19 @@
 		2868987F1FB94CB4007EEDCD /* SelectStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStatusViewController.swift; sourceTree = "<group>"; };
 		28AF4AF1205F90C3002C6D6A /* SelectLensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLensViewController.swift; sourceTree = "<group>"; };
 		28AF4AF320616F0D002C6D6A /* NewestPrescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewestPrescriptionViewController.swift; sourceTree = "<group>"; };
+		28AF4C312068A19E002C6D6A /* 20_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20_background.png; sourceTree = "<group>"; };
+		28AF4C332068A1FB002C6D6A /* 20_en_title1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 20_en_title1.png; path = English/20_en_title1.png; sourceTree = "<group>"; };
+		28AF4C352068A38E002C6D6A /* en_sv_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en_sv_button.png; path = English/en_sv_button.png; sourceTree = "<group>"; };
+		28AF4C372068A4BC002C6D6A /* en_svrg_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en_svrg_button.png; path = English/en_svrg_button.png; sourceTree = "<group>"; };
+		28AF4C3A206911EE002C6D6A /* 21_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 21_background.png; path = SensitivitySV/Images/21_SV/21_background.png; sourceTree = SOURCE_ROOT; };
+		28AF4C3B206911EF002C6D6A /* 21_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 21_l.png; path = SensitivitySV/Images/21_SV/21_l.png; sourceTree = SOURCE_ROOT; };
+		28AF4C3C206911F0002C6D6A /* 21_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 21_s.png; path = SensitivitySV/Images/21_SV/21_s.png; sourceTree = SOURCE_ROOT; };
+		28AF4C3D206911F2002C6D6A /* English */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English; path = SensitivitySV/Images/21_SV/English; sourceTree = SOURCE_ROOT; };
+		28AF4C3E206911F2002C6D6A /* 21_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 21_c.png; path = SensitivitySV/Images/21_SV/21_c.png; sourceTree = SOURCE_ROOT; };
+		28AF4C3F206911F4002C6D6A /* 21_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 21_r.png; path = SensitivitySV/Images/21_SV/21_r.png; sourceTree = SOURCE_ROOT; };
+		28AF4C40206911F5002C6D6A /* setting_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting_button.png; path = SensitivitySV/Images/21_SV/setting_button.png; sourceTree = SOURCE_ROOT; };
+		28AF4C42206911F8002C6D6A /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Japanese; path = SensitivitySV/Images/21_SV/Japanese; sourceTree = SOURCE_ROOT; };
+		28AF4C4C206B8D71002C6D6A /* en_next_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en_next_button.png; path = SensitivitySV/Images/Common/US/en_next_button.png; sourceTree = SOURCE_ROOT; };
 		28BE88CB205931AA002CDB80 /* rigtarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rigtarrow@2x.png"; sourceTree = "<group>"; };
 		28BE88CC205931AA002CDB80 /* open.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = open.jpg; sourceTree = "<group>"; };
 		28BE88CD205931AA002CDB80 /* leftarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftarrow.png; sourceTree = "<group>"; };
@@ -403,7 +428,6 @@
 		28BE89A6205933CC002CDB80 /* icon76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon76@2x.png"; sourceTree = "<group>"; };
 		28BE89A7205933CC002CDB80 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		28BE89B7205933E2002CDB80 /* nikon-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nikon-logo@2x.png"; sourceTree = "<group>"; };
-		28BE89B8205933E2002CDB80 /* nikon-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nikon-logo.png"; sourceTree = "<group>"; };
 		28BE89B9205933E2002CDB80 /* nikon_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nikon_logo.png; sourceTree = "<group>"; };
 		28BE89BD205933F3002CDB80 /* 2732×2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2732×2048.jpg"; sourceTree = "<group>"; };
 		28BE89BE205933F3002CDB80 /* case1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = case1.jpg; sourceTree = "<group>"; };
@@ -612,6 +636,33 @@
 			path = SensitivitySVUITests;
 			sourceTree = "<group>";
 		};
+		28AF4C2E20689ECA002C6D6A /* 20_SV */ = {
+			isa = PBXGroup;
+			children = (
+				28AF4C372068A4BC002C6D6A /* en_svrg_button.png */,
+				28AF4C352068A38E002C6D6A /* en_sv_button.png */,
+				28AF4C332068A1FB002C6D6A /* 20_en_title1.png */,
+				28AF4C312068A19E002C6D6A /* 20_background.png */,
+			);
+			path = 20_SV;
+			sourceTree = "<group>";
+		};
+		28AF4C39206910F8002C6D6A /* 21_SV */ = {
+			isa = PBXGroup;
+			children = (
+				28AF4C3A206911EE002C6D6A /* 21_background.png */,
+				28AF4C3E206911F2002C6D6A /* 21_c.png */,
+				28AF4C3B206911EF002C6D6A /* 21_l.png */,
+				28AF4C3F206911F4002C6D6A /* 21_r.png */,
+				28AF4C3C206911F0002C6D6A /* 21_s.png */,
+				28AF4C3D206911F2002C6D6A /* English */,
+				28AF4C42206911F8002C6D6A /* Japanese */,
+				28AF4C40206911F5002C6D6A /* setting_button.png */,
+			);
+			name = 21_SV;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		28BE88BA20592D97002CDB80 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +682,8 @@
 				28BE88C820592F1E002CDB80 /* 08_Tutorial2 */,
 				28BE88C920592F41002CDB80 /* 09_Round2 */,
 				28BE88CA20592F61002CDB80 /* 10_Result */,
+				28AF4C2E20689ECA002C6D6A /* 20_SV */,
+				28AF4C39206910F8002C6D6A /* 21_SV */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -717,7 +770,6 @@
 			isa = PBXGroup;
 			children = (
 				28BE89B9205933E2002CDB80 /* nikon_logo.png */,
-				28BE89B8205933E2002CDB80 /* nikon-logo.png */,
 				28BE89B7205933E2002CDB80 /* nikon-logo@2x.png */,
 			);
 			path = Logo;
@@ -883,6 +935,7 @@
 		28BE8923205931D5002CDB80 /* US */ = {
 			isa = PBXGroup;
 			children = (
+				28AF4C4C206B8D71002C6D6A /* en_next_button.png */,
 				28BE8A6D205A6A97002CDB80 /* en_previous.png */,
 				28BE8930205932EC002CDB80 /* english_button_a.png */,
 				28BE8933205932EC002CDB80 /* english_button.png */,
@@ -1147,6 +1200,7 @@
 				28BE8A3020593551002CDB80 /* 04_background.png in Resources */,
 				28BE8A6320593721002CDB80 /* MainJP.storyboard in Resources */,
 				28BE897820593369002CDB80 /* chinese1_start_button.png in Resources */,
+				28AF4C4B206911F8002C6D6A /* Japanese in Resources */,
 				28BE89AF205933CC002CDB80 /* icon29@2x.png in Resources */,
 				28BE89A9205933CC002CDB80 /* icon40@2x.png in Resources */,
 				28BE8A1020593501002CDB80 /* Inf7_ST1_plus9.png in Resources */,
@@ -1169,6 +1223,7 @@
 				28BE8A0820593501002CDB80 /* Inf7_ST1_plus6.png in Resources */,
 				28BE8A3620593551002CDB80 /* 04_title.png in Resources */,
 				28BE8A3E2059356C002CDB80 /* 05_title.png in Resources */,
+				28AF4C48206911F8002C6D6A /* 21_r.png in Resources */,
 				28BE8A2320593542002CDB80 /* 03_start_button.png in Resources */,
 				28BE8A512059359D002CDB80 /* 08_chinese1_title.png in Resources */,
 				28BE88F8205931AD002CDB80 /* open.jpg in Resources */,
@@ -1183,6 +1238,7 @@
 				28BE89DA2059340B002CDB80 /* settings.jpg in Resources */,
 				28BE88F9205931AD002CDB80 /* leftarrow.png in Resources */,
 				28BE8A482059357B002CDB80 /* 06_title.png in Resources */,
+				28AF4C322068A1A0002C6D6A /* 20_background.png in Resources */,
 				28BE89EE205934CF002CDB80 /* Inf7_ST1_minus2.png in Resources */,
 				28BE895720593338002CDB80 /* jp_exist_button.png in Resources */,
 				28BE8A0B20593501002CDB80 /* Inf7_ST1_plus4.png in Resources */,
@@ -1194,7 +1250,6 @@
 				28BE89AE205933CC002CDB80 /* icon20@2x.png in Resources */,
 				28BE897720593369002CDB80 /* chinese1_hyperope_button.png in Resources */,
 				28BE895820593338002CDB80 /* jp_setting_title3.png in Resources */,
-				28BE89BB205933E2002CDB80 /* nikon-logo.png in Resources */,
 				28BE89B3205933CC002CDB80 /* icon40.png in Resources */,
 				28BE89F6205934CF002CDB80 /* Inf7_ST1_minus9.png in Resources */,
 				28BE8A1320593527002CDB80 /* 01.-Loading-page.png in Resources */,
@@ -1202,6 +1257,7 @@
 				28BE88FA205931AD002CDB80 /* reconfirm.png in Resources */,
 				28BE8A0A20593501002CDB80 /* Inf7_ST1_plus3.png in Resources */,
 				28BE891E205931AD002CDB80 /* Default-Landscape.png in Resources */,
+				28AF4C49206911F8002C6D6A /* setting_button.png in Resources */,
 				28BE897B20593369002CDB80 /* chinese1_exist_button.png in Resources */,
 				28BE89C8205933F3002CDB80 /* 2224×1668.jpg in Resources */,
 				28BE89B1205933CC002CDB80 /* icon_all.psd in Resources */,
@@ -1217,6 +1273,7 @@
 				28BE8913205931AD002CDB80 /* choose_button.png in Resources */,
 				28BE897A20593369002CDB80 /* chinese1_trial_button.png in Resources */,
 				28BE89ED205934CF002CDB80 /* Inf7_ST1_minus11.png in Resources */,
+				28AF4C43206911F8002C6D6A /* 21_background.png in Resources */,
 				28BE89F1205934CF002CDB80 /* Inf7_ST1_minus4.png in Resources */,
 				28BE88F7205931AD002CDB80 /* rigtarrow@2x.png in Resources */,
 				28BE898220593369002CDB80 /* chinese1_setting_title3.png in Resources */,
@@ -1232,11 +1289,13 @@
 				28BE895F20593338002CDB80 /* jp_trial_button.png in Resources */,
 				28BE8922205931AD002CDB80 /* result.jpg in Resources */,
 				28BE8A0620593501002CDB80 /* Inf7_ST1_plus12.png in Resources */,
+				28AF4C342068A1FC002C6D6A /* 20_en_title1.png in Resources */,
 				28BE8A472059357B002CDB80 /* 06_chinese2_title.png in Resources */,
 				28BE8998205933A6002CDB80 /* chinese2_manual_button.png in Resources */,
 				28BE897C20593369002CDB80 /* chinese1_trial_button_a.png in Resources */,
 				28BE897D20593369002CDB80 /* chinese1_previous.png in Resources */,
 				28BE893E205932EC002CDB80 /* Glass.png in Resources */,
+				28AF4C44206911F8002C6D6A /* 21_l.png in Resources */,
 				28BE895620593338002CDB80 /* jp_setting_title1.png in Resources */,
 				28BE8903205931AD002CDB80 /* title.png in Resources */,
 				28BE890E205931AD002CDB80 /* trial_button.png in Resources */,
@@ -1249,6 +1308,7 @@
 				28BE8A72205A6EB0002CDB80 /* score_back.png in Resources */,
 				28BE896220593338002CDB80 /* jp_myope_button.png in Resources */,
 				28BE891B205931AD002CDB80 /* previous.png in Resources */,
+				28AF4C4D206B8D73002C6D6A /* en_next_button.png in Resources */,
 				28BE8A532059359D002CDB80 /* 08_title.png in Resources */,
 				28BE89C5205933F3002CDB80 /* 2732×2048.jpg in Resources */,
 				28BE8996205933A6002CDB80 /* chinese2_exist_button_a.png in Resources */,
@@ -1256,6 +1316,7 @@
 				28BE8A0C20593501002CDB80 /* Inf7_ST1_plus5.png in Resources */,
 				28BE89CB205933F3002CDB80 /* case2.jpg in Resources */,
 				28BE8A2420593542002CDB80 /* 03_setting.png in Resources */,
+				28AF4C47206911F8002C6D6A /* 21_c.png in Resources */,
 				28BE890C205931AD002CDB80 /* startup.jpg in Resources */,
 				28BE8A2520593542002CDB80 /* 03_title.png in Resources */,
 				28BE8A2820593542002CDB80 /* 03_background.png in Resources */,
@@ -1267,6 +1328,7 @@
 				28BE8901205931AD002CDB80 /* open.psd in Resources */,
 				28BE8A1A20593534002CDB80 /* 02_backgrond.png in Resources */,
 				28BE89AA205933CC002CDB80 /* icon1024.png in Resources */,
+				28AF4C46206911F8002C6D6A /* English in Resources */,
 				28BE8A5D205935BA002CDB80 /* 10_chinese1_title.png in Resources */,
 				28BE8A76205A7ED6002CDB80 /* 05_chinese2_title.png in Resources */,
 				28BE897420593369002CDB80 /* chinese1_tryagain_button.png in Resources */,
@@ -1296,6 +1358,7 @@
 				28BE897920593369002CDB80 /* chinese1_myope_button.png in Resources */,
 				28BE8A4C2059358E002CDB80 /* 07_layout.png in Resources */,
 				28BE89BA205933E2002CDB80 /* nikon-logo@2x.png in Resources */,
+				28AF4C382068A4BD002C6D6A /* en_svrg_button.png in Resources */,
 				28BE8938205932EC002CDB80 /* hyperope_button.png in Resources */,
 				28BE8A0520593501002CDB80 /* Inf7_ST1_plus11.png in Resources */,
 				28BE8910205931AD002CDB80 /* myope_button.png in Resources */,
@@ -1321,10 +1384,12 @@
 				28BE8A0D20593501002CDB80 /* Inf7_ST1_plus7.png in Resources */,
 				28BE89CC205933F3002CDB80 /* TestGlass.png in Resources */,
 				28BE896320593338002CDB80 /* jp_exist_button_a.png in Resources */,
+				28AF4C45206911F8002C6D6A /* 21_s.png in Resources */,
 				28BE8A402059356C002CDB80 /* 05_backgrount.png in Resources */,
 				28BE897520593369002CDB80 /* chinese1_setting_title2.png in Resources */,
 				28BE895D20593338002CDB80 /* jp_start_button.png in Resources */,
 				28BE89C9205933F3002CDB80 /* case2.psd in Resources */,
+				28AF4C362068A390002C6D6A /* en_sv_button.png in Resources */,
 				28BE8992205933A6002CDB80 /* chinese2_start_button.png in Resources */,
 				28BE895520593338002CDB80 /* jp_setting_title2.png in Resources */,
 				28BE89D42059340B002CDB80 /* setting_background.png in Resources */,
