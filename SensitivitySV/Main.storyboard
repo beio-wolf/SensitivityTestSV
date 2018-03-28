@@ -273,7 +273,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_previous.png"/>
                                 <connections>
-                                    <segue destination="7N8-cQ-5c6" kind="show" id="m3l-hv-479"/>
+                                    <segue destination="7N8-cQ-5c6" kind="show" animates="NO" id="m3l-hv-479"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Q0-mv-ciJ">
@@ -281,7 +281,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_next_button.png"/>
                                 <connections>
-                                    <segue destination="ePw-Nk-HH6" kind="show" id="u0X-IJ-tUN"/>
+                                    <segue destination="ePw-Nk-HH6" kind="show" animates="NO" id="u0X-IJ-tUN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -324,7 +324,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="en_svrg_button.png"/>
                                 <connections>
-                                    <segue destination="9hs-PY-f7X" kind="show" id="kCU-XP-ao2"/>
+                                    <segue destination="9hs-PY-f7X" kind="show" animates="NO" id="kCU-XP-ao2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1b-tl-10t">
@@ -332,7 +332,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="en_sv_button.png"/>
                                 <connections>
-                                    <segue destination="9hs-PY-f7X" kind="show" id="S16-Sh-fyt"/>
+                                    <segue destination="9hs-PY-f7X" kind="show" animates="NO" id="S16-Sh-fyt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqz-us-4xm">
@@ -348,7 +348,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="previous.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Iqy-bZ-XoG"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="Iqy-bZ-XoG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -417,13 +417,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_next_button.png"/>
                                 <connections>
-                                    <segue destination="BNs-cA-nth" kind="show" id="KUh-Uv-Qla"/>
+                                    <segue destination="BNs-cA-nth" kind="show" animates="NO" id="KUh-Uv-Qla"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6B-gh-7yH">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_previous.png"/>
+                                <connections>
+                                    <segue destination="lxd-nQ-KxA" kind="show" animates="NO" id="zWF-n1-3ku"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G2q-yO-lfE">
                                 <rect key="frame" x="385" y="227" width="181" height="30"/>
@@ -440,7 +443,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fH1-eu-Gdi">
-                                <rect key="frame" x="385" y="363" width="181" height="30"/>
+                                <rect key="frame" x="385" y="369" width="181" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -517,7 +520,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_previous.png"/>
                                 <connections>
-                                    <segue destination="7N8-cQ-5c6" kind="show" id="mue-ai-hmb"/>
+                                    <segue destination="7N8-cQ-5c6" kind="show" animates="NO" id="mue-ai-hmb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -603,7 +606,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_previous.png"/>
                                 <connections>
-                                    <segue destination="ePw-Nk-HH6" kind="show" id="08T-Aa-pty"/>
+                                    <segue destination="ePw-Nk-HH6" kind="show" animates="NO" id="08T-Aa-pty"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wed-4j-4X7">
@@ -632,7 +635,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="start_button.png"/>
                                 <connections>
-                                    <segue destination="3pf-4G-uLq" kind="show" id="2GE-5H-vBo"/>
+                                    <segue destination="3pf-4G-uLq" kind="show" animates="NO" id="2GE-5H-vBo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.8m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5b-gq-rhL">
@@ -1166,8 +1169,8 @@
         <segue reference="2ln-xv-dxG"/>
         <segue reference="08T-Aa-pty"/>
         <segue reference="m3l-hv-479"/>
-        <segue reference="S16-Sh-fyt"/>
-        <segue reference="pV9-8X-VM5"/>
+        <segue reference="kCU-XP-ao2"/>
+        <segue reference="D88-JT-1QH"/>
         <segue reference="Iqy-bZ-XoG"/>
     </inferredMetricsTieBreakers>
 </document>
