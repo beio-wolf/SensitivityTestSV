@@ -57,9 +57,9 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar0.barStyle = UIBarStyle.default
                 toolBar0.isTranslucent = true
                 toolBar0.tintColor = UIColor.black
-                let doneButton0   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressedBrand))
+                let doneButton0   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed0))
                 doneButton0.tintColor = fontColor
-                let cancelButton0 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressedBrand))
+                let cancelButton0 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed0))
                 cancelButton0.tintColor = fontColor
                 let spaceButton0  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
                                                     target: nil,
@@ -88,9 +88,9 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar1.barStyle = UIBarStyle.default
                 toolBar1.isTranslucent = true
                 toolBar1.tintColor = UIColor.black
-                let doneButton1   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressedBrand))
+                let doneButton1   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed1))
                 doneButton1.tintColor = fontColor
-                let cancelButton1 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressedBrand))
+                let cancelButton1 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed1))
                 cancelButton1.tintColor = fontColor
                 let spaceButton1  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
                                                     target: nil,
@@ -119,9 +119,9 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar2.barStyle = UIBarStyle.default
                 toolBar2.isTranslucent = true
                 toolBar2.tintColor = UIColor.black
-                let doneButton2   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressedBrand))
+                let doneButton2   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed2))
                 doneButton2.tintColor = fontColor
-                let cancelButton2 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressedBrand))
+                let cancelButton2 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed2))
                 cancelButton2.tintColor = fontColor
                 let spaceButton2  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
                                                     target: nil,
@@ -150,9 +150,9 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar3.barStyle = UIBarStyle.default
                 toolBar3.isTranslucent = true
                 toolBar3.tintColor = UIColor.black
-                let doneButton3   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressedBrand))
+                let doneButton3   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed3))
                 doneButton3.tintColor = fontColor
-                let cancelButton3 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressedBrand))
+                let cancelButton3 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed3))
                 cancelButton3.tintColor = fontColor
                 let spaceButton3  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
                                                     target: nil,
@@ -172,7 +172,7 @@ class NewestPrescriptionViewController: UIViewController,
     }
     
     // Done
-    @objc func donePressedBrand() {
+    @objc func donePressed0() {
         
         let intIndex:Int = prescriptionPickerView0.selectedRow(inComponent: 0)
         let intName:String = intDataArray[intIndex]
@@ -185,11 +185,62 @@ class NewestPrescriptionViewController: UIViewController,
         view.endEditing(true)
     }
 
-    // Cancel
-    @objc func cancelPressedBrand() {
+    @objc func donePressed1() {
+        
+        let intIndex:Int = prescriptionPickerView1.selectedRow(inComponent: 0)
+        let intName:String = intDataArray[intIndex]
+        
+        let decimalIndex:Int = prescriptionPickerView1.selectedRow(inComponent: 1)
+        let decimalName:String = decimalDataArray[decimalIndex]
+        
+        prescriptionTextField1_.text = intName + "." + decimalName
+        
+        view.endEditing(true)
+    }
+
+    @objc func donePressed2() {
+        
+        let intIndex:Int = prescriptionPickerView2.selectedRow(inComponent: 0)
+        let intName:String = intDataArray[intIndex]
+        
+        let decimalIndex:Int = prescriptionPickerView2.selectedRow(inComponent: 1)
+        let decimalName:String = decimalDataArray[decimalIndex]
+        
+        prescriptionTextField2_.text = intName + "." + decimalName
+        
         view.endEditing(true)
     }
     
+    @objc func donePressed3() {
+        
+        let intIndex:Int = prescriptionPickerView3.selectedRow(inComponent: 0)
+        let intName:String = intDataArray[intIndex]
+        
+        let decimalIndex:Int = prescriptionPickerView3.selectedRow(inComponent: 1)
+        let decimalName:String = decimalDataArray[decimalIndex]
+        
+        prescriptionTextField3_.text = intName + "." + decimalName
+        
+        view.endEditing(true)
+    }
+
+    // Cancel
+    @objc func cancelPressed0() {
+        view.endEditing(true)
+    }
+    
+    @objc func cancelPressed1() {
+        view.endEditing(true)
+    }
+
+    @objc func cancelPressed2() {
+        view.endEditing(true)
+    }
+
+    @objc func cancelPressed3() {
+        view.endEditing(true)
+    }
+
     ////// ドラムロールのプロトコル //////
     // コンポーネント数
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
