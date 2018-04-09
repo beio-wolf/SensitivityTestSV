@@ -16,6 +16,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func tappedEnterButton(_ sender: Any) {
         let inputString:String? = myTextField.text
         if (inputString == "NikonLenswear100") {
+            UserDefaults.standard.set(true, forKey: "auth")
             loginFaildImage_.isHidden = true
             let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Title")
             nextVC?.modalTransitionStyle = .crossDissolve

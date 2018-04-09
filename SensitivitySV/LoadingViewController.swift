@@ -31,9 +31,17 @@ class LoadingViewController: UIViewController {
     }
     
     @objc func timerFired() {
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Login")
-        nextVC?.modalTransitionStyle = .crossDissolve
-        present(nextVC!, animated: true, completion: nil)
+        
+        // ログインが必要かチェック
+        if (UserDefaults.standard.object(forKey: "auth") != nil) {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Title")
+            nextVC?.modalTransitionStyle = .crossDissolve
+            present(nextVC!, animated: true, completion: nil)
+        } else {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+            nextVC?.modalTransitionStyle = .crossDissolve
+            present(nextVC!, animated: true, completion: nil)
+        }
     }
     
     override var prefersStatusBarHidden: Bool {
