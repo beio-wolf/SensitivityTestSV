@@ -26,6 +26,12 @@ enum Region {
     case JP     // 日本
 }
 
+// レンズタイプ
+enum LensType {
+    case SingleVision
+    case SingleVisionForReadingGlasses
+}
+
 final class DataServer {
     
     // シングルトン
@@ -36,9 +42,20 @@ final class DataServer {
     private var glassType_:GlassType = GlassType.TrialSet
     private var eyeStatus_:EyeStatus = EyeStatus.Myope
     private var region_:Region       = Region.US
+    private var lensType_:LensType   = LensType.SingleVision
     private var comfirmIndex_:Int    = 0
     private var reConfirmIndex_:Int  = 0
     private var resultValue_:Int     = 0
+    
+    private var newestPrescriptionR_S_:Float = 0.0
+    private var newestPrescriptionR_C_:Float = 0.0
+    private var newestPrescriptionL_S_:Float = 0.0
+    private var newestPrescriptionL_C_:Float = 0.0
+
+    private var currentPrescriptionR_S_:Float = 0.0
+    private var currentPrescriptionR_C_:Float = 0.0
+    private var currentPrescriptionL_S_:Float = 0.0
+    private var currentPrescriptionL_C_:Float = 0.0
 
     // アクセサー
     func getGlassType() -> GlassType {
@@ -65,6 +82,78 @@ final class DataServer {
         region_ = newStatus
     }
     
+    func getLensType() -> LensType {
+        return lensType_
+    }
+    
+    func setLensType(_ newLensType:LensType) {
+        lensType_ = newLensType
+    }
+
+    func getNewestPrescriptionR_S() -> Float {
+        return newestPrescriptionR_S_
+    }
+    
+    func setNewestPrescriptionR_S(_ newestPrescriptionR_S:Float) {
+        newestPrescriptionR_S_ = newestPrescriptionR_S
+    }
+    
+    func getNewestPrescriptionR_C() -> Float {
+        return newestPrescriptionR_C_
+    }
+    
+    func setNewestPrescriptionR_C(_ newestPrescriptionR_C:Float) {
+        newestPrescriptionR_C_ = newestPrescriptionR_C
+    }
+
+    func getNewestPrescriptionL_S() -> Float {
+        return newestPrescriptionL_S_
+    }
+    
+    func setNewestPrescriptionL_S(_ newestPrescriptionL_S:Float) {
+        newestPrescriptionL_S_ = newestPrescriptionL_S
+    }
+    
+    func getNewestPrescriptionL_C() -> Float {
+        return newestPrescriptionL_C_
+    }
+    
+    func setNewestPrescriptionL_C(_ newestPrescriptionL_C:Float) {
+        newestPrescriptionL_C_ = newestPrescriptionL_C
+    }
+
+    func getCurrentPrescriptionR_S() -> Float {
+        return currentPrescriptionR_S_
+    }
+    
+    func setCurrentPrescriptionR_S(_ currentPrescriptionR_S:Float) {
+        currentPrescriptionR_S_ = currentPrescriptionR_S
+    }
+    
+    func getCurrentPrescriptionR_C() -> Float {
+        return currentPrescriptionR_C_
+    }
+    
+    func setCurrentPrescriptionR_C(_ currentPrescriptionR_C:Float) {
+        currentPrescriptionR_C_ = currentPrescriptionR_C
+    }
+    
+    func getCurrentPrescriptionL_S() -> Float {
+        return currentPrescriptionL_S_
+    }
+    
+    func setCurrentPrescriptionL_S(_ currentPrescriptionL_S:Float) {
+        currentPrescriptionL_S_ = currentPrescriptionL_S
+    }
+    
+    func getCurrentPrescriptionL_C() -> Float {
+        return currentPrescriptionL_C_
+    }
+    
+    func setCurrentPrescriptionL_C(_ currentPrescriptionL_C:Float) {
+        currentPrescriptionL_C_ = currentPrescriptionL_C
+    }
+
     func getConfirmIndex() -> Int {
         return comfirmIndex_
     }

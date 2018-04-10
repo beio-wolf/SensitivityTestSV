@@ -16,6 +16,26 @@ class SelectLensViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func tappedSingleVisionButton(_ sender: Any) {
+
+        let dataServer = DataServer.shared
+        dataServer.setLensType(LensType.SingleVision)
+        
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier:"NewestPrescription")
+        nextVC?.modalTransitionStyle = .crossDissolve
+        present(nextVC!, animated: false, completion: nil)
+    }
+    
+    @IBAction func tappedSingleVisionForReadingGlassesButton(_ sender: Any) {
+        
+        let dataServer = DataServer.shared
+        dataServer.setLensType(LensType.SingleVisionForReadingGlasses)
+        
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier:"NewestPrescription")
+        nextVC?.modalTransitionStyle = .crossDissolve
+        present(nextVC!, animated: false, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
