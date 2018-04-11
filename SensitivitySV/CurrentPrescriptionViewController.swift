@@ -39,6 +39,12 @@ class CurrentPrescriptionViewController: UIViewController,
                                         blue:0.294117647,
                                         alpha:1.0)
         
+        // 初期値を設定
+        dataServer.setCurrentPrescriptionR_S(0.0)
+        dataServer.setCurrentPrescriptionR_C(0.0)
+        dataServer.setCurrentPrescriptionL_S(0.0)
+        dataServer.setCurrentPrescriptionL_C(0.0)
+
         if (region == Region.US) {
             do {
                 currentPrescriptionPickerView0.frame = CGRect(x:0, y:0,
@@ -46,6 +52,10 @@ class CurrentPrescriptionViewController: UIViewController,
                                                 height:currentPrescriptionPickerView0.bounds.size.height)
                 currentPrescriptionPickerView0.delegate   = self
                 currentPrescriptionPickerView0.dataSource = self
+                currentPrescriptionPickerView0.selectRow(10, inComponent: 0, animated: false)
+                currentPrescriptionPickerView0.selectRow(0, inComponent: 1, animated: false)
+                currentPrescriptionPickerView0.selectRow(0, inComponent: 2, animated: false)
+
                 
                 let view0 = UIView(frame: currentPrescriptionPickerView0.bounds)
                 view0.backgroundColor = UIColor.white
@@ -68,7 +78,8 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar0.isUserInteractionEnabled = true
                 toolBar0.sizeToFit()
                 currentPrescriptionTextField0_.inputAccessoryView = toolBar0
-                currentPrescriptionTextField0_.placeholder = "0.00"
+                currentPrescriptionTextField0_.text = "0.00"
+
             }
             
             do {
@@ -77,6 +88,10 @@ class CurrentPrescriptionViewController: UIViewController,
                                                       height:currentPrescriptionPickerView1.bounds.size.height)
                 currentPrescriptionPickerView1.delegate   = self
                 currentPrescriptionPickerView1.dataSource = self
+                currentPrescriptionPickerView1.selectRow(10, inComponent: 0, animated: false)
+                currentPrescriptionPickerView1.selectRow(0, inComponent: 1, animated: false)
+                currentPrescriptionPickerView1.selectRow(0, inComponent: 2, animated: false)
+
                 
                 let view1 = UIView(frame: currentPrescriptionPickerView1.bounds)
                 view1.backgroundColor = UIColor.white
@@ -99,7 +114,8 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar1.isUserInteractionEnabled = true
                 toolBar1.sizeToFit()
                 currentPrescriptionTextField1_.inputAccessoryView = toolBar1
-                currentPrescriptionTextField1_.placeholder = "0.00"
+                currentPrescriptionTextField1_.text = "0.00"
+
             }
             
             do {
@@ -108,6 +124,9 @@ class CurrentPrescriptionViewController: UIViewController,
                                                        height:currentPrescriptionPickerView2.bounds.size.height)
                 currentPrescriptionPickerView2.delegate   = self
                 currentPrescriptionPickerView2.dataSource = self
+                currentPrescriptionPickerView2.selectRow(10, inComponent: 0, animated: false)
+                currentPrescriptionPickerView2.selectRow(0, inComponent: 1, animated: false)
+                currentPrescriptionPickerView2.selectRow(0, inComponent: 2, animated: false)
                 
                 let view2 = UIView(frame: currentPrescriptionPickerView2.bounds)
                 view2.backgroundColor = UIColor.white
@@ -130,7 +149,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar2.isUserInteractionEnabled = true
                 toolBar2.sizeToFit()
                 currentPrescriptionTextField2_.inputAccessoryView = toolBar2
-                currentPrescriptionTextField2_.placeholder = "0.00"
+                currentPrescriptionTextField2_.text = "0.00"
             }
             
             do {
@@ -139,6 +158,10 @@ class CurrentPrescriptionViewController: UIViewController,
                                                        height:currentPrescriptionPickerView3.bounds.size.height)
                 currentPrescriptionPickerView3.delegate   = self
                 currentPrescriptionPickerView3.dataSource = self
+                currentPrescriptionPickerView3.selectRow(10, inComponent: 0, animated: false)
+                currentPrescriptionPickerView3.selectRow(0, inComponent: 1, animated: false)
+                currentPrescriptionPickerView3.selectRow(0, inComponent: 2, animated: false)
+
                 
                 let view3 = UIView(frame: currentPrescriptionPickerView3.bounds)
                 view3.backgroundColor = UIColor.white
@@ -161,7 +184,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar3.isUserInteractionEnabled = true
                 toolBar3.sizeToFit()
                 currentPrescriptionTextField3_.inputAccessoryView = toolBar3
-                currentPrescriptionTextField3_.placeholder = "0.00"
+                currentPrescriptionTextField3_.text = "0.00"
             }
 
         } else {
@@ -177,10 +200,14 @@ class CurrentPrescriptionViewController: UIViewController,
         let intIndex:Int = currentPrescriptionPickerView0.selectedRow(inComponent: 0)
         let intName:String = intDataArray[intIndex]
 
-        let decimalIndex:Int = currentPrescriptionPickerView0.selectedRow(inComponent: 1)
+        let decimalIndex:Int = currentPrescriptionPickerView0.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
 
         currentPrescriptionTextField0_.text = intName + "." + decimalName
+
+        // 選択された値を保存
+        let dataServer = DataServer.shared
+        dataServer.setCurrentPrescriptionR_S(Float(currentPrescriptionTextField0_.text!)!)
         
         view.endEditing(true)
     }
@@ -190,11 +217,15 @@ class CurrentPrescriptionViewController: UIViewController,
         let intIndex:Int = currentPrescriptionPickerView1.selectedRow(inComponent: 0)
         let intName:String = intDataArray[intIndex]
         
-        let decimalIndex:Int = currentPrescriptionPickerView1.selectedRow(inComponent: 1)
+        let decimalIndex:Int = currentPrescriptionPickerView1.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
         
         currentPrescriptionTextField1_.text = intName + "." + decimalName
         
+        // 選択された値を保存
+        let dataServer = DataServer.shared
+        dataServer.setCurrentPrescriptionR_C(Float(currentPrescriptionTextField1_.text!)!)
+
         view.endEditing(true)
     }
 
@@ -203,10 +234,14 @@ class CurrentPrescriptionViewController: UIViewController,
         let intIndex:Int = currentPrescriptionPickerView2.selectedRow(inComponent: 0)
         let intName:String = intDataArray[intIndex]
         
-        let decimalIndex:Int = currentPrescriptionPickerView2.selectedRow(inComponent: 1)
+        let decimalIndex:Int = currentPrescriptionPickerView2.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
         
         currentPrescriptionTextField2_.text = intName + "." + decimalName
+        
+        // 選択された値を保存
+        let dataServer = DataServer.shared
+        dataServer.setCurrentPrescriptionL_S(Float(currentPrescriptionTextField2_.text!)!)
         
         view.endEditing(true)
     }
@@ -216,11 +251,15 @@ class CurrentPrescriptionViewController: UIViewController,
         let intIndex:Int = currentPrescriptionPickerView3.selectedRow(inComponent: 0)
         let intName:String = intDataArray[intIndex]
         
-        let decimalIndex:Int = currentPrescriptionPickerView3.selectedRow(inComponent: 1)
+        let decimalIndex:Int = currentPrescriptionPickerView3.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
         
         currentPrescriptionTextField3_.text = intName + "." + decimalName
         
+        // 選択された値を保存
+        let dataServer = DataServer.shared
+        dataServer.setCurrentPrescriptionL_C(Float(currentPrescriptionTextField3_.text!)!)
+
         view.endEditing(true)
     }
 
@@ -244,12 +283,12 @@ class CurrentPrescriptionViewController: UIViewController,
     ////// ドラムロールのプロトコル //////
     // コンポーネント数
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 2
+        return 3
     }
     
     // 列数
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 2
+        return 3
     }
     
     // 行数
@@ -258,6 +297,9 @@ class CurrentPrescriptionViewController: UIViewController,
             return intDataArray.count
         }
         else if (component == 1) {
+            return 1
+        }
+        else if (component == 2) {
             return decimalDataArray.count
         }
         
@@ -291,8 +333,14 @@ class CurrentPrescriptionViewController: UIViewController,
             label.font = UIFont.systemFont(ofSize:24.0)
             label.textColor = fontColor
             return label
-        }
-        else {
+        } else if (component == 1) {
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
+            label.textAlignment = .center
+            label.text = "."
+            label.font = UIFont.systemFont(ofSize:24.0)
+            label.textColor = fontColor
+            return label
+        } else {
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
             label.textAlignment = .center
             label.text = decimalDataArray[row]

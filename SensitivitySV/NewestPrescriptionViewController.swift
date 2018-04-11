@@ -77,7 +77,6 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar0.isUserInteractionEnabled = true
                 toolBar0.sizeToFit()
                 prescriptionTextField0_.inputAccessoryView = toolBar0
-//                prescriptionTextField0_.placeholder = "0.00"
                 prescriptionTextField0_.text = "0.00"
             }
             
@@ -112,7 +111,6 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar1.isUserInteractionEnabled = true
                 toolBar1.sizeToFit()
                 prescriptionTextField1_.inputAccessoryView = toolBar1
-//                prescriptionTextField1_.placeholder = "0.00"
                 prescriptionTextField1_.text = "0.00"
             }
             
@@ -147,7 +145,6 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar2.isUserInteractionEnabled = true
                 toolBar2.sizeToFit()
                 prescriptionTextField2_.inputAccessoryView = toolBar2
-//                prescriptionTextField2_.placeholder = "0.00"
                 prescriptionTextField2_.text = "0.00"
             }
             
@@ -182,7 +179,6 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar3.isUserInteractionEnabled = true
                 toolBar3.sizeToFit()
                 prescriptionTextField3_.inputAccessoryView = toolBar3
-//                prescriptionTextField3_.placeholder = "0.00"
                 prescriptionTextField3_.text = "0.00"
             }
 
