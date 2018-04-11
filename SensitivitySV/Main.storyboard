@@ -321,7 +321,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="en_svrg_button.png"/>
                                 <connections>
-                                    <segue destination="lxd-nQ-KxA" kind="show" id="gWc-a2-zhI"/>
+                                    <segue destination="lxd-nQ-KxA" kind="show" animates="NO" id="gWc-a2-zhI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1b-tl-10t">
@@ -329,7 +329,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="en_sv_button.png"/>
                                 <connections>
-                                    <segue destination="lxd-nQ-KxA" kind="show" id="XIh-gL-Smq"/>
+                                    <segue destination="lxd-nQ-KxA" kind="show" animates="NO" id="XIh-gL-Smq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqz-us-4xm">
@@ -643,6 +643,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1iG-rk-oMK"/>
                     </view>
+                    <connections>
+                        <outlet property="distanceLabel_" destination="W5b-gq-rhL" id="5hz-zV-6Tt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UQ6-Wa-ofh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1156,6 +1159,9 @@
                                 <rect key="frame" x="412" y="611" width="198" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="start_button.png"/>
+                                <connections>
+                                    <segue destination="3pf-4G-uLq" kind="show" animates="NO" id="Ptg-m1-KOh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.8m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWc-lA-mea">
                                 <rect key="frame" x="643" y="390" width="100" height="100"/>
@@ -1168,6 +1174,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="h2m-lv-oFk"/>
                     </view>
+                    <connections>
+                        <outlet property="distanceLabel_" destination="DWc-lA-mea" id="T8D-77-Wfo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lML-Jb-Fgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1225,8 +1234,8 @@
         <image name="tryagain_button.png" width="360" height="104"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zWF-n1-3ku"/>
-        <segue reference="2GE-5H-vBo"/>
+        <segue reference="gWc-a2-zhI"/>
+        <segue reference="Ptg-m1-KOh"/>
         <segue reference="rbN-Pa-ReF"/>
         <segue reference="2ln-xv-dxG"/>
         <segue reference="08T-Aa-pty"/>
