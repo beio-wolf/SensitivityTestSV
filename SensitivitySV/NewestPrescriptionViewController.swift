@@ -46,7 +46,10 @@ class NewestPrescriptionViewController: UIViewController,
                                                 height:prescriptionPickerView0.bounds.size.height)
                 prescriptionPickerView0.delegate   = self
                 prescriptionPickerView0.dataSource = self
-                
+                prescriptionPickerView0.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView0.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView0.selectRow(0, inComponent: 2, animated: false)
+
                 let view0 = UIView(frame: prescriptionPickerView0.bounds)
                 view0.backgroundColor = UIColor.white
                 view0.addSubview(prescriptionPickerView0)
@@ -68,7 +71,8 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar0.isUserInteractionEnabled = true
                 toolBar0.sizeToFit()
                 prescriptionTextField0_.inputAccessoryView = toolBar0
-                prescriptionTextField0_.placeholder = "0.00"
+//                prescriptionTextField0_.placeholder = "0.00"
+                prescriptionTextField0_.text = "0.00"
             }
             
             do {
@@ -77,7 +81,10 @@ class NewestPrescriptionViewController: UIViewController,
                                                       height:prescriptionPickerView1.bounds.size.height)
                 prescriptionPickerView1.delegate   = self
                 prescriptionPickerView1.dataSource = self
-                
+                prescriptionPickerView1.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView1.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView1.selectRow(0, inComponent: 2, animated: false)
+
                 let view1 = UIView(frame: prescriptionPickerView1.bounds)
                 view1.backgroundColor = UIColor.white
                 view1.addSubview(prescriptionPickerView1)
@@ -99,7 +106,8 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar1.isUserInteractionEnabled = true
                 toolBar1.sizeToFit()
                 prescriptionTextField1_.inputAccessoryView = toolBar1
-                prescriptionTextField1_.placeholder = "0.00"
+//                prescriptionTextField1_.placeholder = "0.00"
+                prescriptionTextField1_.text = "0.00"
             }
             
             do {
@@ -108,7 +116,10 @@ class NewestPrescriptionViewController: UIViewController,
                                                        height:prescriptionPickerView2.bounds.size.height)
                 prescriptionPickerView2.delegate   = self
                 prescriptionPickerView2.dataSource = self
-                
+                prescriptionPickerView2.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView2.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView2.selectRow(0, inComponent: 2, animated: false)
+
                 let view2 = UIView(frame: prescriptionPickerView2.bounds)
                 view2.backgroundColor = UIColor.white
                 view2.addSubview(prescriptionPickerView2)
@@ -130,7 +141,8 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar2.isUserInteractionEnabled = true
                 toolBar2.sizeToFit()
                 prescriptionTextField2_.inputAccessoryView = toolBar2
-                prescriptionTextField2_.placeholder = "0.00"
+//                prescriptionTextField2_.placeholder = "0.00"
+                prescriptionTextField2_.text = "0.00"
             }
             
             do {
@@ -139,7 +151,10 @@ class NewestPrescriptionViewController: UIViewController,
                                                        height:prescriptionPickerView3.bounds.size.height)
                 prescriptionPickerView3.delegate   = self
                 prescriptionPickerView3.dataSource = self
-                
+                prescriptionPickerView3.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView3.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView3.selectRow(0, inComponent: 2, animated: false)
+
                 let view3 = UIView(frame: prescriptionPickerView3.bounds)
                 view3.backgroundColor = UIColor.white
                 view3.addSubview(prescriptionPickerView3)
@@ -161,7 +176,8 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar3.isUserInteractionEnabled = true
                 toolBar3.sizeToFit()
                 prescriptionTextField3_.inputAccessoryView = toolBar3
-                prescriptionTextField3_.placeholder = "0.00"
+//                prescriptionTextField3_.placeholder = "0.00"
+                prescriptionTextField3_.text = "0.00"
             }
 
         } else {
@@ -177,7 +193,7 @@ class NewestPrescriptionViewController: UIViewController,
         let intIndex:Int = prescriptionPickerView0.selectedRow(inComponent: 0)
         let intName:String = intDataArray[intIndex]
 
-        let decimalIndex:Int = prescriptionPickerView0.selectedRow(inComponent: 1)
+        let decimalIndex:Int = prescriptionPickerView0.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
 
         prescriptionTextField0_.text = intName + "." + decimalName
@@ -190,7 +206,7 @@ class NewestPrescriptionViewController: UIViewController,
         let intIndex:Int = prescriptionPickerView1.selectedRow(inComponent: 0)
         let intName:String = intDataArray[intIndex]
         
-        let decimalIndex:Int = prescriptionPickerView1.selectedRow(inComponent: 1)
+        let decimalIndex:Int = prescriptionPickerView1.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
         
         prescriptionTextField1_.text = intName + "." + decimalName
@@ -203,7 +219,7 @@ class NewestPrescriptionViewController: UIViewController,
         let intIndex:Int = prescriptionPickerView2.selectedRow(inComponent: 0)
         let intName:String = intDataArray[intIndex]
         
-        let decimalIndex:Int = prescriptionPickerView2.selectedRow(inComponent: 1)
+        let decimalIndex:Int = prescriptionPickerView2.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
         
         prescriptionTextField2_.text = intName + "." + decimalName
@@ -216,7 +232,7 @@ class NewestPrescriptionViewController: UIViewController,
         let intIndex:Int = prescriptionPickerView3.selectedRow(inComponent: 0)
         let intName:String = intDataArray[intIndex]
         
-        let decimalIndex:Int = prescriptionPickerView3.selectedRow(inComponent: 1)
+        let decimalIndex:Int = prescriptionPickerView3.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
         
         prescriptionTextField3_.text = intName + "." + decimalName
@@ -244,12 +260,12 @@ class NewestPrescriptionViewController: UIViewController,
     ////// ドラムロールのプロトコル //////
     // コンポーネント数
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 2
+        return 3
     }
     
     // 列数
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 2
+        return 3
     }
     
     // 行数
@@ -258,6 +274,9 @@ class NewestPrescriptionViewController: UIViewController,
             return intDataArray.count
         }
         else if (component == 1) {
+            return 1
+        }
+        else if (component == 2) {
             return decimalDataArray.count
         }
         
@@ -291,8 +310,14 @@ class NewestPrescriptionViewController: UIViewController,
             label.font = UIFont.systemFont(ofSize:24.0)
             label.textColor = fontColor
             return label
-        }
-        else {
+        } else if (component == 1) {
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
+            label.textAlignment = .center
+            label.text = "."
+            label.font = UIFont.systemFont(ofSize:24.0)
+            label.textColor = fontColor
+            return label
+        } else {
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
             label.textAlignment = .center
             label.text = decimalDataArray[row]

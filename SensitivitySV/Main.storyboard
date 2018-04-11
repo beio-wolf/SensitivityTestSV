@@ -272,16 +272,13 @@
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_previous.png"/>
-                                <connections>
-                                    <segue destination="7N8-cQ-5c6" kind="show" animates="NO" id="m3l-hv-479"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Q0-mv-ciJ">
                                 <rect key="frame" x="407" y="634" width="213" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_next_button.png"/>
                                 <connections>
-                                    <segue destination="ePw-Nk-HH6" kind="show" animates="NO" id="u0X-IJ-tUN"/>
+                                    <segue destination="ePw-Nk-HH6" kind="show" animates="NO" id="GL9-8Q-z4m"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -324,8 +321,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="en_svrg_button.png"/>
                                 <connections>
-                                    <action selector="tappedSingleVisionForReadingGlassesButton:" destination="7N8-cQ-5c6" eventType="touchUpInside" id="Zys-lS-zB4"/>
-                                    <segue destination="9hs-PY-f7X" kind="show" animates="NO" id="kCU-XP-ao2"/>
+                                    <segue destination="lxd-nQ-KxA" kind="show" id="gWc-a2-zhI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1b-tl-10t">
@@ -333,8 +329,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="en_sv_button.png"/>
                                 <connections>
-                                    <action selector="tappedSingleVisionButton:" destination="7N8-cQ-5c6" eventType="touchUpInside" id="lTG-Li-pjb"/>
-                                    <segue destination="9hs-PY-f7X" kind="show" animates="NO" id="S16-Sh-fyt"/>
+                                    <segue destination="lxd-nQ-KxA" kind="show" id="XIh-gL-Smq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqz-us-4xm">
@@ -521,9 +516,6 @@
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_previous.png"/>
-                                <connections>
-                                    <segue destination="7N8-cQ-5c6" kind="show" animates="NO" id="mue-ai-hmb"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1090,16 +1082,25 @@
                                 <rect key="frame" x="964" y="704" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="setting_button.png"/>
+                                <connections>
+                                    <segue destination="3Rm-fV-QSR" kind="show" id="TXz-g3-XJ0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ih3-cY-yIi">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_previous.png"/>
+                                <connections>
+                                    <segue destination="7N8-cQ-5c6" kind="show" animates="NO" id="Cjw-mD-Z6K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcY-0o-yH2">
                                 <rect key="frame" x="407" y="634" width="213" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_next_button.png"/>
+                                <connections>
+                                    <segue destination="ePw-Nk-HH6" kind="show" animates="NO" id="V0r-p8-iBF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1166,13 +1167,13 @@
         <image name="tryagain_button.png" width="360" height="104"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Cjw-mD-Z6K"/>
+        <segue reference="gWc-a2-zhI"/>
         <segue reference="2GE-5H-vBo"/>
         <segue reference="rbN-Pa-ReF"/>
         <segue reference="2ln-xv-dxG"/>
-        <segue reference="u0X-IJ-tUN"/>
-        <segue reference="m3l-hv-479"/>
-        <segue reference="kCU-XP-ao2"/>
-        <segue reference="pV9-8X-VM5"/>
+        <segue reference="V0r-p8-iBF"/>
+        <segue reference="TXz-g3-XJ0"/>
         <segue reference="Iqy-bZ-XoG"/>
     </inferredMetricsTieBreakers>
 </document>
