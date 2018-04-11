@@ -39,6 +39,12 @@ class NewestPrescriptionViewController: UIViewController,
                                         blue:0.294117647,
                                         alpha:1.0)
         
+        // 初期値を設定
+        dataServer.setNewestPrescriptionR_S(0.0)
+        dataServer.setNewestPrescriptionR_C(0.0)
+        dataServer.setNewestPrescriptionL_S(0.0)
+        dataServer.setNewestPrescriptionL_C(0.0)
+
         if (region == Region.US) {
             do {
                 prescriptionPickerView0.frame = CGRect(x:0, y:0,
@@ -197,7 +203,11 @@ class NewestPrescriptionViewController: UIViewController,
         let decimalName:String = decimalDataArray[decimalIndex]
 
         prescriptionTextField0_.text = intName + "." + decimalName
-        
+
+        // 選択された値を保存
+        let dataServer = DataServer.shared
+        dataServer.setNewestPrescriptionR_S(Float(prescriptionTextField0_.text!)!)
+
         view.endEditing(true)
     }
 
@@ -211,6 +221,10 @@ class NewestPrescriptionViewController: UIViewController,
         
         prescriptionTextField1_.text = intName + "." + decimalName
         
+        // 選択された値を保存
+        let dataServer = DataServer.shared
+        dataServer.setNewestPrescriptionR_C(Float(prescriptionTextField1_.text!)!)
+
         view.endEditing(true)
     }
 
@@ -224,6 +238,10 @@ class NewestPrescriptionViewController: UIViewController,
         
         prescriptionTextField2_.text = intName + "." + decimalName
         
+        // 選択された値を保存
+        let dataServer = DataServer.shared
+        dataServer.setNewestPrescriptionL_S(Float(prescriptionTextField2_.text!)!)
+
         view.endEditing(true)
     }
     
@@ -237,6 +255,10 @@ class NewestPrescriptionViewController: UIViewController,
         
         prescriptionTextField3_.text = intName + "." + decimalName
         
+        // 選択された値を保存
+        let dataServer = DataServer.shared
+        dataServer.setNewestPrescriptionL_C(Float(prescriptionTextField3_.text!)!)
+
         view.endEditing(true)
     }
 
