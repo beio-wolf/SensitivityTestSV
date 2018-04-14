@@ -130,7 +130,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 
                 let view2 = UIView(frame: currentPrescriptionPickerView2.bounds)
                 view2.backgroundColor = UIColor.white
-                view2.addSubview(prescriptionPickerView2)
+                view2.addSubview(currentPrescriptionPickerView2)
                 
                 currentPrescriptionTextField2_.inputView = view2
                 

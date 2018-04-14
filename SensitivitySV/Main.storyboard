@@ -472,7 +472,7 @@
                     <connections>
                         <outlet property="currentPrescriptionTextField0_" destination="G2q-yO-lfE" id="2Of-C7-OzH"/>
                         <outlet property="currentPrescriptionTextField1_" destination="nwb-jX-Z8X" id="Jfw-Qt-FW0"/>
-                        <outlet property="currentPrescriptionTextField2_" destination="fH1-eu-Gdi" id="Cx9-A5-yg7"/>
+                        <outlet property="currentPrescriptionTextField2_" destination="fH1-eu-Gdi" id="vOV-ii-Gnn"/>
                         <outlet property="currentPrescriptionTextField3_" destination="dny-yw-BbB" id="1OF-Ba-UVd"/>
                     </connections>
                 </viewController>
@@ -1256,12 +1256,13 @@
         <image name="tryagain_button.png" width="360" height="104"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="KUh-Uv-Qla"/>
         <segue reference="zWF-n1-3ku"/>
         <segue reference="Ptg-m1-KOh"/>
         <segue reference="rbN-Pa-ReF"/>
         <segue reference="BGh-US-ePH"/>
         <segue reference="08T-Aa-pty"/>
-        <segue reference="D88-JT-1QH"/>
-        <segue reference="Zlo-3D-p64"/>
+        <segue reference="PXp-pl-F4y"/>
+        <segue reference="gy2-Rh-QXM"/>
     </inferredMetricsTieBreakers>
 </document>
