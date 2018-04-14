@@ -323,7 +323,7 @@ class NewestPrescriptionViewController: UIViewController,
 //        if (pickerView.tag == 1) {
         if (component == 0) {
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
-            label.textAlignment = .center
+            label.textAlignment = NSTextAlignment.right
             label.text = intDataArray[row]
             label.font = UIFont.systemFont(ofSize:24.0)
             label.textColor = fontColor
@@ -337,7 +337,7 @@ class NewestPrescriptionViewController: UIViewController,
             return label
         } else {
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
-            label.textAlignment = .center
+            label.textAlignment = NSTextAlignment.left
             label.text = decimalDataArray[row]
             label.font = UIFont.systemFont(ofSize:24.0)
             label.textColor = fontColor
