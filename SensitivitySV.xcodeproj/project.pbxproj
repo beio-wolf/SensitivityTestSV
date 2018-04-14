@@ -247,7 +247,6 @@
 		28BE8A5D205935BA002CDB80 /* 10_chinese1_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A58205935BA002CDB80 /* 10_chinese1_title.png */; };
 		28BE8A5E205935BA002CDB80 /* 10_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A59205935BA002CDB80 /* 10_background.png */; };
 		28BE8A6320593721002CDB80 /* MainJP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A6020593720002CDB80 /* MainJP.storyboard */; };
-		28BE8A6420593721002CDB80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A6120593721002CDB80 /* Main.storyboard */; };
 		28BE8A6620593794002CDB80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A6520593794002CDB80 /* LaunchScreen.storyboard */; };
 		28BE8A6A205A645B002CDB80 /* chinese1_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A69205A645A002CDB80 /* chinese1_button.png */; };
 		28BE8A6C205A654A002CDB80 /* chinese2_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BE8A6B205A6549002CDB80 /* chinese2_button.png */; };
@@ -273,6 +272,7 @@
 		28BF609B1FD554FA00B2418F /* MainCH1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BF609A1FD554FA00B2418F /* MainCH1.storyboard */; };
 		28BF60D71FD6A0DE00B2418F /* MainCH2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BF60D61FD6A0DE00B2418F /* MainCH2.storyboard */; };
 		28D5BB681FB97ADA00FC868C /* FullTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5BB671FB97ADA00FC868C /* FullTestViewController.swift */; };
+		28EE18B22081A5240009A34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EE18B12081A5240009A34C /* Main.storyboard */; };
 		28FBBC73207DEF3900548B4A /* ConfarmNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBBC72207DEF3900548B4A /* ConfarmNearViewController.swift */; };
 		28FBBC76207DF01D00548B4A /* 24_Near in Resources */ = {isa = PBXBuildFile; fileRef = 28FBBC75207DF01D00548B4A /* 24_Near */; };
 		28FF8674207D09C60058F45A /* 21_en_title1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FF8673207D09C60058F45A /* 21_en_title1.png */; };
@@ -541,7 +541,6 @@
 		28BE8A58205935BA002CDB80 /* 10_chinese1_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10_chinese1_title.png; sourceTree = "<group>"; };
 		28BE8A59205935BA002CDB80 /* 10_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10_background.png; sourceTree = "<group>"; };
 		28BE8A6020593720002CDB80 /* MainJP.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainJP.storyboard; sourceTree = "<group>"; };
-		28BE8A6120593721002CDB80 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		28BE8A6520593794002CDB80 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28BE8A6720593860002CDB80 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28BE8A69205A645A002CDB80 /* chinese1_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chinese1_button.png; path = SensitivitySV/Images/Common/CH1/chinese1_button.png; sourceTree = SOURCE_ROOT; };
@@ -568,6 +567,7 @@
 		28BF609A1FD554FA00B2418F /* MainCH1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainCH1.storyboard; sourceTree = "<group>"; };
 		28BF60D61FD6A0DE00B2418F /* MainCH2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainCH2.storyboard; sourceTree = "<group>"; };
 		28D5BB671FB97ADA00FC868C /* FullTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTestViewController.swift; sourceTree = "<group>"; };
+		28EE18B12081A5240009A34C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		28FBBC72207DEF3900548B4A /* ConfarmNearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfarmNearViewController.swift; sourceTree = "<group>"; };
 		28FBBC75207DF01D00548B4A /* 24_Near */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 24_Near; sourceTree = "<group>"; };
 		28FF8673207D09C60058F45A /* 21_en_title1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 21_en_title1.png; path = SensitivitySV/Images/21_SV/English/21_en_title1.png; sourceTree = SOURCE_ROOT; };
@@ -624,7 +624,7 @@
 				28BE88BA20592D97002CDB80 /* Images */,
 				28BE8A6520593794002CDB80 /* LaunchScreen.storyboard */,
 				28BF60191FD023CE00B2418F /* PreMain.storyboard */,
-				28BE8A6120593721002CDB80 /* Main.storyboard */,
+				28EE18B12081A5240009A34C /* Main.storyboard */,
 				28BE8A6020593720002CDB80 /* MainJP.storyboard */,
 				28BF609A1FD554FA00B2418F /* MainCH1.storyboard */,
 				28BF60D61FD6A0DE00B2418F /* MainCH2.storyboard */,
@@ -1354,6 +1354,7 @@
 				28BE8913205931AD002CDB80 /* choose_button.png in Resources */,
 				28BE897A20593369002CDB80 /* chinese1_trial_button.png in Resources */,
 				28BE89ED205934CF002CDB80 /* Inf7_ST1_minus11.png in Resources */,
+				28EE18B22081A5240009A34C /* Main.storyboard in Resources */,
 				28AF4C43206911F8002C6D6A /* 21_background.png in Resources */,
 				28BE89F1205934CF002CDB80 /* Inf7_ST1_minus4.png in Resources */,
 				28BE88F7205931AD002CDB80 /* rigtarrow@2x.png in Resources */,
@@ -1432,7 +1433,6 @@
 				28FBBC76207DF01D00548B4A /* 24_Near in Resources */,
 				28BE898F205933A6002CDB80 /* chinese2_trial_button.png in Resources */,
 				28BE8919205931AD002CDB80 /* validate_button.png in Resources */,
-				28BE8A6420593721002CDB80 /* Main.storyboard in Resources */,
 				28BE8A6C205A654A002CDB80 /* chinese2_button.png in Resources */,
 				28BE89B2205933CC002CDB80 /* icon83_5@2x.png in Resources */,
 				28BE89D62059340B002CDB80 /* setting_button.png in Resources */,
