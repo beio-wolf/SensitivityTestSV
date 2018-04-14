@@ -78,7 +78,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar0.isUserInteractionEnabled = true
                 toolBar0.sizeToFit()
                 currentPrescriptionTextField0_.inputAccessoryView = toolBar0
-                currentPrescriptionTextField0_.text = "0.00"
+                currentPrescriptionTextField0_.text = "+0.00"
 
             }
             
@@ -114,7 +114,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar1.isUserInteractionEnabled = true
                 toolBar1.sizeToFit()
                 currentPrescriptionTextField1_.inputAccessoryView = toolBar1
-                currentPrescriptionTextField1_.text = "0.00"
+                currentPrescriptionTextField1_.text = "+0.00"
 
             }
             
@@ -149,7 +149,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar2.isUserInteractionEnabled = true
                 toolBar2.sizeToFit()
                 currentPrescriptionTextField2_.inputAccessoryView = toolBar2
-                currentPrescriptionTextField2_.text = "0.00"
+                currentPrescriptionTextField2_.text = "+0.00"
             }
             
             do {
@@ -184,7 +184,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar3.isUserInteractionEnabled = true
                 toolBar3.sizeToFit()
                 currentPrescriptionTextField3_.inputAccessoryView = toolBar3
-                currentPrescriptionTextField3_.text = "0.00"
+                currentPrescriptionTextField3_.text = "+0.00"
             }
 
         } else {
