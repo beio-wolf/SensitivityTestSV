@@ -27,6 +27,22 @@ class CurrentPrescriptionViewController: UIViewController,
     @IBOutlet weak var currentPrescriptionTextField2_: UITextField!
     @IBOutlet weak var currentPrescriptionTextField3_: UITextField!
     
+    @IBAction func tappedGoToNextButton(_ sender: Any) {
+        
+        let dataServer = DataServer.shared
+        let lensType = dataServer.getLensType()
+
+        if (lensType == LensType.SingleVision) {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier:"ConfarmFar")
+            nextVC?.modalTransitionStyle = .crossDissolve
+            present(nextVC!, animated: false, completion: nil)
+        } else {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier:"ConfarmNear")
+            nextVC?.modalTransitionStyle = .crossDissolve
+            present(nextVC!, animated: false, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

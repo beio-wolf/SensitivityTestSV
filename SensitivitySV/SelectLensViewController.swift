@@ -16,7 +16,6 @@ class SelectLensViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    /*
     @IBAction func tappedSingleVisionButton(_ sender: Any) {
 
         let dataServer = DataServer.shared
@@ -36,7 +35,6 @@ class SelectLensViewController: UIViewController {
         nextVC?.modalTransitionStyle = .crossDissolve
         present(nextVC!, animated: false, completion: nil)
     }
-    */
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -161,6 +161,7 @@
                                 <state key="normal" image="manual_button.png"/>
                                 <connections>
                                     <action selector="tappedManualButton:" destination="sSg-cn-5ln" eventType="touchUpInside" id="Fh3-dN-6DP"/>
+                                    <segue destination="7l4-TF-xLg" kind="show" animates="NO" id="vGL-Do-mUh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NH-TA-aQb">
@@ -204,6 +205,40 @@
             </objects>
             <point key="canvasLocation" x="-3064" y="61"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="48s-iZ-Z0e">
+            <objects>
+                <viewController storyboardIdentifier="Web" id="7l4-TF-xLg" customClass="WebViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L2V-sB-Ir0">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0r-8A-4OP">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soS-Vh-4QA">
+                                <rect key="frame" x="35" y="698" width="106" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="&lt; Back"/>
+                                <connections>
+                                    <segue destination="sSg-cn-5ln" kind="show" animates="NO" id="KR4-fe-cXM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5hV-XN-6qi"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="t0r-8A-4OP" id="zBb-lU-h5P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PaF-1m-mZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3064" y="855"/>
+        </scene>
     </scenes>
     <resources>
         <image name="01.-Loading-layout.png" width="2048" height="1536"/>
@@ -226,4 +261,7 @@
         <image name="setting_title3.png" width="1078" height="40"/>
         <image name="validate_button.png" width="344" height="119"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vGL-Do-mUh"/>
+    </inferredMetricsTieBreakers>
 </document>
