@@ -22,9 +22,16 @@ class SettingsViewController: UIViewController {
         let dataServer = DataServer.shared
         dataServer.setRegion(Region.US)
         
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-        let next: UIViewController = storyboard.instantiateInitialViewController() as UIViewController!
-        present(next, animated: false, completion: nil)
+        let settingPos = dataServer.getSettingPos()
+        if (settingPos == SettingPos.Common) {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Title")
+            nextVC?.modalTransitionStyle = .crossDissolve
+            present(nextVC!, animated: true, completion: nil)
+        } else {
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+            let next: UIViewController = storyboard.instantiateInitialViewController() as UIViewController!
+            present(next, animated: false, completion: nil)
+        }
     }
     
     @IBAction func tappedJapaneseButton(_ sender: Any) {
@@ -32,9 +39,16 @@ class SettingsViewController: UIViewController {
         let dataServer = DataServer.shared
         dataServer.setRegion(Region.JP)
 
-        let storyboard: UIStoryboard = UIStoryboard(name: "MainJP",bundle: nil)
-        let next: UIViewController = storyboard.instantiateInitialViewController() as UIViewController!
-        present(next, animated: false, completion: nil)
+        let settingPos = dataServer.getSettingPos()
+        if (settingPos == SettingPos.Common) {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Title")
+            nextVC?.modalTransitionStyle = .crossDissolve
+            present(nextVC!, animated: true, completion: nil)
+        } else {
+            let storyboard: UIStoryboard = UIStoryboard(name: "MainJP",bundle: nil)
+            let next: UIViewController = storyboard.instantiateInitialViewController() as UIViewController!
+            present(next, animated: false, completion: nil)
+        }
     }
     
     @IBAction func tappedChinese1Button(_ sender: Any) {
@@ -42,9 +56,16 @@ class SettingsViewController: UIViewController {
         let dataServer = DataServer.shared
         dataServer.setRegion(Region.CH1)
 
-        let storyboard: UIStoryboard = UIStoryboard(name: "MainCH1",bundle: nil)
-        let next: UIViewController = storyboard.instantiateInitialViewController() as UIViewController!
-        present(next, animated: false, completion: nil)
+        let settingPos = dataServer.getSettingPos()
+        if (settingPos == SettingPos.Common) {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Title")
+            nextVC?.modalTransitionStyle = .crossDissolve
+            present(nextVC!, animated: true, completion: nil)
+        } else {
+            let storyboard: UIStoryboard = UIStoryboard(name: "MainCH1",bundle: nil)
+            let next: UIViewController = storyboard.instantiateInitialViewController() as UIViewController!
+            present(next, animated: false, completion: nil)
+        }
     }
     
     @IBAction func tappedChinese2Button(_ sender: Any) {
@@ -52,9 +73,16 @@ class SettingsViewController: UIViewController {
         let dataServer = DataServer.shared
         dataServer.setRegion(Region.CH2)
         
-        let storyboard: UIStoryboard = UIStoryboard(name: "MainCH2",bundle: nil)
-        let next: UIViewController = storyboard.instantiateInitialViewController() as UIViewController!
-        present(next, animated: false, completion: nil)
+        let settingPos = dataServer.getSettingPos()
+        if (settingPos == SettingPos.Common) {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Title")
+            nextVC?.modalTransitionStyle = .crossDissolve
+            present(nextVC!, animated: true, completion: nil)
+        } else {
+            let storyboard: UIStoryboard = UIStoryboard(name: "MainCH2",bundle: nil)
+            let next: UIViewController = storyboard.instantiateInitialViewController() as UIViewController!
+            present(next, animated: false, completion: nil)
+        }
     }
     
     @IBAction func tappedManualButton(_ sender: Any) {

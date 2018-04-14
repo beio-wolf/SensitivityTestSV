@@ -18,7 +18,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if (inputString == "NikonLenswear100") {
             UserDefaults.standard.set(true, forKey: "auth")
             loginFaildImage_.isHidden = true
-            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Title")
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Settings")
             nextVC?.modalTransitionStyle = .crossDissolve
             present(nextVC!, animated: true, completion: nil)
         } else {

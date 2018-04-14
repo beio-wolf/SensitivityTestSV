@@ -34,7 +34,7 @@ class LoadingViewController: UIViewController {
         
         // ログインが必要かチェック
         if (UserDefaults.standard.object(forKey: "auth") != nil) {
-            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Title")
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Settings")
             nextVC?.modalTransitionStyle = .crossDissolve
             present(nextVC!, animated: true, completion: nil)
         } else {

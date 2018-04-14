@@ -32,6 +32,12 @@ enum LensType {
     case SingleVisionForReadingGlasses
 }
 
+// セッティング画面の場所
+enum SettingPos {
+    case Common // 共通
+    case Module // 非共通
+}
+
 final class DataServer {
     
     // シングルトン
@@ -39,10 +45,12 @@ final class DataServer {
     static let shared = DataServer()
 
     // 属性
-    private var glassType_:GlassType = GlassType.TrialSet
-    private var eyeStatus_:EyeStatus = EyeStatus.Myope
-    private var region_:Region       = Region.US
-    private var lensType_:LensType   = LensType.SingleVision
+    private var glassType_:GlassType    = GlassType.TrialSet
+    private var eyeStatus_:EyeStatus    = EyeStatus.Myope
+    private var region_:Region          = Region.US
+    private var lensType_:LensType      = LensType.SingleVision
+    private var settingPos_:SettingPos  = SettingPos.Common
+
     private var comfirmIndex_:Int    = 0
     private var reConfirmIndex_:Int  = 0
     private var resultValue_:Int     = 0
@@ -90,6 +98,14 @@ final class DataServer {
         lensType_ = newLensType
     }
 
+    func getSettingPos() -> SettingPos {
+        return settingPos_
+    }
+    
+    func setSettingPos(_ newStatus: SettingPos) {
+        settingPos_ = newStatus
+    }
+    
     func getNewestPrescriptionR_S() -> Float {
         return newestPrescriptionR_S_
     }

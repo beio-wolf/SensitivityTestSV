@@ -11,6 +11,10 @@ import UIKit
 class TitleViewController: UIViewController {
 
     @IBAction func tappedStartButton(_ sender: Any) {
+
+        let dataServer = DataServer.shared
+        dataServer.setSettingPos(SettingPos.Module)
+        
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let nextView = storyboard.instantiateInitialViewController()
         present(nextView!, animated: true, completion: nil)
