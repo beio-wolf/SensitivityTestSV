@@ -904,7 +904,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tryagain_button.png"/>
                                 <connections>
-                                    <segue destination="wnz-W4-Ym6" kind="show" animates="NO" id="BGh-US-ePH"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="7EG-P2-C4C"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="ni5-gc-4ag">
@@ -1164,7 +1164,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="24_landolt.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ucz-30-n3q">
-                                <rect key="frame" x="469" y="489" width="84" height="84"/>
+                                <rect key="frame" x="495" y="525" width="34" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vad-IF-EHr">
@@ -1246,11 +1246,10 @@
         <image name="tryagain_button.png" width="360" height="104"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ptg-m1-KOh"/>
+        <segue reference="2GE-5H-vBo"/>
         <segue reference="rbN-Pa-ReF"/>
-        <segue reference="BGh-US-ePH"/>
         <segue reference="08T-Aa-pty"/>
         <segue reference="D88-JT-1QH"/>
-        <segue reference="Zlo-3D-p64"/>
+        <segue reference="Mun-BA-dt5"/>
     </inferredMetricsTieBreakers>
 </document>
