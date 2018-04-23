@@ -302,15 +302,16 @@ class NewestPrescriptionViewController: UIViewController,
     }
     
     // 横幅
-    /*
      func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
-     if (component == 0) {
-     return 100
-     } else {
-     return 200
+
+        if (component == 0) {
+            return 100
+        } else if (component == 1) {
+            return 100
+        } else {
+            return 100
+        }
      }
-     }
-     */
     
     // pickerに表示するUIViewを返す
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
@@ -320,44 +321,28 @@ class NewestPrescriptionViewController: UIViewController,
                                         blue:0.294117647,
                                         alpha:1.0)
         // 表示するラベルを生成する
-//        if (pickerView.tag == 1) {
         if (component == 0) {
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
-            label.textAlignment = NSTextAlignment.right
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+            label.textAlignment = NSTextAlignment.center
             label.text = intDataArray[row]
             label.font = UIFont.systemFont(ofSize:24.0)
             label.textColor = fontColor
             return label
         } else if (component == 1) {
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
             label.textAlignment = .center
             label.text = "."
             label.font = UIFont.systemFont(ofSize:24.0)
             label.textColor = fontColor
             return label
         } else {
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
-            label.textAlignment = NSTextAlignment.left
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+            label.textAlignment = NSTextAlignment.center
             label.text = decimalDataArray[row]
             label.font = UIFont.systemFont(ofSize:24.0)
             label.textColor = fontColor
             return label
         }
-        
-//        } else {
-            /*
-            let productIndex:Int   = brandPickerView_.selectedRow(inComponent:0)
-            let productDataArray_  = productAllDataArray_![productIndex]
-            let productName:String = productDataArray_[row]
-            
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
-            label.textAlignment = .center
-            label.text = productName
-            label.font = UIFont.systemFont(ofSize:24.0)
-            label.textColor = fontColor
-            return label
-             */
-//        }
     }
     
     // pickerに表示する値を返す
