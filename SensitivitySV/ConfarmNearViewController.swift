@@ -48,7 +48,8 @@ class ConfarmNearViewController: UIViewController {
         }
         
         // 距離を表示
-        distanceLabel_.text = (String(format:"%3.2f", distance)) + "cm"
+        let intDistance:Int = Int(distance + 0.5)
+        distanceLabel_.text = (String(format:"%d", intDistance)) + "cm"
     }
 
     override func didReceiveMemoryWarning() {

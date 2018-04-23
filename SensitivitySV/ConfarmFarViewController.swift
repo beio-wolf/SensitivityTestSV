@@ -48,6 +48,9 @@ class ConfarmFarViewController: UIViewController {
         }
         
         // 距離を表示
+        distance = distance * 10.0
+        let intDistance:Int = (Int)(distance + 0.5)
+        distance = Float(intDistance) / 10.0
         distanceLabel_.text = (String(format:"%3.2f", distance)) + "m"
     }
 
