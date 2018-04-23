@@ -323,15 +323,16 @@ class CurrentPrescriptionViewController: UIViewController,
     }
     
     // 横幅
-    /*
      func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
-     if (component == 0) {
-     return 100
-     } else {
-     return 200
+
+        if (component == 0) {
+            return 100
+        } else if (component == 1) {
+            return 100
+        } else {
+            return 100
+        }
      }
-     }
-     */
     
     // pickerに表示するUIViewを返す
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
@@ -343,21 +344,21 @@ class CurrentPrescriptionViewController: UIViewController,
         // 表示するラベルを生成する
 //        if (pickerView.tag == 1) {
         if (component == 0) {
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
             label.textAlignment = .right
             label.text = intDataArray[row]
             label.font = UIFont.systemFont(ofSize:24.0)
             label.textColor = fontColor
             return label
         } else if (component == 1) {
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
             label.textAlignment = .center
             label.text = "."
             label.font = UIFont.systemFont(ofSize:24.0)
             label.textColor = fontColor
             return label
         } else {
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
             label.textAlignment = .left
             label.text = decimalDataArray[row]
             label.font = UIFont.systemFont(ofSize:24.0)
