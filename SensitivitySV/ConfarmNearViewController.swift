@@ -40,7 +40,7 @@ class ConfarmNearViewController: UIViewController {
         
         let G_n:Float = N_new - N_old
         
-        var distance:Float = 100.0 / (2.5 + G_n)
+        var distance:Float = 100.0 / (2.5 - G_n)
         if (distance >= 50.0) {
             distance = 50.0
         } else if (distance <= 30.0) {

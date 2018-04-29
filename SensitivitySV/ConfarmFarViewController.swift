@@ -40,7 +40,7 @@ class ConfarmFarViewController: UIViewController {
 
         let G_f:Float = F_new - F_old
         
-        var distance:Float = 1.0 / (1.0 + G_f)
+        var distance:Float = 1.0 / (1.0 - G_f)
         if (distance >= 1.5) {
             distance = 1.5
         } else if (distance <= 0.5) {
