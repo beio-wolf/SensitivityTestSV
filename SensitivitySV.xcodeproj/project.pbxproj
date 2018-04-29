@@ -10,7 +10,6 @@
 		2801235B2082640D00A4BBE8 /* nikon_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 280123572082640700A4BBE8 /* nikon_logo.png */; };
 		2801235C2082640D00A4BBE8 /* 24_landolt.png in Resources */ = {isa = PBXBuildFile; fileRef = 280123582082640800A4BBE8 /* 24_landolt.png */; };
 		2801235D2082640D00A4BBE8 /* 23_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 280123592082640A00A4BBE8 /* 23_background.png */; };
-		2801235E2082640D00A4BBE8 /* setting_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2801235A2082640B00A4BBE8 /* setting_button.png */; };
 		280123622082643800A4BBE8 /* 24_en_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 2801235F2082643100A4BBE8 /* 24_en_title.png */; };
 		280123632082643800A4BBE8 /* 24_en_layout.png in Resources */ = {isa = PBXBuildFile; fileRef = 280123602082643300A4BBE8 /* 24_en_layout.png */; };
 		280123642082643800A4BBE8 /* start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 280123612082643600A4BBE8 /* start_button.png */; };
@@ -40,7 +39,6 @@
 		28AF4C46206911F8002C6D6A /* English in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C3D206911F2002C6D6A /* English */; };
 		28AF4C47206911F8002C6D6A /* 21_c.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C3E206911F2002C6D6A /* 21_c.png */; };
 		28AF4C48206911F8002C6D6A /* 21_r.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C3F206911F4002C6D6A /* 21_r.png */; };
-		28AF4C49206911F8002C6D6A /* setting_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C40206911F5002C6D6A /* setting_button.png */; };
 		28AF4C4B206911F8002C6D6A /* Japanese in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C42206911F8002C6D6A /* Japanese */; };
 		28AF4C4D206B8D73002C6D6A /* en_next_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C4C206B8D71002C6D6A /* en_next_button.png */; };
 		28AF4C4F206BAE6D002C6D6A /* CurrentPrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF4C4E206BAE6D002C6D6A /* CurrentPrescriptionViewController.swift */; };
@@ -305,7 +303,6 @@
 		280123572082640700A4BBE8 /* nikon_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nikon_logo.png; path = SensitivitySV/Images/24_Near/nikon_logo.png; sourceTree = SOURCE_ROOT; };
 		280123582082640800A4BBE8 /* 24_landolt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 24_landolt.png; path = SensitivitySV/Images/24_Near/24_landolt.png; sourceTree = SOURCE_ROOT; };
 		280123592082640A00A4BBE8 /* 23_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 23_background.png; path = SensitivitySV/Images/24_Near/23_background.png; sourceTree = SOURCE_ROOT; };
-		2801235A2082640B00A4BBE8 /* setting_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting_button.png; path = SensitivitySV/Images/24_Near/setting_button.png; sourceTree = SOURCE_ROOT; };
 		2801235F2082643100A4BBE8 /* 24_en_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 24_en_title.png; path = SensitivitySV/Images/24_Near/English/24_en_title.png; sourceTree = SOURCE_ROOT; };
 		280123602082643300A4BBE8 /* 24_en_layout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 24_en_layout.png; path = SensitivitySV/Images/24_Near/English/24_en_layout.png; sourceTree = SOURCE_ROOT; };
 		280123612082643600A4BBE8 /* start_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_button.png; path = SensitivitySV/Images/24_Near/English/start_button.png; sourceTree = SOURCE_ROOT; };
@@ -340,7 +337,6 @@
 		28AF4C3D206911F2002C6D6A /* English */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English; path = SensitivitySV/Images/21_SV/English; sourceTree = SOURCE_ROOT; };
 		28AF4C3E206911F2002C6D6A /* 21_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 21_c.png; path = SensitivitySV/Images/21_SV/21_c.png; sourceTree = SOURCE_ROOT; };
 		28AF4C3F206911F4002C6D6A /* 21_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 21_r.png; path = SensitivitySV/Images/21_SV/21_r.png; sourceTree = SOURCE_ROOT; };
-		28AF4C40206911F5002C6D6A /* setting_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting_button.png; path = SensitivitySV/Images/21_SV/setting_button.png; sourceTree = SOURCE_ROOT; };
 		28AF4C42206911F8002C6D6A /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Japanese; path = SensitivitySV/Images/21_SV/Japanese; sourceTree = SOURCE_ROOT; };
 		28AF4C4C206B8D71002C6D6A /* en_next_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en_next_button.png; path = SensitivitySV/Images/Common/US/en_next_button.png; sourceTree = SOURCE_ROOT; };
 		28AF4C4E206BAE6D002C6D6A /* CurrentPrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentPrescriptionViewController.swift; sourceTree = "<group>"; };
@@ -619,7 +615,6 @@
 				280123592082640A00A4BBE8 /* 23_background.png */,
 				280123582082640800A4BBE8 /* 24_landolt.png */,
 				280123572082640700A4BBE8 /* nikon_logo.png */,
-				2801235A2082640B00A4BBE8 /* setting_button.png */,
 			);
 			name = 24_Near;
 			path = "New Group";
@@ -729,7 +724,6 @@
 				28AF4C3C206911F0002C6D6A /* 21_s.png */,
 				28AF4C3D206911F2002C6D6A /* English */,
 				28AF4C42206911F8002C6D6A /* Japanese */,
-				28AF4C40206911F5002C6D6A /* setting_button.png */,
 			);
 			name = 21_SV;
 			path = "New Group";
@@ -1365,7 +1359,6 @@
 				28BE88FA205931AD002CDB80 /* reconfirm.png in Resources */,
 				28BE8A0A20593501002CDB80 /* Inf7_ST1_plus3.png in Resources */,
 				28BE891E205931AD002CDB80 /* Default-Landscape.png in Resources */,
-				28AF4C49206911F8002C6D6A /* setting_button.png in Resources */,
 				28BE897B20593369002CDB80 /* chinese1_exist_button.png in Resources */,
 				28BE89C8205933F3002CDB80 /* 2224×1668.jpg in Resources */,
 				28BE89B1205933CC002CDB80 /* icon_all.psd in Resources */,
@@ -1435,7 +1428,6 @@
 				28AF4C65206BD8B0002C6D6A /* jp_sv_button.png in Resources */,
 				28BE890C205931AD002CDB80 /* startup.jpg in Resources */,
 				28BE8A2520593542002CDB80 /* 03_title.png in Resources */,
-				2801235E2082640D00A4BBE8 /* setting_button.png in Resources */,
 				28BE8A2820593542002CDB80 /* 03_background.png in Resources */,
 				28BE8941205932EC002CDB80 /* enter.png in Resources */,
 				28BE8A5A205935BA002CDB80 /* 10_jp_title.png in Resources */,
