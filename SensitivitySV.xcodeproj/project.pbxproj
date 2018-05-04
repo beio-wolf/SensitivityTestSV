@@ -277,6 +277,7 @@
 		28BF609B1FD554FA00B2418F /* MainCH1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BF609A1FD554FA00B2418F /* MainCH1.storyboard */; };
 		28BF60D71FD6A0DE00B2418F /* MainCH2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BF60D61FD6A0DE00B2418F /* MainCH2.storyboard */; };
 		28D5BB681FB97ADA00FC868C /* FullTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5BB671FB97ADA00FC868C /* FullTestViewController.swift */; };
+		28E92A76209CA06E00249BA4 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E92A75209CA06C00249BA4 /* point.png */; };
 		28EE18B22081A5240009A34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EE18B12081A5240009A34C /* Main.storyboard */; };
 		28FBBC73207DEF3900548B4A /* ConfarmNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBBC72207DEF3900548B4A /* ConfarmNearViewController.swift */; };
 		28FF8674207D09C60058F45A /* 21_en_title1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FF8673207D09C60058F45A /* 21_en_title1.png */; };
@@ -576,6 +577,7 @@
 		28BF609A1FD554FA00B2418F /* MainCH1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainCH1.storyboard; sourceTree = "<group>"; };
 		28BF60D61FD6A0DE00B2418F /* MainCH2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainCH2.storyboard; sourceTree = "<group>"; };
 		28D5BB671FB97ADA00FC868C /* FullTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTestViewController.swift; sourceTree = "<group>"; };
+		28E92A75209CA06C00249BA4 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
 		28EE18B12081A5240009A34C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		28FBBC72207DEF3900548B4A /* ConfarmNearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfarmNearViewController.swift; sourceTree = "<group>"; };
 		28FF8673207D09C60058F45A /* 21_en_title1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 21_en_title1.png; path = SensitivitySV/Images/21_SV/English/21_en_title1.png; sourceTree = SOURCE_ROOT; };
@@ -869,6 +871,7 @@
 		28BE88BE20592DE4002CDB80 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				28E92A75209CA06C00249BA4 /* point.png */,
 				28BE89C0205933F3002CDB80 /* 2224×1668.jpg */,
 				28BE89BD205933F3002CDB80 /* 2732×2048.jpg */,
 				28BE89BE205933F3002CDB80 /* case1.jpg */,
@@ -1383,6 +1386,7 @@
 				28BE89F1205934CF002CDB80 /* Inf7_ST1_minus4.png in Resources */,
 				28BE88F7205931AD002CDB80 /* rigtarrow@2x.png in Resources */,
 				28BE898220593369002CDB80 /* chinese1_setting_title3.png in Resources */,
+				28E92A76209CA06E00249BA4 /* point.png in Resources */,
 				28BE8993205933A6002CDB80 /* chinese2_setting_title2.png in Resources */,
 				28BE8920205931AD002CDB80 /* start@2x.png in Resources */,
 				28BE89B6205933CC002CDB80 /* icon.png in Resources */,

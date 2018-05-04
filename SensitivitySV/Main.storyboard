@@ -283,6 +283,7 @@
                         <viewLayoutGuide key="safeArea" id="3oz-NM-4Lv"/>
                     </view>
                     <connections>
+                        <outlet property="KeyDownView_" destination="bTv-i3-fb1" id="zWv-Pl-SuV"/>
                         <outlet property="prescriptionTextField0_" destination="JFt-Rr-Bab" id="gey-uW-6p6"/>
                         <outlet property="prescriptionTextField1_" destination="PnZ-fw-0b2" id="kLU-jb-LLP"/>
                         <outlet property="prescriptionTextField2_" destination="ev3-VY-keq" id="n3i-Ln-XUx"/>
@@ -1096,6 +1097,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2XW-PT-Sdy" userLabel="KeyDownView">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyj-HZ-BD2">
                                 <rect key="frame" x="964" y="704" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1125,6 +1131,7 @@
                         <viewLayoutGuide key="safeArea" id="6FH-FK-gJi"/>
                     </view>
                     <connections>
+                        <outlet property="KeyDownView_" destination="2XW-PT-Sdy" id="lTd-1n-ixU"/>
                         <outlet property="prescriptionTextField0_" destination="nP7-r8-V7Y" id="5ZZ-U5-QQ7"/>
                         <outlet property="prescriptionTextField1_" destination="h9S-dh-4WB" id="VFJ-Qi-CEh"/>
                         <outlet property="prescriptionTextField2_" destination="Oxo-tF-Yzh" id="07M-kG-aAs"/>
@@ -1260,9 +1267,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="Ptg-m1-KOh"/>
         <segue reference="rbN-Pa-ReF"/>
-        <segue reference="enQ-Pt-urr"/>
-        <segue reference="CNg-00-yzX"/>
-        <segue reference="D88-JT-1QH"/>
+        <segue reference="V0r-p8-iBF"/>
+        <segue reference="Cjw-mD-Z6K"/>
+        <segue reference="TXz-g3-XJ0"/>
         <segue reference="Zlo-3D-p64"/>
     </inferredMetricsTieBreakers>
 </document>

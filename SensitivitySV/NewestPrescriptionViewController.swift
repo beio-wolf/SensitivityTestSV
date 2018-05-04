@@ -26,6 +26,8 @@ class NewestPrescriptionViewController: UIViewController,
     @IBOutlet weak var prescriptionTextField1_: UITextField!
     @IBOutlet weak var prescriptionTextField2_: UITextField!
     @IBOutlet weak var prescriptionTextField3_: UITextField!
+
+    @IBOutlet weak var KeyDownView_: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +35,20 @@ class NewestPrescriptionViewController: UIViewController,
         // Do any additional setup after loading the view.
         let dataServer = DataServer.shared
         let region = dataServer.getRegion()
- 
+
+        /*
+        prescriptionTextField0_.isUserInteractionEnabled = false
+        prescriptionTextField1_.isUserInteractionEnabled = false
+        prescriptionTextField2_.isUserInteractionEnabled = false
+        prescriptionTextField3_.isUserInteractionEnabled = false
+        */
+
+        // タップでキーボードを引っ込めるViewの設定
+        KeyDownView_.isUserInteractionEnabled = true
+        KeyDownView_.addGestureRecognizer(UITapGestureRecognizer(target: self,
+                                                                 action: #selector(self.tappedKeyDown(sender:))))
+        
+        
         let fontColor:UIColor = UIColor(red:0.231372549,
                                         green:0.250980392,
                                         blue:0.294117647,
@@ -61,7 +76,7 @@ class NewestPrescriptionViewController: UIViewController,
                 view0.addSubview(prescriptionPickerView0)
                 
                 prescriptionTextField0_.inputView = view0
-                
+
                 let toolBar0 = UIToolbar()
                 toolBar0.barStyle = UIBarStyle.default
                 toolBar0.isTranslucent = true
@@ -187,6 +202,14 @@ class NewestPrescriptionViewController: UIViewController,
         }
         
         self.setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    @objc func tappedKeyDown(sender: UITapGestureRecognizer) {
+        
+        prescriptionTextField0_.resignFirstResponder()
+        prescriptionTextField1_.resignFirstResponder()
+        prescriptionTextField2_.resignFirstResponder()
+        prescriptionTextField3_.resignFirstResponder()
     }
     
     // Done
@@ -331,8 +354,8 @@ class NewestPrescriptionViewController: UIViewController,
         } else if (component == 1) {
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
             label.textAlignment = .center
-            label.text = "."
-            label.font = UIFont.systemFont(ofSize:24.0)
+            label.text = "●"
+            label.font = UIFont.systemFont(ofSize:12.0)
             label.textColor = fontColor
             return label
         } else {
