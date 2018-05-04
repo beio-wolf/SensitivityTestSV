@@ -353,8 +353,8 @@ class CurrentPrescriptionViewController: UIViewController,
         } else if (component == 1) {
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
             label.textAlignment = .center
-            label.text = "."
-            label.font = UIFont.systemFont(ofSize:24.0)
+            label.text = "●"
+            label.font = UIFont.systemFont(ofSize:12.0)
             label.textColor = fontColor
             return label
         } else {
