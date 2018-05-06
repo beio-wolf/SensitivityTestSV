@@ -898,9 +898,6 @@
                                 <rect key="frame" x="407" y="634" width="213" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="jp_next_button.png"/>
-                                <connections>
-                                    <segue destination="wVl-Ue-yYL" kind="show" animates="NO" id="Mwh-Y2-SUp"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8y9-3W-TkB">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
@@ -957,7 +954,7 @@
         <!--Confarm Far View Controller-->
         <scene sceneID="uvE-Dz-Dyu">
             <objects>
-                <viewController id="wVl-Ue-yYL" customClass="ConfarmFarViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfarmFar" id="wVl-Ue-yYL" customClass="ConfarmFarViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hO1-l4-Iw3">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1019,6 +1016,65 @@
             </objects>
             <point key="canvasLocation" x="1181" y="961"/>
         </scene>
+        <!--Confarm Near View Controller-->
+        <scene sceneID="yi8-rn-nm1">
+            <objects>
+                <viewController storyboardIdentifier="ConfarmNear" id="shw-uD-9dy" customClass="ConfarmNearViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XBf-1a-L3G">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="23_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="59N-7V-7nd">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovX-Hd-b77">
+                                <rect key="frame" x="35" y="689" width="132" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="en_previous.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ils-ys-w7q">
+                                <rect key="frame" x="964" y="704" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="setting_button.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLy-hJ-gsV">
+                                <rect key="frame" x="35" y="35" width="78" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nikon-logo.png"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="24_jp_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="UBe-TO-7sL">
+                                <rect key="frame" x="130" y="160" width="764" height="294"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="24_landolt.png" translatesAutoresizingMaskIntoConstraints="NO" id="wU6-sY-uCo">
+                                <rect key="frame" x="495" y="525" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7y-dG-W2D">
+                                <rect key="frame" x="412" y="611" width="198" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="jp_start_button.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.8m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u70-3g-lio">
+                                <rect key="frame" x="423" y="334" width="245" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DZ5-sZ-blf"/>
+                    </view>
+                    <connections>
+                        <outlet property="distanceLabel_" destination="u70-3g-lio" id="BGJ-3k-gzq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OLA-gS-GPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="1725"/>
+        </scene>
     </scenes>
     <resources>
         <image name="04_background.png" width="2048" height="1536"/>
@@ -1041,8 +1097,11 @@
         <image name="23_background.png" width="2048" height="1536"/>
         <image name="23_jp_title.png" width="1527" height="588"/>
         <image name="23_landolt.png" width="168" height="168"/>
+        <image name="24_jp_title.png" width="1527" height="588"/>
+        <image name="24_landolt.png" width="67" height="67"/>
         <image name="chinese1_button.png" width="365" height="104"/>
         <image name="chinese2_button.png" width="365" height="104"/>
+        <image name="en_previous.png" width="263" height="150"/>
         <image name="english_button.png" width="365" height="104"/>
         <image name="japanese_button.png" width="365" height="104"/>
         <image name="jp_choose_button.png" width="465" height="119"/>
@@ -1069,10 +1128,10 @@
         <image name="setting_button.png" width="120" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dvp-Ik-zQj"/>
+        <segue reference="N0c-jC-Ivj"/>
         <segue reference="a8t-hT-VuG"/>
         <segue reference="qz6-Wa-e8O"/>
-        <segue reference="V64-1M-74x"/>
+        <segue reference="7ZS-Yp-Rf1"/>
         <segue reference="f5X-u3-baL"/>
         <segue reference="D1w-7f-xm0"/>
         <segue reference="WaL-ir-d90"/>

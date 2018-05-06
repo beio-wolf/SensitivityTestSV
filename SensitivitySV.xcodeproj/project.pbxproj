@@ -276,6 +276,8 @@
 		28D5BB681FB97ADA00FC868C /* FullTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5BB671FB97ADA00FC868C /* FullTestViewController.swift */; };
 		28E92A76209CA06E00249BA4 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E92A75209CA06C00249BA4 /* point.png */; };
 		28E92A79209CCDEF00249BA4 /* 21_jp_title1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E92A78209CCDEE00249BA4 /* 21_jp_title1.png */; };
+		28E92A7B209F6FE500249BA4 /* 24_jp_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E92A7A209F6FE300249BA4 /* 24_jp_title.png */; };
+		28E92A7D209F705E00249BA4 /* jp_start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E92A7C209F705D00249BA4 /* jp_start_button.png */; };
 		28EE18B22081A5240009A34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EE18B12081A5240009A34C /* Main.storyboard */; };
 		28FBBC73207DEF3900548B4A /* ConfarmNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBBC72207DEF3900548B4A /* ConfarmNearViewController.swift */; };
 		28FF8674207D09C60058F45A /* 21_en_title1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FF8673207D09C60058F45A /* 21_en_title1.png */; };
@@ -574,6 +576,8 @@
 		28D5BB671FB97ADA00FC868C /* FullTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTestViewController.swift; sourceTree = "<group>"; };
 		28E92A75209CA06C00249BA4 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
 		28E92A78209CCDEE00249BA4 /* 21_jp_title1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21_jp_title1.png; sourceTree = "<group>"; };
+		28E92A7A209F6FE300249BA4 /* 24_jp_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 24_jp_title.png; path = SensitivitySV/Images/24_Near/Japanese/24_jp_title.png; sourceTree = SOURCE_ROOT; };
+		28E92A7C209F705D00249BA4 /* jp_start_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jp_start_button.png; path = SensitivitySV/Images/24_Near/Japanese/jp_start_button.png; sourceTree = SOURCE_ROOT; };
 		28EE18B12081A5240009A34C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		28FBBC72207DEF3900548B4A /* ConfarmNearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfarmNearViewController.swift; sourceTree = "<group>"; };
 		28FF8673207D09C60058F45A /* 21_en_title1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 21_en_title1.png; path = SensitivitySV/Images/21_SV/English/21_en_title1.png; sourceTree = SOURCE_ROOT; };
@@ -607,6 +611,8 @@
 		28012356208263BF00A4BBE8 /* 24_Near */ = {
 			isa = PBXGroup;
 			children = (
+				28E92A7C209F705D00249BA4 /* jp_start_button.png */,
+				28E92A7A209F6FE300249BA4 /* 24_jp_title.png */,
 				280123602082643300A4BBE8 /* 24_en_layout.png */,
 				2801235F2082643100A4BBE8 /* 24_en_title.png */,
 				280123612082643600A4BBE8 /* start_button.png */,
@@ -1319,6 +1325,7 @@
 				28BE8A3E2059356C002CDB80 /* 05_title.png in Resources */,
 				28AF4C48206911F8002C6D6A /* 21_r.png in Resources */,
 				28BE8A2320593542002CDB80 /* 03_start_button.png in Resources */,
+				28E92A7B209F6FE500249BA4 /* 24_jp_title.png in Resources */,
 				28BE8A512059359D002CDB80 /* 08_chinese1_title.png in Resources */,
 				28BE88F8205931AD002CDB80 /* open.jpg in Resources */,
 				2801235D2082640D00A4BBE8 /* 23_background.png in Resources */,
@@ -1389,6 +1396,7 @@
 				28BE89BC205933E2002CDB80 /* nikon_logo.png in Resources */,
 				28BE8995205933A6002CDB80 /* chinese2_setting_title1.png in Resources */,
 				28BE895F20593338002CDB80 /* jp_trial_button.png in Resources */,
+				28E92A7D209F705E00249BA4 /* jp_start_button.png in Resources */,
 				28BE8922205931AD002CDB80 /* result.jpg in Resources */,
 				28BE8A0620593501002CDB80 /* Inf7_ST1_plus12.png in Resources */,
 				28AF4C342068A1FC002C6D6A /* 20_en_title1.png in Resources */,
