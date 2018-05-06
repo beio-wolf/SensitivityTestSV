@@ -196,7 +196,142 @@ class NewestPrescriptionViewController: UIViewController,
                 prescriptionTextField3_.inputAccessoryView = toolBar3
                 prescriptionTextField3_.text = "+0.00"
             }
-
+        } else if (region == Region.JP) {
+            do {
+                prescriptionPickerView0.frame = CGRect(x:0, y:0,
+                                                           width:UIScreen.main.bounds.size.width,
+                                                           height:prescriptionPickerView0.bounds.size.height)
+                prescriptionPickerView0.delegate   = self
+                prescriptionPickerView0.dataSource = self
+                prescriptionPickerView0.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView0.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView0.selectRow(0, inComponent: 2, animated: false)
+                    
+                let view0 = UIView(frame: prescriptionPickerView0.bounds)
+                view0.backgroundColor = UIColor.white
+                view0.addSubview(prescriptionPickerView0)
+                    
+                prescriptionTextField0_.inputView = view0
+                    
+                let toolBar0 = UIToolbar()
+                toolBar0.barStyle = UIBarStyle.default
+                toolBar0.isTranslucent = true
+                toolBar0.tintColor = UIColor.black
+                let doneButton0   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed0))
+                    doneButton0.tintColor = fontColor
+                let cancelButton0 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed0))
+                    cancelButton0.tintColor = fontColor
+                let spaceButton0  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
+                                                        target: nil,
+                                                        action: nil)
+                toolBar0.setItems([spaceButton0, cancelButton0, spaceButton0,           doneButton0, spaceButton0], animated: false)
+                toolBar0.isUserInteractionEnabled = true
+                toolBar0.sizeToFit()
+                prescriptionTextField0_.inputAccessoryView = toolBar0
+                prescriptionTextField0_.text = "+0.00"
+            }
+                
+            do {
+                prescriptionPickerView1.frame = CGRect(x:0, y:0,
+                                                           width:UIScreen.main.bounds.size.width,
+                                                           height:prescriptionPickerView1.bounds.size.height)
+                prescriptionPickerView1.delegate   = self
+                prescriptionPickerView1.dataSource = self
+                prescriptionPickerView1.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView1.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView1.selectRow(0, inComponent: 2, animated: false)
+                    
+                let view1 = UIView(frame: prescriptionPickerView1.bounds)
+                view1.backgroundColor = UIColor.white
+                view1.addSubview(prescriptionPickerView1)
+                    
+                prescriptionTextField1_.inputView = view1
+                    
+                let toolBar1 = UIToolbar()
+                toolBar1.barStyle = UIBarStyle.default
+                toolBar1.isTranslucent = true
+                toolBar1.tintColor = UIColor.black
+                let doneButton1   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed1))
+                    doneButton1.tintColor = fontColor
+                let cancelButton1 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed1))
+                    cancelButton1.tintColor = fontColor
+                let spaceButton1  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
+                                                        target: nil,
+                                                        action: nil)
+                toolBar1.setItems([spaceButton1, cancelButton1, spaceButton1, doneButton1, spaceButton1], animated: false)
+                toolBar1.isUserInteractionEnabled = true
+                toolBar1.sizeToFit()
+                prescriptionTextField1_.inputAccessoryView = toolBar1
+                prescriptionTextField1_.text = "+0.00"
+            }
+                
+            do {
+                prescriptionPickerView2.frame = CGRect(x:0, y:0,
+                                                           width:UIScreen.main.bounds.size.width,
+                                                           height:prescriptionPickerView2.bounds.size.height)
+                prescriptionPickerView2.delegate   = self
+                prescriptionPickerView2.dataSource = self
+                prescriptionPickerView2.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView2.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView2.selectRow(0, inComponent: 2, animated: false)
+                    
+                let view2 = UIView(frame: prescriptionPickerView2.bounds)
+                view2.backgroundColor = UIColor.white
+                view2.addSubview(prescriptionPickerView2)
+                    
+                prescriptionTextField2_.inputView = view2
+                    
+                let toolBar2 = UIToolbar()
+                toolBar2.barStyle = UIBarStyle.default
+                toolBar2.isTranslucent = true
+                toolBar2.tintColor = UIColor.black
+                let doneButton2   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed2))
+                    doneButton2.tintColor = fontColor
+                let cancelButton2 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed2))
+                    cancelButton2.tintColor = fontColor
+                let spaceButton2  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
+                                                        target: nil,
+                                                        action: nil)
+                toolBar2.setItems([spaceButton2, cancelButton2, spaceButton2, doneButton2, spaceButton2], animated: false)
+                toolBar2.isUserInteractionEnabled = true
+                toolBar2.sizeToFit()
+                prescriptionTextField2_.inputAccessoryView = toolBar2
+                prescriptionTextField2_.text = "+0.00"
+            }
+                
+            do {
+                prescriptionPickerView3.frame = CGRect(x:0, y:0,
+                                                           width:UIScreen.main.bounds.size.width,
+                                                           height:prescriptionPickerView3.bounds.size.height)
+                prescriptionPickerView3.delegate   = self
+                prescriptionPickerView3.dataSource = self
+                prescriptionPickerView3.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView3.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView3.selectRow(0, inComponent: 2, animated: false)
+                    
+                let view3 = UIView(frame: prescriptionPickerView3.bounds)
+                view3.backgroundColor = UIColor.white
+                view3.addSubview(prescriptionPickerView3)
+                    
+                prescriptionTextField3_.inputView = view3
+                    
+                let toolBar3 = UIToolbar()
+                toolBar3.barStyle = UIBarStyle.default
+                toolBar3.isTranslucent = true
+                toolBar3.tintColor = UIColor.black
+                let doneButton3   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed3))
+                    doneButton3.tintColor = fontColor
+                let cancelButton3 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed3))
+                    cancelButton3.tintColor = fontColor
+                let spaceButton3  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
+                                                        target: nil,
+                                                        action: nil)
+                toolBar3.setItems([spaceButton3, cancelButton3, spaceButton3, doneButton3, spaceButton3], animated: false)
+                toolBar3.isUserInteractionEnabled = true
+                toolBar3.sizeToFit()
+                prescriptionTextField3_.inputAccessoryView = toolBar3
+                prescriptionTextField3_.text = "+0.00"
+            }
         } else {
             print("Invalid region")
         }
