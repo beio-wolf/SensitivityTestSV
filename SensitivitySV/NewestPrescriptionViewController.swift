@@ -217,9 +217,9 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar0.barStyle = UIBarStyle.default
                 toolBar0.isTranslucent = true
                 toolBar0.tintColor = UIColor.black
-                let doneButton0   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed0))
+                let doneButton0   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed0))
                     doneButton0.tintColor = fontColor
-                let cancelButton0 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed0))
+                let cancelButton0 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed0))
                     cancelButton0.tintColor = fontColor
                 let spaceButton0  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
                                                         target: nil,
@@ -251,9 +251,9 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar1.barStyle = UIBarStyle.default
                 toolBar1.isTranslucent = true
                 toolBar1.tintColor = UIColor.black
-                let doneButton1   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed1))
+                let doneButton1   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed1))
                     doneButton1.tintColor = fontColor
-                let cancelButton1 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed1))
+                let cancelButton1 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed1))
                     cancelButton1.tintColor = fontColor
                 let spaceButton1  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
                                                         target: nil,
@@ -285,9 +285,9 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar2.barStyle = UIBarStyle.default
                 toolBar2.isTranslucent = true
                 toolBar2.tintColor = UIColor.black
-                let doneButton2   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed2))
+                let doneButton2   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed2))
                     doneButton2.tintColor = fontColor
-                let cancelButton2 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed2))
+                let cancelButton2 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed2))
                     cancelButton2.tintColor = fontColor
                 let spaceButton2  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
                                                         target: nil,
@@ -319,9 +319,9 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar3.barStyle = UIBarStyle.default
                 toolBar3.isTranslucent = true
                 toolBar3.tintColor = UIColor.black
-                let doneButton3   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed3))
+                let doneButton3   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed3))
                     doneButton3.tintColor = fontColor
-                let cancelButton3 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed3))
+                let cancelButton3 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed3))
                     cancelButton3.tintColor = fontColor
                 let spaceButton3  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
                                                         target: nil,
