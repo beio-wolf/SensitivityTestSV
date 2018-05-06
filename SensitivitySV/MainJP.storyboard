@@ -819,7 +819,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="jp_next_button.png"/>
                                 <connections>
-                                    <segue destination="ln6-vY-WQ0" kind="show" id="dvp-Ik-zQj"/>
+                                    <segue destination="ln6-vY-WQ0" kind="show" animates="NO" id="dvp-Ik-zQj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -846,6 +846,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLh-Ab-tQd" userLabel="KeyDownView">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="21_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="07n-Rj-L11">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -939,6 +943,7 @@
                         <viewLayoutGuide key="safeArea" id="8vk-uN-0Sm"/>
                     </view>
                     <connections>
+                        <outlet property="KeyDownView_" destination="BLh-Ab-tQd" id="ElL-XS-DO2"/>
                         <outlet property="currentPrescriptionTextField0_" destination="vaY-4F-u5G" id="UUd-O6-ge7"/>
                         <outlet property="currentPrescriptionTextField1_" destination="GPm-fW-lrh" id="VVJ-q7-5UH"/>
                         <outlet property="currentPrescriptionTextField2_" destination="4au-QK-fhW" id="PYX-TZ-BZI"/>
@@ -1067,7 +1072,7 @@
         <segue reference="dvp-Ik-zQj"/>
         <segue reference="a8t-hT-VuG"/>
         <segue reference="qz6-Wa-e8O"/>
-        <segue reference="n7F-bN-6bh"/>
+        <segue reference="V64-1M-74x"/>
         <segue reference="f5X-u3-baL"/>
         <segue reference="D1w-7f-xm0"/>
         <segue reference="WaL-ir-d90"/>

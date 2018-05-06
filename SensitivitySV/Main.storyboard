@@ -367,18 +367,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUm-st-eCE">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="21_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="oTi-3Y-CjG">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gso-Lm-kyB">
-                                <rect key="frame" x="35" y="35" width="78" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="nikon-logo.png"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="gy2-Rh-QXM"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="21_r.png" translatesAutoresizingMaskIntoConstraints="NO" id="9co-wR-fuf">
                                 <rect key="frame" x="216" y="225" width="43" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -407,6 +403,14 @@
                                 <rect key="frame" x="246" y="100" width="536" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gso-Lm-kyB">
+                                <rect key="frame" x="35" y="35" width="78" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nikon-logo.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="gy2-Rh-QXM"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c06-hK-fbY">
                                 <rect key="frame" x="964" y="704" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -464,6 +468,7 @@
                         <viewLayoutGuide key="safeArea" id="IvG-0f-SgW"/>
                     </view>
                     <connections>
+                        <outlet property="KeyDownView_" destination="vUm-st-eCE" id="VnU-ez-ZqD"/>
                         <outlet property="currentPrescriptionTextField0_" destination="G2q-yO-lfE" id="2Of-C7-OzH"/>
                         <outlet property="currentPrescriptionTextField1_" destination="nwb-jX-Z8X" id="Jfw-Qt-FW0"/>
                         <outlet property="currentPrescriptionTextField2_" destination="fH1-eu-Gdi" id="vOV-ii-Gnn"/>
@@ -472,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxf-67-t5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="432" y="1245"/>
+            <point key="canvasLocation" x="538" y="1288"/>
         </scene>
         <!--SelectTest-->
         <scene sceneID="nMf-vE-tji">
@@ -660,7 +665,7 @@
                         <viewLayoutGuide key="safeArea" id="1iG-rk-oMK"/>
                     </view>
                     <connections>
-                        <outlet property="distanceLabel_" destination="W5b-gq-rhL" id="5hz-zV-6Tt"/>
+                        <outlet property="distanceLabel_" destination="W5b-gq-rhL" id="smO-pA-Vro"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UQ6-Wa-ofh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1148,11 +1153,10 @@
         <image name="tryagain_button.png" width="360" height="104"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fu2-r0-ZYK"/>
-        <segue reference="Ptg-m1-KOh"/>
+        <segue reference="2GE-5H-vBo"/>
         <segue reference="rbN-Pa-ReF"/>
-        <segue reference="GL9-8Q-z4m"/>
-        <segue reference="5nF-3b-EsV"/>
-        <segue reference="XOL-nz-jlB"/>
+        <segue reference="08T-Aa-pty"/>
+        <segue reference="D88-JT-1QH"/>
+        <segue reference="Mun-BA-dt5"/>
     </inferredMetricsTieBreakers>
 </document>

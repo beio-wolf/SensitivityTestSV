@@ -27,6 +27,8 @@ class CurrentPrescriptionViewController: UIViewController,
     @IBOutlet weak var currentPrescriptionTextField2_: UITextField!
     @IBOutlet weak var currentPrescriptionTextField3_: UITextField!
     
+    @IBOutlet weak var KeyDownView_: UIView!
+    
     @IBAction func tappedGoToNextButton(_ sender: Any) {
         
         let dataServer = DataServer.shared
@@ -50,6 +52,11 @@ class CurrentPrescriptionViewController: UIViewController,
         let dataServer = DataServer.shared
         let region = dataServer.getRegion()
  
+        // タップでキーボードを引っ込めるViewの設定
+        KeyDownView_.isUserInteractionEnabled = true
+        KeyDownView_.addGestureRecognizer(UITapGestureRecognizer(target: self,
+                                                                 action: #selector(self.tappedKeyDown(sender:))))
+        
         let fontColor:UIColor = UIColor(red:0.231372549,
                                         green:0.250980392,
                                         blue:0.294117647,
@@ -203,11 +210,156 @@ class CurrentPrescriptionViewController: UIViewController,
                 currentPrescriptionTextField3_.text = "+0.00"
             }
 
+        } else if (region == Region.JP) {
+            
+            do {
+                prescriptionPickerView0.frame = CGRect(x:0, y:0,
+                                                       width:UIScreen.main.bounds.size.width,
+                                                       height:prescriptionPickerView0.bounds.size.height)
+                prescriptionPickerView0.delegate   = self
+                prescriptionPickerView0.dataSource = self
+                prescriptionPickerView0.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView0.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView0.selectRow(0, inComponent: 2, animated: false)
+                
+                let view0 = UIView(frame: prescriptionPickerView0.bounds)
+                view0.backgroundColor = UIColor.white
+                view0.addSubview(prescriptionPickerView0)
+                
+                currentPrescriptionTextField0_.inputView = view0
+                
+                let toolBar0 = UIToolbar()
+                toolBar0.barStyle = UIBarStyle.default
+                toolBar0.isTranslucent = true
+                toolBar0.tintColor = UIColor.black
+                let doneButton0   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed0))
+                doneButton0.tintColor = fontColor
+                let cancelButton0 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed0))
+                cancelButton0.tintColor = fontColor
+                let spaceButton0  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
+                                                    target: nil,
+                                                    action: nil)
+                toolBar0.setItems([spaceButton0, cancelButton0, spaceButton0,           doneButton0, spaceButton0], animated: false)
+                toolBar0.isUserInteractionEnabled = true
+                toolBar0.sizeToFit()
+                currentPrescriptionTextField0_.inputAccessoryView = toolBar0
+                currentPrescriptionTextField0_.text = "+0.00"
+            }
+            
+            do {
+                prescriptionPickerView1.frame = CGRect(x:0, y:0,
+                                                       width:UIScreen.main.bounds.size.width,
+                                                       height:prescriptionPickerView1.bounds.size.height)
+                prescriptionPickerView1.delegate   = self
+                prescriptionPickerView1.dataSource = self
+                prescriptionPickerView1.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView1.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView1.selectRow(0, inComponent: 2, animated: false)
+                
+                let view1 = UIView(frame: prescriptionPickerView1.bounds)
+                view1.backgroundColor = UIColor.white
+                view1.addSubview(prescriptionPickerView1)
+                
+                currentPrescriptionTextField1_.inputView = view1
+                
+                let toolBar1 = UIToolbar()
+                toolBar1.barStyle = UIBarStyle.default
+                toolBar1.isTranslucent = true
+                toolBar1.tintColor = UIColor.black
+                let doneButton1   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed1))
+                doneButton1.tintColor = fontColor
+                let cancelButton1 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed1))
+                cancelButton1.tintColor = fontColor
+                let spaceButton1  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
+                                                    target: nil,
+                                                    action: nil)
+                toolBar1.setItems([spaceButton1, cancelButton1, spaceButton1, doneButton1, spaceButton1], animated: false)
+                toolBar1.isUserInteractionEnabled = true
+                toolBar1.sizeToFit()
+                currentPrescriptionTextField1_.inputAccessoryView = toolBar1
+                currentPrescriptionTextField1_.text = "+0.00"
+            }
+            
+            do {
+                prescriptionPickerView2.frame = CGRect(x:0, y:0,
+                                                       width:UIScreen.main.bounds.size.width,
+                                                       height:prescriptionPickerView2.bounds.size.height)
+                prescriptionPickerView2.delegate   = self
+                prescriptionPickerView2.dataSource = self
+                prescriptionPickerView2.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView2.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView2.selectRow(0, inComponent: 2, animated: false)
+                
+                let view2 = UIView(frame: prescriptionPickerView2.bounds)
+                view2.backgroundColor = UIColor.white
+                view2.addSubview(prescriptionPickerView2)
+                
+                currentPrescriptionTextField2_.inputView = view2
+                
+                let toolBar2 = UIToolbar()
+                toolBar2.barStyle = UIBarStyle.default
+                toolBar2.isTranslucent = true
+                toolBar2.tintColor = UIColor.black
+                let doneButton2   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed2))
+                doneButton2.tintColor = fontColor
+                let cancelButton2 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed2))
+                cancelButton2.tintColor = fontColor
+                let spaceButton2  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
+                                                    target: nil,
+                                                    action: nil)
+                toolBar2.setItems([spaceButton2, cancelButton2, spaceButton2, doneButton2, spaceButton2], animated: false)
+                toolBar2.isUserInteractionEnabled = true
+                toolBar2.sizeToFit()
+                currentPrescriptionTextField2_.inputAccessoryView = toolBar2
+                currentPrescriptionTextField2_.text = "+0.00"
+            }
+            
+            do {
+                prescriptionPickerView3.frame = CGRect(x:0, y:0,
+                                                       width:UIScreen.main.bounds.size.width,
+                                                       height:prescriptionPickerView3.bounds.size.height)
+                prescriptionPickerView3.delegate   = self
+                prescriptionPickerView3.dataSource = self
+                prescriptionPickerView3.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView3.selectRow(0, inComponent: 1, animated: false)
+                prescriptionPickerView3.selectRow(0, inComponent: 2, animated: false)
+                
+                let view3 = UIView(frame: prescriptionPickerView3.bounds)
+                view3.backgroundColor = UIColor.white
+                view3.addSubview(prescriptionPickerView3)
+                
+                currentPrescriptionTextField3_.inputView = view3
+                
+                let toolBar3 = UIToolbar()
+                toolBar3.barStyle = UIBarStyle.default
+                toolBar3.isTranslucent = true
+                toolBar3.tintColor = UIColor.black
+                let doneButton3   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed3))
+                doneButton3.tintColor = fontColor
+                let cancelButton3 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed3))
+                cancelButton3.tintColor = fontColor
+                let spaceButton3  = UIBarButtonItem(barButtonSystemItem:    UIBarButtonSystemItem.flexibleSpace,
+                                                    target: nil,
+                                                    action: nil)
+                toolBar3.setItems([spaceButton3, cancelButton3, spaceButton3, doneButton3, spaceButton3], animated: false)
+                toolBar3.isUserInteractionEnabled = true
+                toolBar3.sizeToFit()
+                currentPrescriptionTextField3_.inputAccessoryView = toolBar3
+                currentPrescriptionTextField3_.text = "+0.00"
+            }
         } else {
             print("Invalid region")
         }
         
         self.setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    @objc func tappedKeyDown(sender: UITapGestureRecognizer) {
+        
+        currentPrescriptionTextField0_.resignFirstResponder()
+        currentPrescriptionTextField1_.resignFirstResponder()
+        currentPrescriptionTextField2_.resignFirstResponder()
+        currentPrescriptionTextField3_.resignFirstResponder()
     }
     
     // Done
