@@ -730,6 +730,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3CF-uQ-Mhf" userLabel="KeyDownView">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="21_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="kOu-A1-3XA">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -794,11 +798,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="45O-lK-amY" userLabel="KeyDownView">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRF-83-0OD">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -828,7 +827,7 @@
                         <viewLayoutGuide key="safeArea" id="p4f-7m-ufX"/>
                     </view>
                     <connections>
-                        <outlet property="KeyDownView_" destination="45O-lK-amY" id="hZz-16-1Gt"/>
+                        <outlet property="KeyDownView_" destination="3CF-uQ-Mhf" id="c0s-cy-aq1"/>
                         <outlet property="prescriptionTextField0_" destination="uB6-IV-X4T" id="Oxv-G3-kJy"/>
                         <outlet property="prescriptionTextField1_" destination="4dW-ae-p62" id="r1w-f0-m2J"/>
                         <outlet property="prescriptionTextField2_" destination="XD9-nG-PEx" id="2AG-Pv-lyz"/>
