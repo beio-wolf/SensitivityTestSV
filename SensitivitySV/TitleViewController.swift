@@ -12,12 +12,19 @@ class TitleViewController: UIViewController {
 
     @IBAction func tappedStartButton(_ sender: Any) {
 
-        let dataServer = DataServer.shared
+        let dataServer: DataServer = DataServer.shared
+        let region: Region = dataServer.getRegion()
         dataServer.setSettingPos(SettingPos.Module)
         
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let nextView = storyboard.instantiateInitialViewController()
-        present(nextView!, animated: true, completion: nil)
+        if (region == Region.US) {
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let nextView = storyboard.instantiateInitialViewController()
+            present(nextView!, animated: true, completion: nil)
+        } else {
+            let storyboard: UIStoryboard = UIStoryboard(name: "MainJP", bundle: nil)
+            let nextView = storyboard.instantiateInitialViewController()
+            present(nextView!, animated: true, completion: nil)
+        }
     }
     
     override func viewDidLoad() {
