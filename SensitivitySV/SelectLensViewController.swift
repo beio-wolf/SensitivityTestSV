@@ -14,8 +14,13 @@ class SelectLensViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.setNeedsStatusBarAppearanceUpdate()
     }
 
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     @IBAction func tappedSingleVisionButton(_ sender: Any) {
 
         let dataServer = DataServer.shared
