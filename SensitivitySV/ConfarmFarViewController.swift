@@ -51,7 +51,7 @@ class ConfarmFarViewController: UIViewController {
         distance = distance * 10.0
         let intDistance:Int = (Int)(distance + 0.5)
         distance = Float(intDistance) / 10.0
-        distanceLabel_.text = (String(format:"%3.2f", distance)) + "m"
+        distanceLabel_.text = (String(format:"%2.1f", distance)) + "m"
     }
 
     override func didReceiveMemoryWarning() {

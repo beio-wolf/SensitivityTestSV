@@ -76,6 +76,14 @@
                                 <rect key="frame" x="0.0" y="1" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiW-aJ-91N">
+                                <rect key="frame" x="35" y="35" width="78" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nikon-logo.png"/>
+                                <connections>
+                                    <segue destination="K1C-4l-zUS" kind="show" animates="NO" id="R0u-5V-4IU"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M97-hd-fGz">
                                 <rect key="frame" x="316" y="418" width="151" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -112,10 +120,6 @@
                                     <segue destination="K1C-4l-zUS" kind="show" animates="NO" id="WaL-ir-d90"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nikon-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="EC4-ak-7L1">
-                                <rect key="frame" x="35" y="35" width="78" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cmV-EH-gxh"/>
@@ -158,7 +162,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nikon-logo.png"/>
                                 <connections>
-                                    <segue destination="11e-If-4ao" kind="show" id="TcP-L3-2mK"/>
+                                    <segue destination="K1C-4l-zUS" kind="show" animates="NO" id="fSP-dx-Ms9"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="06_jp_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-WA-SAY">
@@ -279,7 +283,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nikon-logo.png"/>
                                 <connections>
-                                    <segue destination="11e-If-4ao" kind="show" animates="NO" id="oNG-i7-Rr2"/>
+                                    <segue destination="K1C-4l-zUS" kind="show" animates="NO" id="WAW-Jg-ESK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV7-8c-IXA">
@@ -420,7 +424,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nikon-logo.png"/>
                                 <connections>
-                                    <segue destination="11e-If-4ao" kind="show" animates="NO" id="Go4-fS-4Yw"/>
+                                    <segue destination="K1C-4l-zUS" kind="show" animates="NO" id="ErD-pB-abi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIK-X8-8hX">
@@ -428,7 +432,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="jp_tryagain_button.png"/>
                                 <connections>
-                                    <segue destination="11e-If-4ao" kind="show" animates="NO" id="D1w-7f-xm0"/>
+                                    <segue destination="K1C-4l-zUS" kind="show" animates="NO" id="U6Y-R8-ccL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4d-8u-SIC">
@@ -673,10 +677,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nikon-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1mM-F6-eJv">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4D7-ED-EUV">
                                 <rect key="frame" x="35" y="35" width="78" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" image="nikon-logo.png"/>
+                                <connections>
+                                    <segue destination="K1C-4l-zUS" kind="show" animates="NO" id="b45-Rf-CTm"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20_jp_title1.png" translatesAutoresizingMaskIntoConstraints="NO" id="WwN-bn-gop">
                                 <rect key="frame" x="301" y="227" width="420" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -686,7 +694,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="jp_svrg_button.png"/>
                                 <connections>
-                                    <segue destination="HGm-uC-J4x" kind="show" animates="NO" id="vJu-Hj-YIc"/>
+                                    <action selector="tappedSingleVisionForReadingGlassesButton:" destination="rgf-Vr-nmv" eventType="touchUpInside" id="afb-2D-nxv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tta-JO-Qa1">
@@ -694,7 +702,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="jp_sv_button.png"/>
                                 <connections>
-                                    <segue destination="HGm-uC-J4x" kind="show" animates="NO" id="vd6-gk-wAO"/>
+                                    <action selector="tappedSingleVisionButton:" destination="rgf-Vr-nmv" eventType="touchUpInside" id="0vb-BN-XEH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbs-nJ-Pc1">
@@ -738,10 +746,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nikon-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="b99-GI-YC0">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9K3-wv-9KW">
                                 <rect key="frame" x="35" y="35" width="78" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" image="nikon-logo.png"/>
+                                <connections>
+                                    <segue destination="K1C-4l-zUS" kind="show" animates="NO" id="d3v-rg-AQY"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="21_jp_title1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZRR-Ne-uNf">
                                 <rect key="frame" x="371" y="95" width="282" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -878,14 +890,18 @@
                                 <rect key="frame" x="588" y="369" width="32" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nikon-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="bJg-lQ-uQ9">
-                                <rect key="frame" x="35" y="35" width="78" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="22_jp_title1.png" translatesAutoresizingMaskIntoConstraints="NO" id="aBr-gJ-WgK">
                                 <rect key="frame" x="299" y="95" width="433" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiY-iZ-nH6">
+                                <rect key="frame" x="35" y="35" width="78" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nikon-logo.png"/>
+                                <connections>
+                                    <segue destination="K1C-4l-zUS" kind="show" animates="NO" id="YmT-8Q-g9P"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zrv-1r-0Yl">
                                 <rect key="frame" x="964" y="704" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -898,6 +914,9 @@
                                 <rect key="frame" x="407" y="634" width="213" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="jp_next_button.png"/>
+                                <connections>
+                                    <action selector="tappedGoToNextButton:" destination="ln6-vY-WQ0" eventType="touchUpInside" id="tVT-i7-jYP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8y9-3W-TkB">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
@@ -983,6 +1002,9 @@
                                 <rect key="frame" x="35" y="35" width="78" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nikon-logo.png"/>
+                                <connections>
+                                    <segue destination="K1C-4l-zUS" kind="show" animates="NO" id="1Tu-sk-L5F"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="23_jp_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="POl-mb-MDN">
                                 <rect key="frame" x="135" y="160" width="753" height="289"/>
@@ -1011,6 +1033,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kYT-Ym-1ZU"/>
                     </view>
+                    <connections>
+                        <outlet property="distanceLabel_" destination="W55-7d-jdp" id="cLY-Uh-fj1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mlP-An-9lT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1031,17 +1056,26 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovX-Hd-b77">
                                 <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="en_previous.png"/>
+                                <state key="normal" title="Button" image="jp_previous.png"/>
+                                <connections>
+                                    <segue destination="ln6-vY-WQ0" kind="show" animates="NO" id="1a0-1K-KoV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ils-ys-w7q">
                                 <rect key="frame" x="964" y="704" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="setting_button.png"/>
+                                <connections>
+                                    <segue destination="ZbZ-eP-XZC" kind="show" id="UWu-sG-YcZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLy-hJ-gsV">
                                 <rect key="frame" x="35" y="35" width="78" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nikon-logo.png"/>
+                                <connections>
+                                    <segue destination="K1C-4l-zUS" kind="show" animates="NO" id="EgD-xv-u5W"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="24_jp_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="UBe-TO-7sL">
                                 <rect key="frame" x="130" y="160" width="764" height="294"/>
@@ -1055,9 +1089,12 @@
                                 <rect key="frame" x="412" y="611" width="198" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="jp_start_button.png"/>
+                                <connections>
+                                    <segue destination="y1q-du-2Za" kind="show" animates="NO" id="Wdh-mt-xXd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.8m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u70-3g-lio">
-                                <rect key="frame" x="423" y="334" width="245" height="100"/>
+                                <rect key="frame" x="421" y="333" width="245" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1068,7 +1105,7 @@
                         <viewLayoutGuide key="safeArea" id="DZ5-sZ-blf"/>
                     </view>
                     <connections>
-                        <outlet property="distanceLabel_" destination="u70-3g-lio" id="BGJ-3k-gzq"/>
+                        <outlet property="distanceLabel_" destination="u70-3g-lio" id="iUm-f7-zm6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLA-gS-GPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1101,7 +1138,6 @@
         <image name="24_landolt.png" width="67" height="67"/>
         <image name="chinese1_button.png" width="365" height="104"/>
         <image name="chinese2_button.png" width="365" height="104"/>
-        <image name="en_previous.png" width="263" height="150"/>
         <image name="english_button.png" width="365" height="104"/>
         <image name="japanese_button.png" width="365" height="104"/>
         <image name="jp_choose_button.png" width="465" height="119"/>
@@ -1128,12 +1164,11 @@
         <image name="setting_button.png" width="120" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="N0c-jC-Ivj"/>
-        <segue reference="a8t-hT-VuG"/>
-        <segue reference="qz6-Wa-e8O"/>
-        <segue reference="7ZS-Yp-Rf1"/>
-        <segue reference="f5X-u3-baL"/>
-        <segue reference="D1w-7f-xm0"/>
-        <segue reference="WaL-ir-d90"/>
+        <segue reference="1a0-1K-KoV"/>
+        <segue reference="Ful-rO-tgC"/>
+        <segue reference="UWu-sG-YcZ"/>
+        <segue reference="Wdh-mt-xXd"/>
+        <segue reference="LCA-qG-olK"/>
+        <segue reference="EgD-xv-u5W"/>
     </inferredMetricsTieBreakers>
 </document>
