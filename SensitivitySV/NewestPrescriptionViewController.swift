@@ -70,6 +70,16 @@ class NewestPrescriptionViewController: UIViewController,
                 prescriptionPickerView0.selectRow(10, inComponent: 0, animated: false)
                 prescriptionPickerView0.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView0.selectRow(0, inComponent: 2, animated: false)
+                
+                let pointLabel = UILabel()
+                pointLabel.frame = CGRect(x: 505,
+                                          y: 110,
+                                          width: 100,
+                                          height: 100)
+                pointLabel.text = "●"
+                pointLabel.sizeToFit()
+                pointLabel.font = UIFont.systemFont(ofSize:6.0)
+                prescriptionPickerView0.addSubview(pointLabel)
 
                 let view0 = UIView(frame: prescriptionPickerView0.bounds)
                 view0.backgroundColor = UIColor.white
@@ -105,6 +115,16 @@ class NewestPrescriptionViewController: UIViewController,
                 prescriptionPickerView1.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView1.selectRow(0, inComponent: 2, animated: false)
 
+                let pointLabel = UILabel()
+                pointLabel.frame = CGRect(x: 505,
+                                          y: 110,
+                                          width: 100,
+                                          height: 100)
+                pointLabel.text = "●"
+                pointLabel.sizeToFit()
+                pointLabel.font = UIFont.systemFont(ofSize:6.0)
+                prescriptionPickerView1.addSubview(pointLabel)
+
                 let view1 = UIView(frame: prescriptionPickerView1.bounds)
                 view1.backgroundColor = UIColor.white
                 view1.addSubview(prescriptionPickerView1)
@@ -138,6 +158,16 @@ class NewestPrescriptionViewController: UIViewController,
                 prescriptionPickerView2.selectRow(10, inComponent: 0, animated: false)
                 prescriptionPickerView2.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView2.selectRow(0, inComponent: 2, animated: false)
+
+                let pointLabel = UILabel()
+                pointLabel.frame = CGRect(x: 505,
+                                          y: 110,
+                                          width: 100,
+                                          height: 100)
+                pointLabel.text = "●"
+                pointLabel.sizeToFit()
+                pointLabel.font = UIFont.systemFont(ofSize:6.0)
+                prescriptionPickerView2.addSubview(pointLabel)
 
                 let view2 = UIView(frame: prescriptionPickerView2.bounds)
                 view2.backgroundColor = UIColor.white
@@ -173,6 +203,16 @@ class NewestPrescriptionViewController: UIViewController,
                 prescriptionPickerView3.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView3.selectRow(0, inComponent: 2, animated: false)
 
+                let pointLabel = UILabel()
+                pointLabel.frame = CGRect(x: 505,
+                                          y: 110,
+                                          width: 100,
+                                          height: 100)
+                pointLabel.text = "●"
+                pointLabel.sizeToFit()
+                pointLabel.font = UIFont.systemFont(ofSize:6.0)
+                prescriptionPickerView3.addSubview(pointLabel)
+
                 let view3 = UIView(frame: prescriptionPickerView3.bounds)
                 view3.backgroundColor = UIColor.white
                 view3.addSubview(prescriptionPickerView3)
@@ -207,6 +247,16 @@ class NewestPrescriptionViewController: UIViewController,
                 prescriptionPickerView0.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView0.selectRow(0, inComponent: 2, animated: false)
                     
+                let pointLabel = UILabel()
+                pointLabel.frame = CGRect(x: 505,
+                                          y: 110,
+                                          width: 100,
+                                          height: 100)
+                pointLabel.text = "●"
+                pointLabel.sizeToFit()
+                pointLabel.font = UIFont.systemFont(ofSize:6.0)
+                prescriptionPickerView0.addSubview(pointLabel)
+
                 let view0 = UIView(frame: prescriptionPickerView0.bounds)
                 view0.backgroundColor = UIColor.white
                 view0.addSubview(prescriptionPickerView0)
@@ -241,6 +291,16 @@ class NewestPrescriptionViewController: UIViewController,
                 prescriptionPickerView1.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView1.selectRow(0, inComponent: 2, animated: false)
                     
+                let pointLabel = UILabel()
+                pointLabel.frame = CGRect(x: 505,
+                                          y: 110,
+                                          width: 100,
+                                          height: 100)
+                pointLabel.text = "●"
+                pointLabel.sizeToFit()
+                pointLabel.font = UIFont.systemFont(ofSize:6.0)
+                prescriptionPickerView1.addSubview(pointLabel)
+
                 let view1 = UIView(frame: prescriptionPickerView1.bounds)
                 view1.backgroundColor = UIColor.white
                 view1.addSubview(prescriptionPickerView1)
@@ -275,6 +335,16 @@ class NewestPrescriptionViewController: UIViewController,
                 prescriptionPickerView2.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView2.selectRow(0, inComponent: 2, animated: false)
                     
+                let pointLabel = UILabel()
+                pointLabel.frame = CGRect(x: 505,
+                                          y: 110,
+                                          width: 100,
+                                          height: 100)
+                pointLabel.text = "●"
+                pointLabel.sizeToFit()
+                pointLabel.font = UIFont.systemFont(ofSize:6.0)
+                prescriptionPickerView2.addSubview(pointLabel)
+
                 let view2 = UIView(frame: prescriptionPickerView2.bounds)
                 view2.backgroundColor = UIColor.white
                 view2.addSubview(prescriptionPickerView2)
@@ -309,6 +379,16 @@ class NewestPrescriptionViewController: UIViewController,
                 prescriptionPickerView3.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView3.selectRow(0, inComponent: 2, animated: false)
                     
+                let pointLabel = UILabel()
+                pointLabel.frame = CGRect(x: 505,
+                                          y: 110,
+                                          width: 100,
+                                          height: 100)
+                pointLabel.text = "●"
+                pointLabel.sizeToFit()
+                pointLabel.font = UIFont.systemFont(ofSize:6.0)
+                prescriptionPickerView3.addSubview(pointLabel)
+
                 let view3 = UIView(frame: prescriptionPickerView3.bounds)
                 view3.backgroundColor = UIColor.white
                 view3.addSubview(prescriptionPickerView3)
@@ -489,7 +569,7 @@ class NewestPrescriptionViewController: UIViewController,
         } else if (component == 1) {
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
             label.textAlignment = .center
-            label.text = "●"
+            label.text = ""
             label.font = UIFont.systemFont(ofSize:12.0)
             label.textColor = fontColor
             return label
