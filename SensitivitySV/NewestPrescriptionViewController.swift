@@ -19,6 +19,7 @@ var intDataArray = ["+10", "+9", "+8", "+7", "+6", "+5", "+4", "+3", "+2", "+1",
 var decimalDataArray = ["00", "25", "50", "75"]
 
 class NewestPrescriptionViewController: UIViewController,
+                                        UITextFieldDelegate,
                                         UIPickerViewDataSource,
                                         UIPickerViewDelegate{
 
@@ -35,6 +36,11 @@ class NewestPrescriptionViewController: UIViewController,
         // Do any additional setup after loading the view.
         let dataServer = DataServer.shared
         let region = dataServer.getRegion()
+        
+        prescriptionTextField0_.delegate = self
+        prescriptionTextField1_.delegate = self
+        prescriptionTextField2_.delegate = self
+        prescriptionTextField3_.delegate = self
 
         /*
         prescriptionTextField0_.isUserInteractionEnabled = false
@@ -425,6 +431,11 @@ class NewestPrescriptionViewController: UIViewController,
         prescriptionTextField1_.resignFirstResponder()
         prescriptionTextField2_.resignFirstResponder()
         prescriptionTextField3_.resignFirstResponder()
+        
+        donePressed0()
+        donePressed1()
+        donePressed2()
+        donePressed3()
     }
     
     // Done
@@ -442,7 +453,7 @@ class NewestPrescriptionViewController: UIViewController,
         let dataServer = DataServer.shared
         dataServer.setNewestPrescriptionR_S(Float(prescriptionTextField0_.text!)!)
 
-        view.endEditing(true)
+//        view.endEditing(true)
     }
 
     @objc func donePressed1() {
@@ -459,7 +470,7 @@ class NewestPrescriptionViewController: UIViewController,
         let dataServer = DataServer.shared
         dataServer.setNewestPrescriptionR_C(Float(prescriptionTextField1_.text!)!)
 
-        view.endEditing(true)
+//        view.endEditing(true)
     }
 
     @objc func donePressed2() {
@@ -476,7 +487,7 @@ class NewestPrescriptionViewController: UIViewController,
         let dataServer = DataServer.shared
         dataServer.setNewestPrescriptionL_S(Float(prescriptionTextField2_.text!)!)
 
-        view.endEditing(true)
+//        view.endEditing(true)
     }
     
     @objc func donePressed3() {
@@ -493,6 +504,31 @@ class NewestPrescriptionViewController: UIViewController,
         let dataServer = DataServer.shared
         dataServer.setNewestPrescriptionL_C(Float(prescriptionTextField3_.text!)!)
 
+//        view.endEditing(true)
+    }
+
+    // DoneEnd
+    @objc func doneEndPressed0() {
+        
+        donePressed0()
+        view.endEditing(true)
+    }
+    
+    @objc func doneEndPressed1() {
+        
+        donePressed1()
+        view.endEditing(true)
+    }
+    
+    @objc func doneEndPressed2() {
+        
+        donePressed2()
+        view.endEditing(true)
+    }
+    
+    @objc func doneEndPressed3() {
+
+        donePressed3()
         view.endEditing(true)
     }
 
@@ -513,6 +549,26 @@ class NewestPrescriptionViewController: UIViewController,
         view.endEditing(true)
     }
 
+    ////// テキストフィールドのプロトコル //////
+
+    //キーボードのReturnキーを押してテキストフィールドの入力が完了した直後
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        view.endEditing(true)
+    }
+
+    //テキストフィールドをタップして文字が入力可能になる直前
+    //戻り値true：文字入力可能状態
+    //戻り値false：入力不可でキーボード表示されない。
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+
+        donePressed0()
+        donePressed1()
+        donePressed2()
+        donePressed3()
+
+        return true
+    }
+    
     ////// ドラムロールのプロトコル //////
     // コンポーネント数
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
