@@ -367,7 +367,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUm-st-eCE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="21_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="vUm-st-eCE">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1153,10 +1153,11 @@
         <image name="tryagain_button.png" width="360" height="104"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="fu2-r0-ZYK"/>
         <segue reference="2GE-5H-vBo"/>
         <segue reference="rbN-Pa-ReF"/>
         <segue reference="GL9-8Q-z4m"/>
-        <segue reference="5nF-3b-EsV"/>
-        <segue reference="sgg-q7-I8I"/>
+        <segue reference="PXp-pl-F4y"/>
+        <segue reference="gy2-Rh-QXM"/>
     </inferredMetricsTieBreakers>
 </document>

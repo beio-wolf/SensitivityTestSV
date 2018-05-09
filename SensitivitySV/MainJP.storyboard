@@ -858,7 +858,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLh-Ab-tQd" userLabel="KeyDownView">
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLh-Ab-tQd">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1166,9 +1166,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="1a0-1K-KoV"/>
         <segue reference="Ful-rO-tgC"/>
-        <segue reference="UWu-sG-YcZ"/>
+        <segue reference="V64-1M-74x"/>
         <segue reference="Wdh-mt-xXd"/>
         <segue reference="LCA-qG-olK"/>
-        <segue reference="EgD-xv-u5W"/>
+        <segue reference="YmT-8Q-g9P"/>
     </inferredMetricsTieBreakers>
 </document>
