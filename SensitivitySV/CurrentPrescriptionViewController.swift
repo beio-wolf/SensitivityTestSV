@@ -19,8 +19,9 @@ var currentIntDataArray = ["+10", "+9", "+8", "+7", "+6", "+5", "+4", "+3", "+2"
 var currentDecimalDataArray = ["00", "25", "50", "75"]
 
 class CurrentPrescriptionViewController: UIViewController,
-                                        UIPickerViewDataSource,
-                                        UIPickerViewDelegate{
+                                         UITextFieldDelegate,
+                                         UIPickerViewDataSource,
+                                         UIPickerViewDelegate{
 
     @IBOutlet weak var currentPrescriptionTextField0_: UITextField!
     @IBOutlet weak var currentPrescriptionTextField1_: UITextField!
@@ -52,6 +53,11 @@ class CurrentPrescriptionViewController: UIViewController,
         let dataServer = DataServer.shared
         let region = dataServer.getRegion()
  
+        currentPrescriptionTextField0_.delegate = self
+        currentPrescriptionTextField1_.delegate = self
+        currentPrescriptionTextField2_.delegate = self
+        currentPrescriptionTextField3_.delegate = self
+
         // タップでキーボードを引っ込めるViewの設定
         KeyDownView_.isUserInteractionEnabled = true
         KeyDownView_.addGestureRecognizer(UITapGestureRecognizer(target: self,
@@ -99,7 +105,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar0.barStyle = UIBarStyle.default
                 toolBar0.isTranslucent = true
                 toolBar0.tintColor = UIColor.black
-                let doneButton0   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed0))
+                let doneButton0   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed0))
                 doneButton0.tintColor = fontColor
                 let cancelButton0 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed0))
                 cancelButton0.tintColor = fontColor
@@ -144,7 +150,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar1.barStyle = UIBarStyle.default
                 toolBar1.isTranslucent = true
                 toolBar1.tintColor = UIColor.black
-                let doneButton1   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed1))
+                let doneButton1   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed1))
                 doneButton1.tintColor = fontColor
                 let cancelButton1 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed1))
                 cancelButton1.tintColor = fontColor
@@ -189,7 +195,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar2.barStyle = UIBarStyle.default
                 toolBar2.isTranslucent = true
                 toolBar2.tintColor = UIColor.black
-                let doneButton2   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed2))
+                let doneButton2   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed2))
                 doneButton2.tintColor = fontColor
                 let cancelButton2 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed2))
                 cancelButton2.tintColor = fontColor
@@ -233,7 +239,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar3.barStyle = UIBarStyle.default
                 toolBar3.isTranslucent = true
                 toolBar3.tintColor = UIColor.black
-                let doneButton3   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed3))
+                let doneButton3   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed3))
                 doneButton3.tintColor = fontColor
                 let cancelButton3 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed3))
                 cancelButton3.tintColor = fontColor
@@ -279,7 +285,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar0.barStyle = UIBarStyle.default
                 toolBar0.isTranslucent = true
                 toolBar0.tintColor = UIColor.black
-                let doneButton0   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed0))
+                let doneButton0   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed0))
                 doneButton0.tintColor = fontColor
                 let cancelButton0 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed0))
                 cancelButton0.tintColor = fontColor
@@ -315,7 +321,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 
                 let view1 = UIView(frame: currentPrescriptionPickerView1.bounds)
                 view1.backgroundColor = UIColor.white
-                view1.addSubview(prescriptionPickerView1)
+                view1.addSubview(currentPrescriptionPickerView1)
                 
                 currentPrescriptionTextField1_.inputView = view1
                 
@@ -323,7 +329,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar1.barStyle = UIBarStyle.default
                 toolBar1.isTranslucent = true
                 toolBar1.tintColor = UIColor.black
-                let doneButton1   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed1))
+                let doneButton1   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed1))
                 doneButton1.tintColor = fontColor
                 let cancelButton1 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed1))
                 cancelButton1.tintColor = fontColor
@@ -355,7 +361,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 pointLabel.text = "●"
                 pointLabel.sizeToFit()
                 pointLabel.font = UIFont.systemFont(ofSize:6.0)
-                prescriptionPickerView2.addSubview(pointLabel)
+                currentPrescriptionPickerView2.addSubview(pointLabel)
                 
                 let view2 = UIView(frame: currentPrescriptionPickerView2.bounds)
                 view2.backgroundColor = UIColor.white
@@ -367,7 +373,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar2.barStyle = UIBarStyle.default
                 toolBar2.isTranslucent = true
                 toolBar2.tintColor = UIColor.black
-                let doneButton2   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed2))
+                let doneButton2   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed2))
                 doneButton2.tintColor = fontColor
                 let cancelButton2 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed2))
                 cancelButton2.tintColor = fontColor
@@ -411,7 +417,7 @@ class CurrentPrescriptionViewController: UIViewController,
                 toolBar3.barStyle = UIBarStyle.default
                 toolBar3.isTranslucent = true
                 toolBar3.tintColor = UIColor.black
-                let doneButton3   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed3))
+                let doneButton3   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed3))
                 doneButton3.tintColor = fontColor
                 let cancelButton3 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed3))
                 cancelButton3.tintColor = fontColor
@@ -437,6 +443,11 @@ class CurrentPrescriptionViewController: UIViewController,
         currentPrescriptionTextField1_.resignFirstResponder()
         currentPrescriptionTextField2_.resignFirstResponder()
         currentPrescriptionTextField3_.resignFirstResponder()
+        
+        donePressed0()
+        donePressed1()
+        donePressed2()
+        donePressed3()
     }
     
     // Done
@@ -454,7 +465,7 @@ class CurrentPrescriptionViewController: UIViewController,
         let dataServer = DataServer.shared
         dataServer.setCurrentPrescriptionR_S(Float(currentPrescriptionTextField0_.text!)!)
         
-        view.endEditing(true)
+//        view.endEditing(true)
     }
 
     @objc func donePressed1() {
@@ -471,7 +482,7 @@ class CurrentPrescriptionViewController: UIViewController,
         let dataServer = DataServer.shared
         dataServer.setCurrentPrescriptionR_C(Float(currentPrescriptionTextField1_.text!)!)
 
-        view.endEditing(true)
+//        view.endEditing(true)
     }
 
     @objc func donePressed2() {
@@ -488,7 +499,7 @@ class CurrentPrescriptionViewController: UIViewController,
         let dataServer = DataServer.shared
         dataServer.setCurrentPrescriptionL_S(Float(currentPrescriptionTextField2_.text!)!)
         
-        view.endEditing(true)
+//        view.endEditing(true)
     }
     
     @objc func donePressed3() {
@@ -505,8 +516,34 @@ class CurrentPrescriptionViewController: UIViewController,
         let dataServer = DataServer.shared
         dataServer.setCurrentPrescriptionL_C(Float(currentPrescriptionTextField3_.text!)!)
 
+//        view.endEditing(true)
+    }
+
+    // DoneEnd
+    @objc func doneEndPressed0() {
+        
+        donePressed0()
         view.endEditing(true)
     }
+    
+    @objc func doneEndPressed1() {
+        
+        donePressed1()
+        view.endEditing(true)
+    }
+    
+    @objc func doneEndPressed2() {
+        
+        donePressed2()
+        view.endEditing(true)
+    }
+    
+    @objc func doneEndPressed3() {
+        
+        donePressed3()
+        view.endEditing(true)
+    }
+
 
     // Cancel
     @objc func cancelPressed0() {
@@ -523,6 +560,25 @@ class CurrentPrescriptionViewController: UIViewController,
 
     @objc func cancelPressed3() {
         view.endEditing(true)
+    }
+
+    ////// テキストフィールドのプロトコル //////
+    //キーボードのReturnキーを押してテキストフィールドの入力が完了した直後
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        view.endEditing(true)
+    }
+    
+    //テキストフィールドをタップして文字が入力可能になる直前
+    //戻り値true：文字入力可能状態
+    //戻り値false：入力不可でキーボード表示されない。
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        
+        donePressed0()
+        donePressed1()
+        donePressed2()
+        donePressed3()
+        
+        return true
     }
 
     ////// ドラムロールのプロトコル //////

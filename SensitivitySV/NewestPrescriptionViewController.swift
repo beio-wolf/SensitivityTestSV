@@ -97,7 +97,7 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar0.barStyle = UIBarStyle.default
                 toolBar0.isTranslucent = true
                 toolBar0.tintColor = UIColor.black
-                let doneButton0   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed0))
+                let doneButton0   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed0))
                 doneButton0.tintColor = fontColor
                 let cancelButton0 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed0))
                 cancelButton0.tintColor = fontColor
@@ -141,7 +141,7 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar1.barStyle = UIBarStyle.default
                 toolBar1.isTranslucent = true
                 toolBar1.tintColor = UIColor.black
-                let doneButton1   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed1))
+                let doneButton1   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed1))
                 doneButton1.tintColor = fontColor
                 let cancelButton1 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed1))
                 cancelButton1.tintColor = fontColor
@@ -185,7 +185,7 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar2.barStyle = UIBarStyle.default
                 toolBar2.isTranslucent = true
                 toolBar2.tintColor = UIColor.black
-                let doneButton2   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed2))
+                let doneButton2   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed2))
                 doneButton2.tintColor = fontColor
                 let cancelButton2 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed2))
                 cancelButton2.tintColor = fontColor
@@ -229,7 +229,7 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar3.barStyle = UIBarStyle.default
                 toolBar3.isTranslucent = true
                 toolBar3.tintColor = UIColor.black
-                let doneButton3   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed3))
+                let doneButton3   = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed3))
                 doneButton3.tintColor = fontColor
                 let cancelButton3 = UIBarButtonItem(title: "CANCEL", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed3))
                 cancelButton3.tintColor = fontColor
@@ -273,7 +273,7 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar0.barStyle = UIBarStyle.default
                 toolBar0.isTranslucent = true
                 toolBar0.tintColor = UIColor.black
-                let doneButton0   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed0))
+                let doneButton0   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed0))
                     doneButton0.tintColor = fontColor
                 let cancelButton0 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed0))
                     cancelButton0.tintColor = fontColor
@@ -317,7 +317,7 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar1.barStyle = UIBarStyle.default
                 toolBar1.isTranslucent = true
                 toolBar1.tintColor = UIColor.black
-                let doneButton1   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed1))
+                let doneButton1   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed1))
                     doneButton1.tintColor = fontColor
                 let cancelButton1 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed1))
                     cancelButton1.tintColor = fontColor
@@ -361,7 +361,7 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar2.barStyle = UIBarStyle.default
                 toolBar2.isTranslucent = true
                 toolBar2.tintColor = UIColor.black
-                let doneButton2   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed2))
+                let doneButton2   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed2))
                     doneButton2.tintColor = fontColor
                 let cancelButton2 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed2))
                     cancelButton2.tintColor = fontColor
@@ -405,7 +405,7 @@ class NewestPrescriptionViewController: UIViewController,
                 toolBar3.barStyle = UIBarStyle.default
                 toolBar3.isTranslucent = true
                 toolBar3.tintColor = UIColor.black
-                let doneButton3   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.donePressed3))
+                let doneButton3   = UIBarButtonItem(title: "決定", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneEndPressed3))
                     doneButton3.tintColor = fontColor
                 let cancelButton3 = UIBarButtonItem(title: "取消", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPressed3))
                     cancelButton3.tintColor = fontColor
@@ -550,7 +550,6 @@ class NewestPrescriptionViewController: UIViewController,
     }
 
     ////// テキストフィールドのプロトコル //////
-
     //キーボードのReturnキーを押してテキストフィールドの入力が完了した直後
     func textFieldDidEndEditing(_ textField: UITextField) {
         view.endEditing(true)
