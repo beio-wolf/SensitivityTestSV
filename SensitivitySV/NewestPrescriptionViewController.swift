@@ -13,16 +13,28 @@ let prescriptionPickerView1 = UIPickerView()
 let prescriptionPickerView2 = UIPickerView()
 let prescriptionPickerView3 = UIPickerView()
 
-var intDataArray = ["+10", "+9", "+8", "+7", "+6", "+5", "+4", "+3", "+2", "+1", "+0",
+var intDataArrayS = ["+10", "+9", "+8", "+7", "+6", "+5", "+4", "+3", "+2", "+1", "+0",
                     "-0", "-1", "-2", "-3", "-4", "-5", "-6", "-7", "-8", "-9", "-10",
                     "-11", "-12", "-13", "-14", "-15", "-16"]
+
+var intDataArrayC = ["+6", "+5", "+4", "+3", "+2", "+1", "+0",
+                     "-0", "-1", "-2", "-3", "-4", "-5", "-6"]
+
 var decimalDataArray = ["00", "25", "50", "75"]
+
 
 class NewestPrescriptionViewController: UIViewController,
                                         UITextFieldDelegate,
                                         UIPickerViewDataSource,
                                         UIPickerViewDelegate{
-
+    // テキストフィールドの種類
+    enum TextFieldType {
+        case RightS     // 右S
+        case RightC     // 右C
+        case LeftS      // 左S
+        case LeftC      // 左C
+    }
+    
     @IBOutlet weak var prescriptionTextField0_: UITextField!
     @IBOutlet weak var prescriptionTextField1_: UITextField!
     @IBOutlet weak var prescriptionTextField2_: UITextField!
@@ -30,6 +42,8 @@ class NewestPrescriptionViewController: UIViewController,
 
     @IBOutlet weak var KeyDownView_: UIView!
     
+    var currentTextFieldType_:TextFieldType = TextFieldType.RightS
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -76,7 +90,6 @@ class NewestPrescriptionViewController: UIViewController,
                 prescriptionPickerView0.selectRow(10, inComponent: 0, animated: false)
                 prescriptionPickerView0.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView0.selectRow(0, inComponent: 2, animated: false)
-                
                 let pointLabel = UILabel()
                 pointLabel.frame = CGRect(x: 505,
                                           y: 110,
@@ -117,7 +130,7 @@ class NewestPrescriptionViewController: UIViewController,
                                                       height:prescriptionPickerView1.bounds.size.height)
                 prescriptionPickerView1.delegate   = self
                 prescriptionPickerView1.dataSource = self
-                prescriptionPickerView1.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView1.selectRow(6, inComponent: 0, animated: false)
                 prescriptionPickerView1.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView1.selectRow(0, inComponent: 2, animated: false)
 
@@ -205,7 +218,7 @@ class NewestPrescriptionViewController: UIViewController,
                                                        height:prescriptionPickerView3.bounds.size.height)
                 prescriptionPickerView3.delegate   = self
                 prescriptionPickerView3.dataSource = self
-                prescriptionPickerView3.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView3.selectRow(6, inComponent: 0, animated: false)
                 prescriptionPickerView3.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView3.selectRow(0, inComponent: 2, animated: false)
 
@@ -293,7 +306,7 @@ class NewestPrescriptionViewController: UIViewController,
                                                            height:prescriptionPickerView1.bounds.size.height)
                 prescriptionPickerView1.delegate   = self
                 prescriptionPickerView1.dataSource = self
-                prescriptionPickerView1.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView1.selectRow(6, inComponent: 0, animated: false)
                 prescriptionPickerView1.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView1.selectRow(0, inComponent: 2, animated: false)
                     
@@ -381,7 +394,7 @@ class NewestPrescriptionViewController: UIViewController,
                                                            height:prescriptionPickerView3.bounds.size.height)
                 prescriptionPickerView3.delegate   = self
                 prescriptionPickerView3.dataSource = self
-                prescriptionPickerView3.selectRow(10, inComponent: 0, animated: false)
+                prescriptionPickerView3.selectRow(6, inComponent: 0, animated: false)
                 prescriptionPickerView3.selectRow(0, inComponent: 1, animated: false)
                 prescriptionPickerView3.selectRow(0, inComponent: 2, animated: false)
                     
@@ -442,7 +455,7 @@ class NewestPrescriptionViewController: UIViewController,
     @objc func donePressed0() {
         
         let intIndex:Int = prescriptionPickerView0.selectedRow(inComponent: 0)
-        let intName:String = intDataArray[intIndex]
+        let intName:String = intDataArrayS[intIndex]
 
         let decimalIndex:Int = prescriptionPickerView0.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
@@ -459,7 +472,7 @@ class NewestPrescriptionViewController: UIViewController,
     @objc func donePressed1() {
         
         let intIndex:Int = prescriptionPickerView1.selectedRow(inComponent: 0)
-        let intName:String = intDataArray[intIndex]
+        let intName:String = intDataArrayC[intIndex]
         
         let decimalIndex:Int = prescriptionPickerView1.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
@@ -476,7 +489,7 @@ class NewestPrescriptionViewController: UIViewController,
     @objc func donePressed2() {
         
         let intIndex:Int = prescriptionPickerView2.selectedRow(inComponent: 0)
-        let intName:String = intDataArray[intIndex]
+        let intName:String = intDataArrayS[intIndex]
         
         let decimalIndex:Int = prescriptionPickerView2.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
@@ -493,7 +506,7 @@ class NewestPrescriptionViewController: UIViewController,
     @objc func donePressed3() {
         
         let intIndex:Int = prescriptionPickerView3.selectedRow(inComponent: 0)
-        let intName:String = intDataArray[intIndex]
+        let intName:String = intDataArrayC[intIndex]
         
         let decimalIndex:Int = prescriptionPickerView3.selectedRow(inComponent: 2)
         let decimalName:String = decimalDataArray[decimalIndex]
@@ -560,6 +573,19 @@ class NewestPrescriptionViewController: UIViewController,
     //戻り値false：入力不可でキーボード表示されない。
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
 
+        if (textField == prescriptionTextField0_) {
+            currentTextFieldType_ = TextFieldType.RightS
+        }
+        else if (textField == prescriptionTextField1_) {
+            currentTextFieldType_ = TextFieldType.RightC
+        }
+        else if (textField == prescriptionTextField2_) {
+            currentTextFieldType_ = TextFieldType.LeftS
+        }
+        else if (textField == prescriptionTextField3_) {
+            currentTextFieldType_ = TextFieldType.LeftC
+        }
+        
         donePressed0()
         donePressed1()
         donePressed2()
@@ -582,12 +608,23 @@ class NewestPrescriptionViewController: UIViewController,
     // 行数
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if (component == 0) {
-            return intDataArray.count
+            if ((currentTextFieldType_ == TextFieldType.RightS)
+                || (currentTextFieldType_ == TextFieldType.LeftS)) {
+                
+                return intDataArrayS.count
+            }
+            else if ((currentTextFieldType_ == TextFieldType.RightC)
+                || (currentTextFieldType_ == TextFieldType.LeftC)) {
+                
+                return intDataArrayC.count
+            }
         }
         else if (component == 1) {
+
             return 1
         }
         else if (component == 2) {
+
             return decimalDataArray.count
         }
         
@@ -615,25 +652,43 @@ class NewestPrescriptionViewController: UIViewController,
                                         alpha:1.0)
         // 表示するラベルを生成する
         if (component == 0) {
+            
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
             label.textAlignment = NSTextAlignment.center
-            label.text = intDataArray[row]
+
+            if ((currentTextFieldType_ == TextFieldType.RightS)
+                || (currentTextFieldType_ == TextFieldType.LeftS)) {
+                
+                label.text = intDataArrayS[row]
+            }
+            else if ((currentTextFieldType_ == TextFieldType.RightC)
+                || (currentTextFieldType_ == TextFieldType.LeftC)) {
+                
+                label.text = intDataArrayC[row]
+            }
+
             label.font = UIFont.systemFont(ofSize:24.0)
             label.textColor = fontColor
             return label
-        } else if (component == 1) {
+        }
+        else if (component == 1) {
+        
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
             label.textAlignment = .center
             label.text = ""
             label.font = UIFont.systemFont(ofSize:12.0)
             label.textColor = fontColor
+
             return label
+        
         } else {
+        
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
             label.textAlignment = NSTextAlignment.center
             label.text = decimalDataArray[row]
             label.font = UIFont.systemFont(ofSize:24.0)
             label.textColor = fontColor
+
             return label
         }
     }
