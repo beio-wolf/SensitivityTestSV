@@ -20,8 +20,16 @@ class TitleViewController: UIViewController {
             let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let nextView = storyboard.instantiateInitialViewController()
             present(nextView!, animated: true, completion: nil)
-        } else {
+        } else if (region == Region.JP){
             let storyboard: UIStoryboard = UIStoryboard(name: "MainJP", bundle: nil)
+            let nextView = storyboard.instantiateInitialViewController()
+            present(nextView!, animated: true, completion: nil)
+        } else if (region == Region.CH1){
+            let storyboard: UIStoryboard = UIStoryboard(name: "MainCH1", bundle: nil)
+            let nextView = storyboard.instantiateInitialViewController()
+            present(nextView!, animated: true, completion: nil)
+        } else if (region == Region.CH2){
+            let storyboard: UIStoryboard = UIStoryboard(name: "MainCH2", bundle: nil)
             let nextView = storyboard.instantiateInitialViewController()
             present(nextView!, animated: true, completion: nil)
         }
