@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="twd-P4-HMG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="twd-P4-HMG">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -201,75 +201,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yAA-RF-34E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="892.96874999999989" y="157.8125"/>
-        </scene>
-        <!--Blur View Controller-->
-        <scene sceneID="Bxw-nJ-hcj">
-            <objects>
-                <viewController storyboardIdentifier="Blur" id="Iwj-2f-kGu" customClass="BlurViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8yi-KW-1RO">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Inf7_ST1_minus1.png" translatesAutoresizingMaskIntoConstraints="NO" id="aCn-MN-TT8">
-                                <rect key="frame" x="0.0" y="56" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recognise the blur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofa-Uq-BGN">
-                                <rect key="frame" x="313" y="116" width="454" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uz2-Mq-ybE">
-                                <rect key="frame" x="284" y="116" width="512" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="startupscreen.png"/>
-                                <connections>
-                                    <action selector="tappedStartUpButton:" destination="Iwj-2f-kGu" eventType="touchUpInside" id="mLv-Br-8t7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTu-ds-ufs">
-                                <rect key="frame" x="395" y="637" width="290" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Confirm" image="start.png"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nikon-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sn7-W1-ISS">
-                                <rect key="frame" x="20" y="20" width="69" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="RMl-GI-fSi">
-                                <rect key="frame" x="97" y="37" width="517" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAp-FK-rH0">
-                                <rect key="frame" x="20" y="628" width="142" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="trialset.png"/>
-                                <connections>
-                                    <action selector="tappedGlassButton:" destination="Iwj-2f-kGu" eventType="touchUpInside" id="cPA-Cp-jK7"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh7-ZF-8rk">
-                                <rect key="frame" x="20" y="628" width="142" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="exiting-equipment.png"/>
-                                <connections>
-                                    <action selector="tappedNormalGlassButton:" destination="Iwj-2f-kGu" eventType="touchUpInside" id="7Fs-FW-pv1"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Vee-FE-oaG"/>
-                    </view>
-                    <connections>
-                        <outlet property="glassButton" destination="FAp-FK-rH0" id="P7P-fb-mAl"/>
-                        <outlet property="normalGlassButton" destination="uh7-ZF-8rk" id="SPs-Zp-Fo5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RGf-cZ-qsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-648.046875" y="157.8125"/>
         </scene>
         <!--Full Test View Controller-->
         <scene sceneID="wO3-CZ-Pkh">
@@ -762,7 +693,6 @@
         <image name="08_chinese2_title.png" width="893" height="257"/>
         <image name="10_background.png" width="2048" height="1536"/>
         <image name="10_chinese2_title.png" width="627" height="283"/>
-        <image name="Inf7_ST1_minus1.png" width="2048" height="1536"/>
         <image name="chinese1_button.png" width="365" height="104"/>
         <image name="chinese2_button.png" width="365" height="104"/>
         <image name="chinese2_choose_button.png" width="465" height="119"/>
@@ -788,9 +718,6 @@
         <image name="score_back.png" width="572" height="480"/>
         <image name="setting_background.png" width="2048" height="1536"/>
         <image name="setting_button.png" width="120" height="120"/>
-        <image name="start.png" width="198" height="59"/>
-        <image name="startupscreen.png" width="256" height="76"/>
-        <image name="title.png" width="517" height="34"/>
         <image name="trialset.png" width="240" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
