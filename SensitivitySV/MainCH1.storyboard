@@ -673,7 +673,7 @@
         <image name="chinese1_choose_button.png" width="465" height="119"/>
         <image name="chinese1_exist_button.png" width="479" height="531"/>
         <image name="chinese1_hyperope_button.png" width="302" height="105"/>
-        <image name="chinese1_image.png" width="59" height="29"/>
+        <image name="chinese1_image.png" width="69" height="35"/>
         <image name="chinese1_manual_button.png" width="508" height="104"/>
         <image name="chinese1_myope_button.png" width="302" height="105"/>
         <image name="chinese1_previous.png" width="263" height="25"/>

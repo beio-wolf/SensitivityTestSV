@@ -16,6 +16,7 @@
 		2806D49D1FC68EAD0042A979 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806D49C1FC68EAD0042A979 /* WebViewController.swift */; };
 		2806D49F1FC6B6B70042A979 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806D49E1FC6B6B70042A979 /* ResultViewController.swift */; };
 		2806D4A11FC6BA8F0042A979 /* ReConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806D4A01FC6BA8F0042A979 /* ReConfirmViewController.swift */; };
+		2810F15820CCEE690028637E /* chinese1_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810F15720CCEE690028637E /* chinese1_image.png */; };
 		285606681FBAD0A80026AB58 /* ShortTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285606671FBAD0A80026AB58 /* ShortTestViewController.swift */; };
 		2856066A1FBAD87F0026AB58 /* BlurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285606691FBAD87F0026AB58 /* BlurViewController.swift */; };
 		286898031FB007EC007EEDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286898021FB007EC007EEDCD /* AppDelegate.swift */; };
@@ -309,6 +310,7 @@
 		2806D49C1FC68EAD0042A979 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		2806D49E1FC6B6B70042A979 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		2806D4A01FC6BA8F0042A979 /* ReConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReConfirmViewController.swift; sourceTree = "<group>"; };
+		2810F15720CCEE690028637E /* chinese1_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chinese1_image.png; path = SensitivitySV/Images/Common/CH1/chinese1_image.png; sourceTree = SOURCE_ROOT; };
 		285606671FBAD0A80026AB58 /* ShortTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortTestViewController.swift; sourceTree = "<group>"; };
 		285606691FBAD87F0026AB58 /* BlurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewController.swift; sourceTree = "<group>"; };
 		286897FF1FB007EC007EEDCD /* SensitivitySV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensitivitySV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1076,6 +1078,7 @@
 		28BE892720593285002CDB80 /* CH1 */ = {
 			isa = PBXGroup;
 			children = (
+				2810F15720CCEE690028637E /* chinese1_image.png */,
 				28BE8A69205A645A002CDB80 /* chinese1_button.png */,
 				28BE896F20593368002CDB80 /* chinese1_choose_button.png */,
 				28BE896720593368002CDB80 /* chinese1_exist_button_a.png */,
@@ -1385,6 +1388,7 @@
 				28E92A76209CA06E00249BA4 /* point.png in Resources */,
 				28BE8993205933A6002CDB80 /* chinese2_setting_title2.png in Resources */,
 				28BE8920205931AD002CDB80 /* start@2x.png in Resources */,
+				2810F15820CCEE690028637E /* chinese1_image.png in Resources */,
 				28BE89B6205933CC002CDB80 /* icon.png in Resources */,
 				28BE8917205931AD002CDB80 /* tryagain_button.png in Resources */,
 				28BE893F205932EC002CDB80 /* hyperope.png in Resources */,
