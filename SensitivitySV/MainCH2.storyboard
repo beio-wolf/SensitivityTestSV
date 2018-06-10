@@ -117,7 +117,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyI-5n-tqH">
-                                <rect key="frame" x="35" y="689" width="135" height="75"/>
+                                <rect key="frame" x="35" y="689" width="132" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="chinese2_previous.png"/>
                                 <connections>
@@ -721,7 +721,7 @@
         <image name="trialset.png" width="240" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uyj-kc-8sh"/>
+        <segue reference="GNA-ZC-LNd"/>
         <segue reference="OWP-fJ-IwE"/>
         <segue reference="a5a-Zy-a3W"/>
     </inferredMetricsTieBreakers>
