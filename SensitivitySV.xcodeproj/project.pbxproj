@@ -53,7 +53,6 @@
 		28AF4C64206BD8B0002C6D6A /* jp_sv_button_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C60206BD8AE002C6D6A /* jp_sv_button_a.png */; };
 		28AF4C65206BD8B0002C6D6A /* jp_sv_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C61206BD8AF002C6D6A /* jp_sv_button.png */; };
 		28AF4C66206BD8B0002C6D6A /* jp_svrg_button_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C62206BD8AF002C6D6A /* jp_svrg_button_a.png */; };
-		28AF4C69206BDBDE002C6D6A /* jp_previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C67206BDBDB002C6D6A /* jp_previous.png */; };
 		28AF4C6A206BDBDE002C6D6A /* jp_next_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C68206BDBDC002C6D6A /* jp_next_button.png */; };
 		28AF4C6F206BDDDC002C6D6A /* 22_jp_title1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C6C206BDDDA002C6D6A /* 22_jp_title1.png */; };
 		28AF4C72206BE02C002C6D6A /* 23_jp_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 28AF4C71206BE02B002C6D6A /* 23_jp_title.png */; };
@@ -352,7 +351,6 @@
 		28AF4C60206BD8AE002C6D6A /* jp_sv_button_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jp_sv_button_a.png; path = Japanese/jp_sv_button_a.png; sourceTree = "<group>"; };
 		28AF4C61206BD8AF002C6D6A /* jp_sv_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jp_sv_button.png; path = Japanese/jp_sv_button.png; sourceTree = "<group>"; };
 		28AF4C62206BD8AF002C6D6A /* jp_svrg_button_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jp_svrg_button_a.png; path = Japanese/jp_svrg_button_a.png; sourceTree = "<group>"; };
-		28AF4C67206BDBDB002C6D6A /* jp_previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jp_previous.png; path = SensitivitySV/Images/Common/jp_previous.png; sourceTree = SOURCE_ROOT; };
 		28AF4C68206BDBDC002C6D6A /* jp_next_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jp_next_button.png; path = SensitivitySV/Images/Common/jp_next_button.png; sourceTree = SOURCE_ROOT; };
 		28AF4C6C206BDDDA002C6D6A /* 22_jp_title1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 22_jp_title1.png; path = SensitivitySV/Images/22_SV/Japanese/22_jp_title1.png; sourceTree = SOURCE_ROOT; };
 		28AF4C71206BE02B002C6D6A /* 23_jp_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 23_jp_title.png; path = SensitivitySV/Images/23_Far/Japanese/23_jp_title.png; sourceTree = SOURCE_ROOT; };
@@ -1052,7 +1050,6 @@
 			isa = PBXGroup;
 			children = (
 				28AF4C68206BDBDC002C6D6A /* jp_next_button.png */,
-				28AF4C67206BDBDB002C6D6A /* jp_previous.png */,
 				28BE894B20593337002CDB80 /* japanese_button.png */,
 				28BE894A20593337002CDB80 /* jp_choose_button.png */,
 				28BE895220593337002CDB80 /* jp_exist_button_a.png */,
@@ -1309,7 +1306,6 @@
 				2868980A1FB007ED007EEDCD /* Assets.xcassets in Resources */,
 				28BE89F7205934CF002CDB80 /* Inf7_ST1_minus12.png in Resources */,
 				28BE891D205931AD002CDB80 /* default@2x.jpg in Resources */,
-				28AF4C69206BDBDE002C6D6A /* jp_previous.png in Resources */,
 				28BE8A2220593542002CDB80 /* 03_chinese1_start_button.png in Resources */,
 				28BE8A3D2059356C002CDB80 /* 05_jp_title.png in Resources */,
 				28BF601A1FD023CE00B2418F /* PreMain.storyboard in Resources */,
