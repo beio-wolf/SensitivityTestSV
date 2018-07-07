@@ -26,7 +26,7 @@ class StartUpViewController: UIViewController {
         let dataServer = DataServer.shared
         dataServer.setGlassType(GlassType.NormalSet)
 
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SelectTest")
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SelectLens")
         nextVC?.modalTransitionStyle = .crossDissolve
         present(nextVC!, animated: true, completion: nil)
     }
