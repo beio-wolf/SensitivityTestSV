@@ -1153,10 +1153,10 @@
         <image name="tryagain_button.png" width="360" height="104"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2GE-5H-vBo"/>
+        <segue reference="BFo-Db-6YM"/>
         <segue reference="rbN-Pa-ReF"/>
-        <segue reference="08T-Aa-pty"/>
-        <segue reference="hLK-TX-pX5"/>
-        <segue reference="Iqy-bZ-XoG"/>
+        <segue reference="enQ-Pt-urr"/>
+        <segue reference="jju-AN-Nq1"/>
+        <segue reference="hXJ-fH-0qE"/>
     </inferredMetricsTieBreakers>
 </document>

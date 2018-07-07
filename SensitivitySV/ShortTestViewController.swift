@@ -97,7 +97,7 @@ class ShortTestViewController: UIViewController {
         } else if (dataServer.getGlassType() == GlassType.NormalSet) {
 
             let storyboard: UIStoryboard = self.storyboard!
-            let backVC = storyboard.instantiateViewController(withIdentifier: "ConfarmFar")
+            let backVC = storyboard.instantiateViewController(withIdentifier: "ConfarmNear")
             self.present(backVC, animated:false, completion: nil)
 
         } else {

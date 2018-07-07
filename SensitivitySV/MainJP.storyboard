@@ -479,7 +479,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="jp_previous.png"/>
                                 <connections>
-                                    <segue destination="xrb-K6-g3Y" kind="show" animates="NO" id="1t8-nF-fg1"/>
+                                    <action selector="tappedReturnButton:" destination="y1q-du-2Za" eventType="touchUpInside" id="bhP-Pq-NqJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7f5-jS-NCM">
@@ -1163,11 +1163,11 @@
         <image name="setting_button.png" width="120" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1a0-1K-KoV"/>
+        <segue reference="N0c-jC-Ivj"/>
         <segue reference="qz6-Wa-e8O"/>
-        <segue reference="6Nd-Ju-Tj0"/>
-        <segue reference="Wdh-mt-xXd"/>
+        <segue reference="7ZS-Yp-Rf1"/>
+        <segue reference="f5X-u3-baL"/>
         <segue reference="LCA-qG-olK"/>
-        <segue reference="agD-Km-93e"/>
+        <segue reference="1Tu-sk-L5F"/>
     </inferredMetricsTieBreakers>
 </document>
