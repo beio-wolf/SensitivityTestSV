@@ -967,7 +967,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="en_previous.png"/>
                                 <connections>
-                                    <segue destination="moi-n6-VUF" kind="show" animates="NO" id="vlW-G7-Fp3"/>
+                                    <action selector="tappedReturnButton:" destination="3pf-4G-uLq" eventType="touchUpInside" id="AUz-zu-G4s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95y-fX-VOK">
@@ -1156,7 +1156,7 @@
         <segue reference="2GE-5H-vBo"/>
         <segue reference="rbN-Pa-ReF"/>
         <segue reference="08T-Aa-pty"/>
-        <segue reference="pV9-8X-VM5"/>
+        <segue reference="hLK-TX-pX5"/>
         <segue reference="Iqy-bZ-XoG"/>
     </inferredMetricsTieBreakers>
 </document>

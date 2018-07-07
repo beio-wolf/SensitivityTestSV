@@ -83,6 +83,28 @@ class ShortTestViewController: UIViewController {
         }
     }
     
+    @IBAction func tappedReturnButton(_ sender: Any) {
+        
+        let dataServer = DataServer.shared
+        dataServer.setConfirmIndex(currentIndex)
+
+        if (dataServer.getGlassType() == GlassType.TrialSet) {
+
+            let storyboard: UIStoryboard = self.storyboard!
+            let backVC = storyboard.instantiateViewController(withIdentifier: "Description")
+            self.present(backVC, animated:false, completion: nil)
+
+        } else if (dataServer.getGlassType() == GlassType.NormalSet) {
+
+            let storyboard: UIStoryboard = self.storyboard!
+            let backVC = storyboard.instantiateViewController(withIdentifier: "ConfarmFar")
+            self.present(backVC, animated:false, completion: nil)
+
+        } else {
+            assert(true)
+        }
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
