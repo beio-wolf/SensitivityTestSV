@@ -39,13 +39,24 @@
 	</array>
 	<key>UIRequiresFullScreen</key>
 	<true/>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
+	<key>CFBundleURLTypes</key>
 	<array>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>jp.co.nikon-essilor.sensitivity-test-sv</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>sensitivity-test-sv</string>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>
