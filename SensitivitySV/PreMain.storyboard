@@ -241,7 +241,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="01.-Loading-layout.png" width="2048" height="1536"/>
+        <image name="01.-Loading-layout.png" width="1112" height="834"/>
         <image name="02_backgrond.png" width="2048" height="1536"/>
         <image name="03_background.png" width="2048" height="1536"/>
         <image name="03_setting.png" width="73" height="73"/>
