@@ -42,6 +42,7 @@
 		2834AB94212FA33100C084B0 /* myope_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2834AB8F212FA33100C084B0 /* myope_button@2x.png */; };
 		2834AB95212FA33100C084B0 /* start_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2834AB90212FA33100C084B0 /* start_button@2x.png */; };
 		2834AB992130065100C084B0 /* Inf7_ST1_minus1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2834AB972130065100C084B0 /* Inf7_ST1_minus1@2x.png */; };
+		2834AB9B21303B1600C084B0 /* Inf7_ST1_minus1@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2834AB9A21303B1600C084B0 /* Inf7_ST1_minus1@1x.png */; };
 		285606681FBAD0A80026AB58 /* ShortTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285606671FBAD0A80026AB58 /* ShortTestViewController.swift */; };
 		2856066A1FBAD87F0026AB58 /* BlurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285606691FBAD87F0026AB58 /* BlurViewController.swift */; };
 		286898031FB007EC007EEDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286898021FB007EC007EEDCD /* AppDelegate.swift */; };
@@ -358,6 +359,7 @@
 		2834AB8F212FA33100C084B0 /* myope_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myope_button@2x.png"; sourceTree = "<group>"; };
 		2834AB90212FA33100C084B0 /* start_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start_button@2x.png"; sourceTree = "<group>"; };
 		2834AB972130065100C084B0 /* Inf7_ST1_minus1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Inf7_ST1_minus1@2x.png"; path = "SensitivitySV/Images/TestImages/myopia/Inf7_ST1_minus1@2x.png"; sourceTree = SOURCE_ROOT; };
+		2834AB9A21303B1600C084B0 /* Inf7_ST1_minus1@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Inf7_ST1_minus1@1x.png"; path = "SensitivitySV/Images/TestImages/myopia/Inf7_ST1_minus1@1x.png"; sourceTree = SOURCE_ROOT; };
 		285606671FBAD0A80026AB58 /* ShortTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortTestViewController.swift; sourceTree = "<group>"; };
 		285606691FBAD87F0026AB58 /* BlurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewController.swift; sourceTree = "<group>"; };
 		286897FF1FB007EC007EEDCD /* SensitivitySV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensitivitySV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1209,6 +1211,7 @@
 			isa = PBXGroup;
 			children = (
 				28BE89E7205934CF002CDB80 /* Inf7_ST1_minus1.png */,
+				2834AB9A21303B1600C084B0 /* Inf7_ST1_minus1@1x.png */,
 				2834AB972130065100C084B0 /* Inf7_ST1_minus1@2x.png */,
 				28BE89E2205934CF002CDB80 /* Inf7_ST1_minus2.png */,
 				28BE89E8205934CF002CDB80 /* Inf7_ST1_minus3.png */,
@@ -1540,6 +1543,7 @@
 				28BE89AC205933CC002CDB80 /* icon83.png in Resources */,
 				28BE89B0205933CC002CDB80 /* icon29.png in Resources */,
 				28BE8A0F20593501002CDB80 /* Inf7_ST1_plus2.png in Resources */,
+				2834AB9B21303B1600C084B0 /* Inf7_ST1_minus1@1x.png in Resources */,
 				28BE8A82205ABAA8002CDB80 /* 10_chinese2_title.png in Resources */,
 				28BE88FD205931AD002CDB80 /* trialset.png in Resources */,
 				28AF4C5E206BD7C8002C6D6A /* 20_jp_title1.png in Resources */,
