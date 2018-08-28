@@ -36,7 +36,7 @@
                                     <action selector="tappedStartButton:" destination="nrt-l7-ZwM" eventType="touchUpInside" id="mV7-T5-TcQ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nikon-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="AeC-Or-ka6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nikon_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="AeC-Or-ka6">
                                 <rect key="frame" x="35" y="35" width="78" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -87,7 +87,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nikon-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="3rF-UC-u5v">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nikon_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="3rF-UC-u5v">
                                 <rect key="frame" x="35" y="35" width="78" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -242,9 +242,9 @@
     </scenes>
     <resources>
         <image name="01.-Loading-layout.png" width="1112" height="834"/>
-        <image name="02_backgrond.png" width="2048" height="1536"/>
-        <image name="03_background.png" width="2048" height="1536"/>
-        <image name="03_setting.png" width="73" height="73"/>
+        <image name="02_backgrond.png" width="1112" height="834"/>
+        <image name="03_background.png" width="1112" height="834"/>
+        <image name="03_setting.png" width="39" height="39"/>
         <image name="03_start_button.png" width="396" height="119"/>
         <image name="03_title.png" width="671" height="117"/>
         <image name="chinese1_button.png" width="365" height="104"/>
@@ -254,7 +254,7 @@
         <image name="login_error.png" width="610" height="21"/>
         <image name="login_please.png" width="932" height="24"/>
         <image name="manual_button.png" width="508" height="104"/>
-        <image name="nikon-logo.png" width="68" height="68"/>
+        <image name="nikon_logo.png" width="84" height="84"/>
         <image name="setting_background.png" width="2048" height="1536"/>
         <image name="setting_title1.png" width="358" height="99"/>
         <image name="setting_title2.png" width="661" height="37"/>
