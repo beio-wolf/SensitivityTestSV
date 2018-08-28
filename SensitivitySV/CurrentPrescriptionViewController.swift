@@ -43,7 +43,7 @@ class CurrentPrescriptionViewController: UIViewController,
     @IBOutlet weak var KeyDownView_: UIView!
     
     @IBAction func tappedGoToNextButton(_ sender: Any) {
-        
+        /*
         let dataServer = DataServer.shared
         let lensType = dataServer.getLensType()
 
@@ -56,6 +56,7 @@ class CurrentPrescriptionViewController: UIViewController,
             nextVC?.modalTransitionStyle = .crossDissolve
             present(nextVC!, animated: false, completion: nil)
         }
+         */
     }
     
     var currentTextFieldType_:TextFieldType = TextFieldType.RightS

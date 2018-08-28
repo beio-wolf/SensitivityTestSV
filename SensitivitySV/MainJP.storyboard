@@ -831,7 +831,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="jp_next_button.png"/>
                                 <connections>
-                                    <segue destination="ln6-vY-WQ0" kind="show" animates="NO" id="dvp-Ik-zQj"/>
+                                    <action selector="tappedNextButton:" destination="HGm-uC-J4x" eventType="touchUpInside" id="Hrh-aE-zgE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -848,12 +848,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZ9-0O-xAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-244" y="961"/>
+            <point key="canvasLocation" x="456" y="961"/>
         </scene>
         <!--Current Prescription View Controller-->
         <scene sceneID="22x-qb-wLp">
             <objects>
-                <viewController id="ln6-vY-WQ0" customClass="CurrentPrescriptionViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CurrentPrescription" id="ln6-vY-WQ0" customClass="CurrentPrescriptionViewController" customModule="SensitivitySV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NZN-vU-Lxd">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -915,7 +915,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="jp_next_button.png"/>
                                 <connections>
-                                    <action selector="tappedGoToNextButton:" destination="ln6-vY-WQ0" eventType="touchUpInside" id="tVT-i7-jYP"/>
+                                    <segue destination="HGm-uC-J4x" kind="show" animates="NO" id="JbY-YO-u1z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8y9-3W-TkB">
@@ -968,7 +968,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p3c-eD-PvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496" y="961"/>
+            <point key="canvasLocation" x="-229" y="961"/>
         </scene>
         <!--Confarm Far View Controller-->
         <scene sceneID="uvE-Dz-Dyu">
@@ -1165,10 +1165,11 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="N0c-jC-Ivj"/>
+        <segue reference="JbY-YO-u1z"/>
         <segue reference="qz6-Wa-e8O"/>
-        <segue reference="7ZS-Yp-Rf1"/>
+        <segue reference="n7F-bN-6bh"/>
         <segue reference="f5X-u3-baL"/>
         <segue reference="LCA-qG-olK"/>
-        <segue reference="U6Y-R8-ccL"/>
+        <segue reference="d3v-rg-AQY"/>
     </inferredMetricsTieBreakers>
 </document>

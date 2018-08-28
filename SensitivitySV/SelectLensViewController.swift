@@ -26,7 +26,7 @@ class SelectLensViewController: UIViewController {
         let dataServer = DataServer.shared
         dataServer.setLensType(LensType.SingleVision)
         
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier:"NewestPrescription")
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier:"CurrentPrescription")
         nextVC?.modalTransitionStyle = .crossDissolve
         present(nextVC!, animated: false, completion: nil)
     }
@@ -36,7 +36,7 @@ class SelectLensViewController: UIViewController {
         let dataServer = DataServer.shared
         dataServer.setLensType(LensType.SingleVisionForReadingGlasses)
         
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier:"NewestPrescription")
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier:"CurrentPrescription")
         nextVC?.modalTransitionStyle = .crossDissolve
         present(nextVC!, animated: false, completion: nil)
     }
