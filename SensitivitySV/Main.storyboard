@@ -191,7 +191,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="21_en_title1.png" translatesAutoresizingMaskIntoConstraints="NO" id="tx1-Gf-iXB">
-                                <rect key="frame" x="253" y="100" width="518" height="26"/>
+                                <rect key="frame" x="304" y="100" width="420" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="21_r.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZXT-4b-TK7">
@@ -307,7 +307,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20_en_title1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eti-J3-WFI">
-                                <rect key="frame" x="244" y="227" width="535" height="19"/>
+                                <rect key="frame" x="285" y="227" width="454" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0d-rY-kKe">
@@ -400,7 +400,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="22_en_title1.png" translatesAutoresizingMaskIntoConstraints="NO" id="puO-na-QnY">
-                                <rect key="frame" x="246" y="100" width="536" height="26"/>
+                                <rect key="frame" x="303" y="100" width="423" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gso-Lm-kyB">
@@ -573,7 +573,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="06_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="8np-en-vgN">
-                                <rect key="frame" x="135" y="160" width="758" height="229"/>
+                                <rect key="frame" x="201" y="160" width="620" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeC-k0-AnK">
@@ -638,11 +638,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="23_en_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-5l-vQJ">
-                                <rect key="frame" x="135" y="160" width="753" height="289"/>
+                                <rect key="frame" x="201" y="160" width="620" height="332"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="23_landolt.png" translatesAutoresizingMaskIntoConstraints="NO" id="3LI-Z7-hLT">
-                                <rect key="frame" x="469" y="489" width="84" height="84"/>
+                                <rect key="frame" x="469" y="510" width="84" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6L-BT-tbM">
@@ -654,7 +654,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.8m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5b-gq-rhL">
-                                <rect key="frame" x="643" y="390" width="245" height="100"/>
+                                <rect key="frame" x="641" y="434" width="245" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -790,7 +790,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="08_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hli-Kr-bbO">
-                                <rect key="frame" x="138" y="240" width="748" height="169"/>
+                                <rect key="frame" x="161" y="240" width="700" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1067,11 +1067,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="24_en_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="spi-6Q-gdN">
-                                <rect key="frame" x="135" y="160" width="753" height="289"/>
+                                <rect key="frame" x="201" y="160" width="620" height="332"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="24_landolt.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ucz-30-n3q">
-                                <rect key="frame" x="495" y="525" width="34" height="34"/>
+                                <rect key="frame" x="495" y="533" width="34" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vad-IF-EHr">
@@ -1083,7 +1083,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.8m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWc-lA-mea">
-                                <rect key="frame" x="643" y="390" width="245" height="100"/>
+                                <rect key="frame" x="643" y="434" width="245" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1107,23 +1107,23 @@
         <image name="04_title.png" width="600" height="55"/>
         <image name="05_backgrount.png" width="2048" height="1536"/>
         <image name="05_title.png" width="181" height="75"/>
-        <image name="06_title.png" width="1505" height="457"/>
-        <image name="08_title.png" width="1496" height="337"/>
+        <image name="06_title.png" width="1239" height="467"/>
+        <image name="08_title.png" width="1400" height="406"/>
         <image name="10_background.png" width="2048" height="1536"/>
         <image name="10_title.png" width="1245" height="293"/>
         <image name="20_background.png" width="2048" height="1536"/>
-        <image name="20_en_title1.png" width="1069" height="38"/>
+        <image name="20_en_title1.png" width="907" height="51"/>
         <image name="21_background.png" width="2048" height="1536"/>
         <image name="21_c.png" width="63" height="58"/>
-        <image name="21_en_title1.png" width="1035" height="51"/>
+        <image name="21_en_title1.png" width="839" height="66"/>
         <image name="21_l.png" width="73" height="72"/>
         <image name="21_r.png" width="85" height="72"/>
         <image name="21_s.png" width="55" height="58"/>
-        <image name="22_en_title1.png" width="1071" height="51"/>
+        <image name="22_en_title1.png" width="845" height="66"/>
         <image name="23_background.png" width="2048" height="1536"/>
-        <image name="23_en_title.png" width="1505" height="577"/>
+        <image name="23_en_title.png" width="1239" height="578"/>
         <image name="23_landolt.png" width="168" height="168"/>
-        <image name="24_en_title.png" width="1505" height="577"/>
+        <image name="24_en_title.png" width="1239" height="578"/>
         <image name="24_landolt.png" width="67" height="67"/>
         <image name="chinese1_button.png" width="365" height="104"/>
         <image name="chinese2_button.png" width="365" height="104"/>
@@ -1154,7 +1154,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ptg-m1-KOh"/>
-        <segue reference="rbN-Pa-ReF"/>
+        <segue reference="G1H-8K-AeP"/>
         <segue reference="KkM-s0-zzZ"/>
         <segue reference="aaj-FP-2VO"/>
         <segue reference="Zlo-3D-p64"/>
