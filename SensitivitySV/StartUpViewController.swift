@@ -31,6 +31,14 @@ class StartUpViewController: UIViewController {
         present(nextVC!, animated: true, completion: nil)
     }
     
+    @IBAction func tappedPreviousPageButton(_ sender: Any) {
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "PreMain", bundle: nil)
+        let nextView = storyboard.instantiateViewController(withIdentifier: "Title")
+        present(nextView, animated: true, completion: nil)
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

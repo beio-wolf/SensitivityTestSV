@@ -22,6 +22,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxS-rd-gP1">
+                                <rect key="frame" x="35" y="689" width="132" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="previous.png"/>
+                                <connections>
+                                    <action selector="tappedPreviousPageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pz8-Nh-vvl"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K94-fY-bUM">
                                 <rect key="frame" x="544" y="357" width="240" height="266"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1156,7 +1164,7 @@
         <segue reference="Ptg-m1-KOh"/>
         <segue reference="G1H-8K-AeP"/>
         <segue reference="KkM-s0-zzZ"/>
-        <segue reference="aaj-FP-2VO"/>
-        <segue reference="Zlo-3D-p64"/>
+        <segue reference="hLK-TX-pX5"/>
+        <segue reference="Iqy-bZ-XoG"/>
     </inferredMetricsTieBreakers>
 </document>

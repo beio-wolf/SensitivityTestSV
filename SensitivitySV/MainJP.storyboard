@@ -22,6 +22,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ju-xg-ae6">
+                                <rect key="frame" x="35" y="689" width="132" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="jp_previous.png"/>
+                                <connections>
+                                    <action selector="tappedPreviousPageButton:" destination="K1C-4l-zUS" eventType="touchUpInside" id="mcl-Om-sBk"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tG1-Vd-8bf">
                                 <rect key="frame" x="544" y="357" width="240" height="266"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1164,10 +1172,10 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dDS-62-UyA"/>
-        <segue reference="WIM-2v-DGF"/>
-        <segue reference="UWu-sG-YcZ"/>
+        <segue reference="Ful-rO-tgC"/>
+        <segue reference="zF2-Pb-eZp"/>
         <segue reference="Wdh-mt-xXd"/>
         <segue reference="LCA-qG-olK"/>
-        <segue reference="EgD-xv-u5W"/>
+        <segue reference="b45-Rf-CTm"/>
     </inferredMetricsTieBreakers>
 </document>
