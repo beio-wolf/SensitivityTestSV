@@ -35,7 +35,22 @@ class ShortTestViewController: UIViewController {
             pager.currentPage = currentIndex - 3
         }
         
-        let displayName: String = imageName + String(currentIndex + 1) + ".png"
+        let productTypeName:String
+        let dataServer = DataServer.shared
+        let deviceName:String = dataServer.getDeviceInfo()
+        if (deviceName.contains("iPad Pro 9.7inch")) {
+            productTypeName = "_S_"
+        }
+        else if (deviceName.contains("iPad Pro 10.5inch")) {
+            productTypeName = "_M_"
+        }
+        else if (deviceName.contains("iPad Pro 12.9inch")) {
+            productTypeName = "_L_"
+        } else {
+            productTypeName = ""
+        }
+        
+        let displayName: String = imageName + productTypeName + String(currentIndex + 1) + ".png"
         let image:UIImage = UIImage(named: displayName)!
         showImage.image = image
         
@@ -56,7 +71,22 @@ class ShortTestViewController: UIViewController {
             pager.currentPage = currentIndex - 3
         }
         
-        let displayName: String = imageName + String(currentIndex + 1) + ".png"
+        let productTypeName:String
+        let dataServer = DataServer.shared
+        let deviceName:String = dataServer.getDeviceInfo()
+        if (deviceName.contains("iPad Pro 9.7inch")) {
+            productTypeName = "_S_"
+        }
+        else if (deviceName.contains("iPad Pro 10.5inch")) {
+            productTypeName = "_M_"
+        }
+        else if (deviceName.contains("iPad Pro 12.9inch")) {
+            productTypeName = "_L_"
+        } else {
+            productTypeName = ""
+        }
+        
+        let displayName: String = imageName + productTypeName + String(currentIndex + 1) + ".png"
         let image:UIImage = UIImage(named: displayName)!
         showImage.image = image
 
@@ -119,8 +149,22 @@ class ShortTestViewController: UIViewController {
             imageName = "Inf7_ST1_plus"
         }
         
+        let productTypeName:String
+        let deviceName:String = dataServer.getDeviceInfo()
+        if (deviceName.contains("iPad Pro 9.7inch")) {
+            productTypeName = "_S_"
+        }
+        else if (deviceName.contains("iPad Pro 10.5inch")) {
+            productTypeName = "_M_"
+        }
+        else if (deviceName.contains("iPad Pro 12.9inch")) {
+            productTypeName = "_L_"
+        } else {
+            productTypeName = ""
+        }
+        
         currentIndex = 3
-        let displayName: String = imageName + String(currentIndex + 1) + ".png"
+        let displayName: String = imageName + productTypeName + String(currentIndex + 1) + ".png"
         let image:UIImage = UIImage(named: displayName)!
         showImage.image = image
         
