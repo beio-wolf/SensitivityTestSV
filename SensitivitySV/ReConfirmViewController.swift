@@ -65,7 +65,21 @@ class ReConfirmViewController: UIViewController {
         
         pager.currentPage = 0
         
-        let displayName: String = imageName + String(currentIndex + 1) + ".png"
+        let productTypeName:String
+        let deviceName:String = dataServer.getDeviceInfo()
+        if (deviceName.contains("iPad Pro 9.7inch")) {
+            productTypeName = "_S_"
+        }
+        else if (deviceName.contains("iPad Pro 10.5inch")) {
+            productTypeName = "_M_"
+        }
+        else if (deviceName.contains("iPad Pro 12.9inch")) {
+            productTypeName = "_L_"
+        } else {
+            productTypeName = ""
+        }
+        
+        let displayName: String = imageName + productTypeName + String(currentIndex + 1) + ".png"
         let image:UIImage = UIImage(named: displayName)!
         showImage.image = image
         
@@ -120,7 +134,21 @@ class ReConfirmViewController: UIViewController {
 
         pager.currentPage = 1
         
-        let displayName: String = imageName + String(currentIndex + 1) + ".png"
+        let productTypeName:String
+        let deviceName:String = dataServer.getDeviceInfo()
+        if (deviceName.contains("iPad Pro 9.7inch")) {
+            productTypeName = "_S_"
+        }
+        else if (deviceName.contains("iPad Pro 10.5inch")) {
+            productTypeName = "_M_"
+        }
+        else if (deviceName.contains("iPad Pro 12.9inch")) {
+            productTypeName = "_L_"
+        } else {
+            productTypeName = ""
+        }
+        
+        let displayName: String = imageName + productTypeName + String(currentIndex + 1) + ".png"
         let image:UIImage = UIImage(named: displayName)!
         showImage.image = image
         
@@ -164,7 +192,21 @@ class ReConfirmViewController: UIViewController {
             currentIndex = 0
         }
         
-        let displayName: String = imageName + String(currentIndex + 1) + ".png"
+        let productTypeName:String
+        let deviceName:String = dataServer.getDeviceInfo()
+        if (deviceName.contains("iPad Pro 9.7inch")) {
+            productTypeName = "_S_"
+        }
+        else if (deviceName.contains("iPad Pro 10.5inch")) {
+            productTypeName = "_M_"
+        }
+        else if (deviceName.contains("iPad Pro 12.9inch")) {
+            productTypeName = "_L_"
+        } else {
+            productTypeName = ""
+        }
+        
+        let displayName: String = imageName + productTypeName + String(currentIndex + 1) + ".png"
         let image:UIImage = UIImage(named: displayName)!
         showImage.image = image
         

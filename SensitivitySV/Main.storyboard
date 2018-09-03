@@ -1161,6 +1161,7 @@
         <image name="tryagain_button.png" width="360" height="104"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="hDn-N9-PKs"/>
         <segue reference="Ptg-m1-KOh"/>
         <segue reference="G1H-8K-AeP"/>
         <segue reference="KkM-s0-zzZ"/>
