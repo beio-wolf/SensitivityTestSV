@@ -193,11 +193,13 @@ final class DataServer {
             "iPad7,6"   :"iPad 6th"                   // iPad 6th Generation Cellular
         ]
         
-        if let deviceName = deviceCodeDic[code] {
+        if let deviceName:String = deviceCodeDic[code] {
             return deviceName
-        }else{
+        } else {
             assert(false)
         }
+        
+        return "Unknown"
     }
     
     func getProductType() -> ProductType {

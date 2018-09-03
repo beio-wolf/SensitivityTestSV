@@ -646,7 +646,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="23_en_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-5l-vQJ">
-                                <rect key="frame" x="201" y="160" width="620" height="332"/>
+                                <rect key="frame" x="201" y="160" width="620" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="23_landolt.png" translatesAutoresizingMaskIntoConstraints="NO" id="3LI-Z7-hLT">
@@ -1075,7 +1075,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="24_en_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="spi-6Q-gdN">
-                                <rect key="frame" x="201" y="160" width="620" height="332"/>
+                                <rect key="frame" x="201" y="160" width="620" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="24_landolt.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ucz-30-n3q">
@@ -1164,7 +1164,7 @@
         <segue reference="Ptg-m1-KOh"/>
         <segue reference="G1H-8K-AeP"/>
         <segue reference="KkM-s0-zzZ"/>
-        <segue reference="hLK-TX-pX5"/>
-        <segue reference="Iqy-bZ-XoG"/>
+        <segue reference="aaj-FP-2VO"/>
+        <segue reference="Zlo-3D-p64"/>
     </inferredMetricsTieBreakers>
 </document>
